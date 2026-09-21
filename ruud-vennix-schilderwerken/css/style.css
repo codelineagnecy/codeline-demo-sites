@@ -92,12 +92,12 @@ em{font-style:italic; color:var(--clay);}
 }
 .nav-links a:hover, .nav-links a.active{ color:var(--ink); }
 .nav-links a.active::after{ content:""; position:absolute; left:0; right:0; bottom:0; height:1px; background:var(--clay); }
-.nav-cta{
+.nav-links a.nav-cta{
   font-size:12px; letter-spacing:.05em; font-weight:700;
   color:var(--paper); background:var(--ink); padding:11px 20px; border-radius:3px;
   transition:background .2s ease;
 }
-.nav-cta:hover{ background:var(--clay); }
+.nav-links a.nav-cta:hover{ background:var(--clay); color:var(--paper); }
 
 .nav-burger{ display:none; flex-direction:column; gap:5px; cursor:pointer; z-index:110; }
 .nav-burger span{ width:24px; height:1px; background:var(--ink); display:block; }
