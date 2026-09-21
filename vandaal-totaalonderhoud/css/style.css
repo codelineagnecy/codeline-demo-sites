@@ -83,15 +83,16 @@ em{font-style:italic; color:var(--brass);}
 @media (max-width:720px){ .nav, .nav.solid{padding:18px 22px;} }
 
 .nav-logo{
-  display:flex; align-items:center; gap:12px;
+  display:flex; align-items:center; gap:14px;
   font-family:var(--serif); font-size:20px; color:var(--paper); letter-spacing:.01em;
 }
-.nav-logo .mark{
-  width:38px; height:38px; border:1px solid var(--brass); border-radius:50%;
-  display:flex; align-items:center; justify-content:center;
-  font-family:var(--serif); font-size:15px; color:var(--brass); letter-spacing:.03em;
+.nav-logo .mark-badge{
+  height:40px; padding:7px 11px; background:var(--paper); border-radius:5px;
+  display:flex; align-items:center; justify-content:center; flex-shrink:0;
 }
+.nav-logo .mark-badge img{ height:100%; width:auto; display:block; }
 .nav-logo .word b{ color:var(--brass); font-weight:400; }
+@media (max-width:520px){ .nav-logo .word{ display:none; } }
 
 .nav-links{ display:flex; align-items:center; gap:38px; }
 .nav-links a{
@@ -309,6 +310,12 @@ footer{ background:var(--ink); color:var(--paper-70); padding:70px 0 30px; borde
 .footer-grid h5{ font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--paper); margin-bottom:18px; }
 .footer-grid a, .footer-grid p{ font-size:14px; line-height:2; color:var(--paper-70); }
 .footer-grid a:hover{ color:var(--brass-light); }
+.footer-logo-badge{
+  display:inline-flex; align-items:center; justify-content:center;
+  height:52px; padding:10px 16px; background:var(--paper); border-radius:6px;
+  margin-bottom:18px;
+}
+.footer-logo-badge img{ height:100%; width:auto; display:block; }
 .footer-logo{ font-family:var(--serif); font-size:24px; color:var(--paper); margin-bottom:14px; }
 .footer-logo b{ color:var(--brass); font-weight:400; }
 .footer-bottom{ display:flex; justify-content:space-between; align-items:center; padding-top:26px; font-size:12px; flex-wrap:wrap; gap:10px; }
