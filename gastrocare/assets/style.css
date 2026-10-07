@@ -23,6 +23,8 @@
 html { scroll-behavior: smooth; scroll-padding-top: 110px; -webkit-text-size-adjust: 100%; }
 body { margin: 0; font-family: var(--font); font-size: 16.5px; line-height: 1.7; color: var(--text); background: var(--grund); -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; height: auto; display: block; }
+main { overflow-x: clip; }
+a, button { -webkit-tap-highlight-color: rgba(43,108,163,.12); }
 a { color: var(--blau); text-decoration: none; }
 a:hover { color: var(--blau-dunkel); }
 :focus-visible { outline: 3px solid #8DB8DD; outline-offset: 2px; border-radius: 4px; }
@@ -61,7 +63,13 @@ h3 { font-size: 1.1rem; }
 .knopf.hell { background: #fff; color: var(--blau); border-color: #BCD3E6; }
 .knopf.hell:hover { background: var(--blau-hell); border-color: var(--blau); color: var(--blau-dunkel); }
 .knopf-reihe { display: flex; flex-wrap: wrap; gap: 12px; }
-.menue { display: none; font: 600 .9rem var(--font); background: var(--weich); border: 1px solid var(--linie); border-radius: 8px; padding: 10px 14px; color: var(--text); cursor: pointer; }
+.menue { display: none; align-items: center; gap: 10px; font: 600 .92rem var(--font); background: var(--weich); border: 1px solid var(--linie); border-radius: 10px; padding: 0 14px; min-height: 44px; color: var(--text); cursor: pointer; }
+.menue .balken { display: inline-block; width: 18px; height: 12px; position: relative; }
+.menue .balken::before, .menue .balken::after, .menue .balken i { content: ""; position: absolute; left: 0; right: 0; height: 2px; background: currentColor; border-radius: 2px; transition: transform .25s var(--ease, ease), opacity .2s, top .25s; }
+.menue .balken::before { top: 0; } .menue .balken i { top: 5px; } .menue .balken::after { top: 10px; }
+.menue[aria-expanded="true"] .balken::before { top: 5px; transform: rotate(45deg); }
+.menue[aria-expanded="true"] .balken::after { top: 5px; transform: rotate(-45deg); }
+.menue[aria-expanded="true"] .balken i { opacity: 0; }
 
 /* ---------- Hero ---------- */
 .hero { background: linear-gradient(180deg, var(--weich), #fff); padding-block: clamp(36px, 6vw, 72px); }
@@ -201,6 +209,7 @@ a.infokarte:hover { border-color: #BCD3E6; color: var(--text); transform: transl
 .fakten dd { margin: 0; }
 
 /* Termin */
+.termin-grid { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
 .wege { display: grid; gap: 14px; margin-bottom: 20px; }
 .weg-karte { background: #fff; border: 1px solid var(--linie); border-radius: var(--radius); padding: 20px 22px; box-shadow: var(--schatten); display: grid; grid-template-columns: auto 1fr; gap: 4px 16px; align-items: start; }
 .weg-karte .icon { grid-row: 1 / span 3; margin: 0; }
@@ -358,3 +367,71 @@ a.infokarte:hover .icon { transform: scale(1.08) rotate(-4deg); }
   .weg-karte { grid-template-columns: minmax(0, 1fr); }
   .weg-karte .icon { grid-row: auto; }
 }
+
+/* ---------- Mobil: Feinschliff ---------- */
+@media (max-width: 860px) {
+  html { scroll-padding-top: 84px; }
+  .menue { display: inline-flex; }
+  .nav { max-height: calc(100vh - 120px); max-height: calc(100dvh - 120px); overflow-y: auto; opacity: 0; transform: translateY(-8px); pointer-events: none; display: flex; visibility: hidden; transition: opacity .25s ease, transform .25s ease, visibility 0s linear .25s; }
+  .nav.offen { opacity: 1; transform: none; pointer-events: auto; visibility: visible; transition: opacity .25s ease, transform .25s ease; }
+  .nav a { min-height: 48px; display: flex; align-items: center; }
+  .nav .nav-termin { min-height: 50px; }
+  .js .reveal.from-left, .js .reveal.from-right { transform: translateY(18px); }
+  .js .reveal { transform: translateY(18px); }
+  .js .reveal.zoom { transform: translateY(18px) scale(.97); }
+  .js .reveal.in, .js .reveal.from-left.in, .js .reveal.from-right.in, .js .reveal.zoom.in { transform: none; }
+  .hero { padding-block: 28px 36px; }
+  .hero-bild img { aspect-ratio: 16 / 11; }
+  .abschnitt { padding-block: 40px; }
+  .wechsel { gap: 20px; padding-block: 26px; }
+  .bild-block { aspect-ratio: 16 / 9; }
+  .bild-block svg { width: 80px; height: 80px; }
+}
+@media (max-width: 600px) {
+  .topleiste { font-size: .84rem; }
+  .topleiste .innen { padding-block: 9px; }
+  .topleiste .status { display: none; }
+  .topleiste a[href^="tel"] { font-weight: 600; }
+  .topleiste .links { width: 100%; justify-content: center; }
+  .innen { padding-inline: 18px; }
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.4rem; }
+  .hero p.lead { font-size: 1.02rem; }
+  .kicker { font-size: .72rem; letter-spacing: .06em; }
+  /* Infokarten kompakt: Icon links, Text rechts */
+  .infokarte { display: grid; grid-template-columns: 46px minmax(0, 1fr); column-gap: 14px; padding: 16px; align-items: start; }
+  .infokarte .icon { grid-row: 1 / span 3; margin: 0; }
+  .infokarte .mehr { padding-top: 4px; }
+  /* Leistungskarten als Zeilen */
+  .karte { flex-direction: row; align-items: stretch; }
+  .karte .bild { aspect-ratio: auto; width: 104px; flex: none; }
+  .karte .bild svg { width: 40px; height: 40px; }
+  .karte .text { padding: 14px 16px; }
+  .karte h3 { font-size: 1rem; }
+  /* Ärzte kompakt */
+  .aerzte.kompakt .arzt { grid-template-columns: 104px minmax(0, 1fr); }
+  .aerzte.kompakt .info { padding: 14px 16px; }
+  .aerzte.kompakt h3 { font-size: 1.05rem; }
+  .arzt .foto { max-height: 320px; }
+  .arzt .info { padding: 18px 18px 22px; }
+  .zeiten-karte, form { padding: 18px; }
+  .zeiten { font-size: .95rem; }
+  .daten { grid-template-columns: 1fr; gap: 0 0; }
+  .daten dt { margin-top: 8px; }
+  .aufruf .knopf-reihe { flex-direction: column; }
+  .wahl { gap: 14px; }
+  .wahl label { min-height: 44px; }
+  .weg li { padding-bottom: 18px; }
+  input, select, textarea { padding: 13px 14px; }
+  .fuss-raster { gap: 24px; }
+  .fuss-zeile { flex-direction: column; gap: 6px; }
+}
+@media (max-width: 360px) {
+  .marke small { letter-spacing: .06em; font-size: .66rem; }
+  .marke b { font-size: 1.05rem; }
+  .menue { padding: 0 10px; }
+  .zahlen { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 860px) { .termin-grid { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 600px) { .form-fuss .knopf { width: 100%; min-height: 50px; } }

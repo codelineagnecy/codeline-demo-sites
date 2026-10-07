@@ -9,8 +9,19 @@
     knopf.addEventListener("click", function () {
       var offen = nav.classList.toggle("offen");
       knopf.setAttribute("aria-expanded", offen ? "true" : "false");
-      knopf.textContent = offen ? "Schließen" : "Menü";
+      var t = knopf.querySelector(".menue-text");
+      if (t) t.textContent = offen ? "Schließen" : "Menü";
     });
+    function zu() {
+      nav.classList.remove("offen");
+      knopf.setAttribute("aria-expanded", "false");
+      var t = knopf.querySelector(".menue-text");
+      if (t) t.textContent = "Menü";
+    }
+    nav.addEventListener("click", function (e) { if (e.target.closest && e.target.closest("a")) zu(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") zu(); });
+    document.addEventListener("click", function (e) { if (nav.classList.contains("offen") && !e.target.closest(".kopf")) zu(); });
+    window.addEventListener("resize", function () { if (window.innerWidth > 860) zu(); });
   }
 
   var ruhig = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
