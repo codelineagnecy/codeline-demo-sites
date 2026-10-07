@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Termin vereinbaren | GastroCare Oberhausen Mitte</title>
+<meta name="description" content="Termin bei GastroCare Oberhausen Mitte vereinbaren: telefonisch unter 0208 23786, online über Doctolib oder per Formular.">
+<meta name="theme-color" content="#06121F">
+<link rel="canonical" href="https://www.gc-ob.de/termin.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="GastroCare Oberhausen Mitte">
+<meta property="og:title" content="Termin vereinbaren | GastroCare Oberhausen Mitte">
+<meta property="og:description" content="Termin bei GastroCare Oberhausen Mitte vereinbaren: telefonisch unter 0208 23786, online über Doctolib oder per Formular.">
+<meta property="og:url" content="https://www.gc-ob.de/termin.html">
+<meta property="og:image" content="https://www.gc-ob.de/assets/img/endoskop-licht.jpg">
+<link rel="icon" href="assets/img/emblem.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+<div class="vorhang" aria-hidden="true"><img src="assets/img/emblem.png" alt="" width="92" height="92"></div>
+<div class="fortschritt" aria-hidden="true"></div>
+
+<header class="kopf">
+  <div class="innen">
+    <a class="marke" href="index.html" aria-label="GastroCare Oberhausen Mitte, zur Startseite">
+      <img src="assets/img/emblem.png" alt="" width="52" height="52">
+      <span><b>GASTRO<i>CARE</i></b><small>OBERHAUSEN MITTE</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Hauptnavigation">
+      <a href="ueber-uns.html" style="--i:0">Über uns</a>
+      <a href="leistungen.html" style="--i:1">Leistungen</a>
+      <a href="team.html" style="--i:2">Das Team</a>
+      <a href="praxis.html" style="--i:3">Die Praxis</a>
+      <a href="kontakt.html" style="--i:4">Kontakt</a>
+      <a class="nav-termin" href="termin.html" style="--i:5" aria-current="page">Termin anfragen</a>
+    </nav>
+    <a class="knopf" href="termin.html">Termin anfragen</a>
+    <button class="menue" type="button" aria-expanded="false" aria-controls="nav">Menü</button>
+  </div>
+</header>
+
+<main>
+  <section class="buehne klein">
+    <div class="ringe" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="innen buehne-inhalt">
+      <span class="linie"></span>
+      <h1><span><i>Termin&shy;vereinbarung</i></span></h1>
+      <p>Sie erreichen uns auf drei Wegen. Wählen Sie den, der für Sie am bequemsten ist.</p>
+    </div>
+  </section>
+
+  <section class="abschnitt">
+    <div class="innen zwei" style="grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)">
+      <div>
+        <div class="wege">
+          <div class="zeig">
+            <h2>Telefonisch</h2>
+            <a class="telefon" href="tel:+4920823786">0208 23786</a>
+            <p>Bei hohem Anrufaufkommen kann es zu längeren Wartezeiten kommen.</p>
+          </div>
+          <div class="zeig" style="--i:1">
+            <h2>Online über Doctolib</h2>
+            <p>Eine weitere bequeme Möglichkeit, direkt einen Termin zu vereinbaren, bietet das Portal Doctolib.</p>
+            <!-- TODO: hier den direkten Doctolib-Profil-Link der Praxis eintragen -->
+            <p><a class="textlink" href="https://www.doctolib.de/" rel="noopener" target="_blank">Zu Doctolib</a></p>
+          </div>
+          <div class="zeig" style="--i:2">
+            <h2>Vor Ort oder per Formular</h2>
+            <p>Alternativ können Sie Termine auch in der Praxis oder durch Ausfüllen des Formulars vereinbaren.</p>
+          </div>
+        </div>
+        <p class="hinweis zeig">Um einen Termin für die Sprechstunde bei festgestellten gastroenterologischen Erkrankungen zu vereinbaren, bitten wir Sie, Ihren Überweisungsschein sowie vorhandene Vorbefunde vorzulegen. Senden Sie Kopien der Unterlagen bitte an info@gc-ob.de.</p>
+      </div>
+
+      <form id="terminform" class="zeig" style="--i:1" novalidate>
+        <h2>Terminanfrage</h2>
+        <div class="feld-reihe">
+          <div class="feld"><label for="f-name">Nachname, Vorname *</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="feld"><label for="f-geb">Geburtsdatum *</label><input id="f-geb" name="geburtsdatum" type="date" autocomplete="bday" required></div>
+        </div>
+        <div class="feld-reihe">
+          <div class="feld"><label for="f-tel">Telefon *</label><input id="f-tel" name="telefon" type="tel" autocomplete="tel" required></div>
+          <div class="feld"><label for="f-mail">E-Mail</label><input id="f-mail" name="email" type="email" autocomplete="email"></div>
+        </div>
+        <div class="feld-reihe">
+          <div class="feld"><label for="f-art">Terminart *</label>
+            <select id="f-art" name="terminart" required><option value="">Bitte wählen</option><option>Darmspiegelung</option><option>Magen- und Darmspiegelung</option></select></div>
+          <div class="feld"><label for="f-vers">Versicherung *</label><input id="f-vers" name="versicherung" type="text" placeholder="z. B. AOK, Knappschaft, privat" required></div>
+        </div>
+        <fieldset>
+          <legend>Überweisung vom Hausarzt *</legend>
+          <div class="wahl">
+            <label for="f-ueb-ja"><input id="f-ueb-ja" type="radio" name="ueberweisung" value="vorhanden" required> vorhanden</label>
+            <label for="f-ueb-nein"><input id="f-ueb-nein" type="radio" name="ueberweisung" value="nicht vorhanden"> nicht vorhanden</label>
+          </div>
+        </fieldset>
+        <div class="feld"><label for="f-komm">Kommentar</label><textarea id="f-komm" name="kommentar"></textarea></div>
+        <div class="form-fuss">
+          <button class="knopf" type="submit">Anfrage per E-Mail senden</button>
+          <p id="form-meldung" role="status"></p>
+          <small>Ihr E-Mail-Programm öffnet sich mit der ausgefüllten Anfrage an info@gc-ob.de. Bitte senden Sie die E-Mail dort ab. Felder mit * sind Pflichtfelder.</small>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="fuss">
+  <div class="innen">
+    <div class="fuss-raster">
+      <a href="index.html" aria-label="Zur Startseite"><img class="fuss-logo" src="assets/img/logo.png" alt="Logo GastroCare Oberhausen Mitte" width="132" height="132" loading="lazy"></a>
+      <div>
+        <h2>PRAXIS</h2>
+        <ul>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="leistungen.html">Leistungen</a></li>
+          <li><a href="team.html">Das Team</a></li>
+          <li><a href="praxis.html">Die Praxis</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>KONTAKT</h2>
+        <ul>
+          <li>Goebenstr. 47<br>46045 Oberhausen</li>
+          <li><a href="tel:+4920823786">Tel. 0208 23786</a></li>
+          <li><a href="mailto:info@gc-ob.de">info@gc-ob.de</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>SPRECHZEITEN</h2>
+        <ul>
+          <li>Mo, Di, Do: 7:30 bis 16 Uhr</li>
+          <li>Mi, Fr: 7:30 bis 14 Uhr</li>
+          <li><a href="termin.html">Termin anfragen</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fuss-wort" aria-hidden="true" data-parallax="-0.04">GastroCare</p>
+    <div class="fuss-zeile">
+      <span>© 2026 GastroCare Oberhausen Mitte</span>
+      <a href="impressum.html">Impressum</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js" defer></script>
+</body>
+</html>
