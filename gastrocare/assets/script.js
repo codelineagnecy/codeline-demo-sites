@@ -1,6 +1,7 @@
 (function () {
   "use strict";
   document.documentElement.classList.add("js");
+  window.__gc = 1;
 
   // Menü auf kleinen Bildschirmen
   var knopf = document.querySelector(".menue"), nav = document.getElementById("nav");
@@ -12,14 +13,69 @@
     });
   }
 
-  // Dezentes Einblenden
+  var ruhig = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Kopfzeile bekommt beim Scrollen einen weichen Schatten
+  var kopf = document.querySelector(".kopf"), wartet = false;
+  function rollen() { wartet = false; if (kopf) kopf.classList.toggle("gescrollt", window.scrollY > 8); }
+  rollen();
+  window.addEventListener("scroll", function () { if (!wartet) { wartet = true; requestAnimationFrame(rollen); } }, { passive: true });
+
+  // Gruppen erscheinen nacheinander (gestaffelt)
+  document.querySelectorAll(".karten, .infokarten, .aerzte, .zahlen, .namen, .weg, .wege, .bildpaar, .fakten").forEach(function (c) {
+    c.classList.remove("reveal");
+    var par = c.parentElement;
+    if (par && par.classList.contains("reveal") && par.children.length === 1) par.classList.remove("reveal");
+    Array.prototype.forEach.call(c.children, function (k, i) {
+      k.classList.add("reveal");
+      k.style.setProperty("--d", (i * 0.09).toFixed(2) + "s");
+    });
+  });
+  // Zweispaltige Bereiche: Text und Bild kommen von den Seiten
+  document.querySelectorAll(".zwei").forEach(function (z) {
+    var k = z.children;
+    if (k[0] && k[0].classList.contains("reveal")) k[0].classList.add("from-left");
+    if (k[1] && k[1].classList.contains("reveal")) { k[1].classList.add("from-right"); k[1].style.setProperty("--d", ".12s"); }
+  });
+  document.querySelectorAll(".wechsel").forEach(function (w, i) {
+    w.classList.remove("reveal");
+    var bild = w.querySelector(".bild-block"), text = w.querySelector(".fliess");
+    var links = i % 2 === 0;
+    if (bild) { bild.classList.add("reveal", links ? "from-left" : "from-right"); }
+    if (text) { text.classList.add("reveal", links ? "from-right" : "from-left"); text.style.setProperty("--d", ".12s"); }
+  });
+  document.querySelectorAll(".aufruf .innen, .abschnitt-kopf").forEach(function (e) { e.classList.add("reveal"); });
+  document.querySelectorAll(".karten > *, .aerzte > *").forEach(function (e) { e.classList.add("zoom"); });
+
+  // Zahlen zählen hoch
+  function zaehlen(el) {
+    var ziel = parseInt(el.getAttribute("data-zahl"), 10);
+    if (ruhig || !ziel) { el.textContent = ziel; return; }
+    var start = null;
+    function schritt(t) {
+      if (!start) start = t;
+      var p = Math.min(1, (t - start) / 1300);
+      el.textContent = Math.round(ziel * (1 - Math.pow(1 - p, 3)));
+      if (p < 1) requestAnimationFrame(schritt);
+    }
+    el.textContent = "0";
+    requestAnimationFrame(schritt);
+  }
+  var zahlen = document.querySelectorAll(".zahlen b");
+  zahlen.forEach(function (b) { b.setAttribute("data-zahl", b.textContent.trim()); });
+
   var ziele = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
     var obs = new IntersectionObserver(function (es) {
-      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); obs.unobserve(e.target); } });
-    }, { threshold: 0.08 });
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.add("in");
+        var b = e.target.querySelector && e.target.querySelector(".zahlen b, b[data-zahl]");
+        if (e.target.matches && e.target.matches(".zahlen > *") && b) zaehlen(b);
+        obs.unobserve(e.target);
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
     ziele.forEach(function (z) { obs.observe(z); });
-    setTimeout(function () { ziele.forEach(function (z) { z.classList.add("in"); }); }, 2500);
   } else {
     ziele.forEach(function (z) { z.classList.add("in"); });
   }
