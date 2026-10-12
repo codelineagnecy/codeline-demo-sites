@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Online afspraak maken – Tajmeel Lab by Sisters</title>
+<meta name="description" content="Demo van een online boekingssysteem voor Tajmeel Lab by Sisters.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=1">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__tl)document.documentElement.classList.remove("js")},4000);</script>
+
+</head>
+<body>
+<a class="nur-sr" href="#inhoud">Naar de inhoud</a>
+<header class="kop">
+  <div class="wrap">
+    <a class="merk" href="index.html" aria-label="Tajmeel Lab by Sisters – home"><img src="assets/img/logo.png" alt="Tajmeel Lab by Sisters" width="150" height="46"></a>
+    <button class="menu-knop" type="button" aria-expanded="false" aria-controls="hoofdnav"><span class="streep"><i></i></span><span class="menu-tekst">Menu</span></button>
+    <nav class="nav" id="hoofdnav" aria-label="Hoofdmenu"><a href="index.html">Home</a><a href="behandelingen.html">Behandelingen</a><a href="index.html#werkt">Zo werkt het</a><a href="index.html#contact">Contact</a><a class="nav-boek" href="boeken.html">Online boeken</a></nav>
+    <a class="knop klein goud" href="boeken.html">Online boeken</a>
+  </div>
+</header>
+<main id="inhoud">
+
+<section class="paginakop">
+  <div class="wrap">
+    <p class="krumel"><a href="index.html">Home</a> / Online boeken</p>
+    <h1>Online afspraak maken</h1>
+    <p>Kies je behandeling, dag en tijd. Probeer het zelf uit.</p>
+  </div>
+</section>
+<section class="sectie" style="padding-top:clamp(18px,3vw,30px)">
+  <div class="wrap">
+    <div class="demo-balk" role="note"><span><b>Demo.</b> Dit is een voorbeeld van een boekingssysteem. Er wordt niets verstuurd of opgeslagen en de beschikbare tijden zijn voorbeeldwaarden.</span></div>
+    <div class="boek">
+      <div>
+        <ol class="stappenbalk" id="sb" aria-label="Voortgang"><li class="sb">Behandeling</li><li class="sb">Dag &amp; tijd</li><li class="sb">Gegevens</li><li class="sb">Klaar</li></ol>
+        <div class="paneel" id="paneel" aria-live="polite"><noscript>Voor dit voorbeeld is JavaScript nodig.</noscript></div>
+      </div>
+      <aside class="samenvatting" id="sam" aria-label="Samenvatting van je afspraak"></aside>
+    </div>
+  </div>
+</section>
+<script type="application/json" id="tl-data">{"behandelingen": [{"id": "hydrafacial", "naam": "Hydrafacial", "groep": "huid", "icoon": "<path d=\"M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0\"/>", "kort": "Reinigende, hydraterende gezichtsbehandeling."}, {"id": "peelings", "naam": "Peelings", "groep": "huid", "icoon": "<path d=\"M12 3c3.5 4.200 6 7.200 6 10.300a6 6 0 0 1-12 0C6 10.200 8.500 7.200 12 3z\"/>", "kort": "Voor een frissere, egalere huid."}, {"id": "skinboosters", "naam": "Skinboosters", "groep": "huid", "icoon": "<path d=\"M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.500 2.500M15.500 15.500 18 18M18 6l-2.500 2.500M8.500 15.500 6 18\"/>", "kort": "Hydratatie en glans voor je huid."}, {"id": "mesotherapie", "naam": "Mesotherapie", "groep": "huid", "icoon": "<path d=\"m18 2 4 4M15 5l4 4M13 7 4 16l-1 5 5-1 9-9M9 11l4 4\"/>", "kort": "Verzorgende huidbehandeling."}, {"id": "botox", "naam": "Botox", "groep": "inject", "icoon": "<circle cx=\"12\" cy=\"12\" r=\"8.500\"/><path d=\"M9 10.500h.01M15 10.500h.01M8.800 14.500c1.800 2 4.600 2 6.400 0\"/>", "kort": "In overleg met je behandelaar."}, {"id": "fillers", "naam": "Fillers", "groep": "inject", "icoon": "<path d=\"M12 20s-7-4.500-7-10a4 4 0 0 1 7-2.500A4 4 0 0 1 19 10c0 5.500-7 10-7 10z\"/>", "kort": "Voor volume en contouren."}, {"id": "lemon-bottle", "naam": "Lemon Bottle", "groep": "inject", "icoon": "<path d=\"M5 19c0-8 5-14 15-14 0 10-6 15-14 15M5 19c3-5 6-8 10-10\"/>", "kort": "Voor lokale vetpuntjes."}, {"id": "laserontharing", "naam": "Laserontharing", "groep": "ontharen", "icoon": "<path d=\"M13 2 4 14h7l-1 8 9-12h-7z\"/>", "kort": "Ontharen met laser."}, {"id": "adviesgesprek", "naam": "Adviesgesprek", "groep": "advies", "icoon": "<path d=\"M4 5h16v11H9l-5 4z\"/>", "kort": "Kennismaken en advies op maat."}], "groepen": [{"id": "huid", "naam": "Huidverzorging"}, {"id": "inject", "naam": "Injectables"}, {"id": "ontharen", "naam": "Ontharen"}, {"id": "advies", "naam": "Eerst advies"}], "salon": {"naam": "Tajmeel Lab by Sisters", "adres": "Uiterwaardenstraat 113, 1079 BV Amsterdam", "tel": "06 87747390", "telHref": "tel:+31687747390"}}</script>
+
+</main>
+<footer class="voet">
+  <div class="wrap">
+    <div class="raster">
+      <div>
+        <img src="assets/img/logo.png" alt="Tajmeel Lab by Sisters" width="150" height="46" style="height:46px;width:auto">
+        <p class="tekst">Beauty- en schoonheidssalon in Amsterdam. Volg Tajmeel Lab op Instagram voor de laatste behandelingen en resultaten.</p>
+      </div>
+      <div>
+        <h2>Pagina's</h2>
+        <ul><li><a href="behandelingen.html">Behandelingen</a></li><li><a href="boeken.html">Online boeken</a></li><li><a href="index.html#werkt">Zo werkt het</a></li><li><a href="index.html#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul><li><a href="tel:+31687747390">06 87747390</a></li><li><a href="https://www.instagram.com/tajmeellab/" target="_blank" rel="noopener">Instagram @tajmeellab</a></li><li><a href="https://www.google.com/maps/search/?api=1&query=Uiterwaardenstraat+113+Amsterdam" target="_blank" rel="noopener">Uiterwaardenstraat 113<br>1079 BV Amsterdam</a></li></ul>
+      </div>
+    </div>
+    <div class="onder"><span>Conceptvoorbeeld door CodeLine Agency – niet de officiële website van Tajmeel Lab.</span><span>Alle tijden in het boeksysteem zijn voorbeeldwaarden.</span></div>
+  </div>
+</footer>
+
+<script src="js/tijden.js?v=1" defer></script>
+<script src="js/boeken.js?v=1" defer></script>
+<script src="js/main.js?v=1" defer></script>
+</body>
+</html>
