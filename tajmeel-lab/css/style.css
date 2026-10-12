@@ -264,18 +264,16 @@ figure.hv-klein img { box-shadow: none; border-radius: 0; }
 .fotostrook img { width: 100%; height: 100%; object-fit: cover; border-radius: 18px; box-shadow: var(--schaduw); }
 
 /* Instagram */
-.ig-balk { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 22px; font-size: .9rem; color: var(--inkt-zacht); }
-.ig-balk .knop svg { width: 20px; height: 20px; }
-.ig-balk[hidden] { display: none; }
 .ig-raster { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-.ig-kaart { background: var(--lila); border: 1px solid var(--lijn); border-radius: 18px; overflow: hidden; min-height: 300px; display: flex; }
-.ig-leeg { margin: auto; text-align: center; padding: 30px 20px; display: grid; gap: 6px; justify-items: center; }
-.ig-leeg b { font-family: var(--kop); font-size: 1.4rem; font-weight: 600; }
-.ig-leeg small { color: var(--inkt-zacht); }
-.ig-icoon { width: 54px; height: 54px; border-radius: 16px; background: #fff; color: var(--paars); display: grid; place-items: center; margin-bottom: 6px; border: 1px solid var(--lijn); }
-.ig-icoon svg { width: 28px; height: 28px; }
-.ig-kaart iframe { display: block; width: 100%; height: 640px; border: 0; background: #fff; }
-.ig-kaart.geladen { background: #fff; min-height: 0; }
+.ig-kaart { position: relative; display: block; border-radius: 18px; overflow: hidden; aspect-ratio: 5 / 6; background: var(--lila); box-shadow: var(--schaduw); }
+.ig-kaart img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease); }
+.ig-kaart:hover img { transform: scale(1.04); }
+.ig-kaart::after { content: ""; position: absolute; inset: auto 0 0 0; height: 45%; background: linear-gradient(0deg, rgba(43,34,51,.78), rgba(43,34,51,0)); }
+.ig-play { position: absolute; top: 14px; right: 14px; width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,.92); z-index: 2; }
+.ig-play::before { content: ""; position: absolute; left: 13px; top: 10px; border-left: 11px solid var(--paars); border-top: 7px solid transparent; border-bottom: 7px solid transparent; }
+.ig-cap { position: absolute; left: 16px; right: 16px; bottom: 14px; z-index: 2; color: #fff; font-family: var(--kop); font-size: 1.3rem; font-weight: 600; line-height: 1.2; }
+.ig-cap small { display: block; font-family: var(--tekst); font-size: .78rem; font-weight: 500; letter-spacing: .06em; opacity: .9; margin-top: 3px; }
+.knop svg { width: 20px; height: 20px; }
 
 /* Voet */
 .voet { background: var(--champagne); border-top: 1px solid var(--lijn); padding-top: clamp(38px, 5vw, 58px); color: var(--inkt-zacht); font-size: .95rem; }
