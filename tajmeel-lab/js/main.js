@@ -58,5 +58,20 @@
     }
   }
 
+  /* Instagram: pas laden na klik (cookies van Instagram) */
+  var igKnop = d.getElementById('ig-laad');
+  if (igKnop) {
+    igKnop.addEventListener('click', function () {
+      d.querySelectorAll('.ig-kaart[data-code]').forEach(function (k) {
+        var f = d.createElement('iframe');
+        f.src = 'https://www.instagram.com/reel/' + k.dataset.code + '/embed/';
+        f.title = 'Instagram-post van @tajmeellab';
+        f.loading = 'lazy'; f.setAttribute('allowtransparency', 'true'); f.setAttribute('scrolling', 'no');
+        k.textContent = ''; k.classList.add('geladen'); k.appendChild(f);
+      });
+      igKnop.parentNode.hidden = true;
+    });
+  }
+
   window.__tl = 1;
 })();

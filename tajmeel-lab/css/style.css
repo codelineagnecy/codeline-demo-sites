@@ -246,6 +246,37 @@ a.ckaart:hover { transform: translateY(-4px); box-shadow: var(--schaduw); border
 .boek-balk[hidden] { display: none !important; }
 .groep-sectie + .groep-sectie { margin-top: clamp(34px, 5vw, 56px); }
 
+/* Foto's, hero-collage, resultaten */
+.hv { position: relative; }
+.hv-grid { display: grid; grid-template-columns: 1.15fr 1fr; grid-template-rows: 1fr 1fr; gap: 10px; aspect-ratio: 1.08; animation: rise .9s var(--ease) .1s both; }
+.hv-grid img { width: 100%; height: 100%; object-fit: cover; border-radius: 18px; box-shadow: var(--schaduw); background: var(--lila); }
+.hv-groot { grid-row: 1 / span 2; }
+img.hv-klein { object-position: 30% 20%; }
+.hv-klein { position: relative; margin: 0; min-height: 0; }
+figure.hv-klein { border-radius: 18px; overflow: hidden; }
+figure.hv-klein img { box-shadow: none; border-radius: 0; }
+.hv-klein figcaption { position: absolute; left: 10px; bottom: 10px; background: rgba(255,255,255,.92); color: var(--inkt); font-size: .72rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; }
+.hv .mini { margin: -46px 5% 0; position: relative; z-index: 2; }
+.resultaat { margin: 0; }
+.resultaat img { width: 100%; height: auto; border-radius: 22px; box-shadow: var(--schaduw); }
+.resultaat figcaption { font-size: .86rem; color: var(--inkt-zacht); margin-top: 10px; }
+.fotostrook { display: grid; grid-template-columns: 1.2fr 1.6fr .8fr; gap: 12px; margin-top: clamp(34px, 5vw, 56px); height: clamp(180px, 26vw, 300px); }
+.fotostrook img { width: 100%; height: 100%; object-fit: cover; border-radius: 18px; box-shadow: var(--schaduw); }
+
+/* Instagram */
+.ig-balk { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 22px; font-size: .9rem; color: var(--inkt-zacht); }
+.ig-balk .knop svg { width: 20px; height: 20px; }
+.ig-balk[hidden] { display: none; }
+.ig-raster { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.ig-kaart { background: var(--lila); border: 1px solid var(--lijn); border-radius: 18px; overflow: hidden; min-height: 300px; display: flex; }
+.ig-leeg { margin: auto; text-align: center; padding: 30px 20px; display: grid; gap: 6px; justify-items: center; }
+.ig-leeg b { font-family: var(--kop); font-size: 1.4rem; font-weight: 600; }
+.ig-leeg small { color: var(--inkt-zacht); }
+.ig-icoon { width: 54px; height: 54px; border-radius: 16px; background: #fff; color: var(--paars); display: grid; place-items: center; margin-bottom: 6px; border: 1px solid var(--lijn); }
+.ig-icoon svg { width: 28px; height: 28px; }
+.ig-kaart iframe { display: block; width: 100%; height: 640px; border: 0; background: #fff; }
+.ig-kaart.geladen { background: #fff; min-height: 0; }
+
 /* Voet */
 .voet { background: var(--champagne); border-top: 1px solid var(--lijn); padding-top: clamp(38px, 5vw, 58px); color: var(--inkt-zacht); font-size: .95rem; }
 .voet .raster { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px; }
@@ -293,6 +324,9 @@ a.ckaart:hover { transform: translateY(-4px); box-shadow: var(--schaduw); border
   .sam-adres { display: none; }
 }
 @media (max-width: 860px) {
+  .ig-raster { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: min(82%, 340px); overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 10px; margin-inline: calc(var(--rand) * -1); padding-inline: var(--rand); scroll-padding-inline: var(--rand); }
+  .ig-kaart { scroll-snap-align: start; }
+  .hv .mini { margin-inline: 3%; }
   .hero .wrap, .twee { grid-template-columns: minmax(0, 1fr); }
   .stappen { grid-template-columns: minmax(0, 1fr); }
   .contact-kaarten { grid-template-columns: minmax(0, 1fr); }
@@ -309,6 +343,11 @@ a.ckaart:hover { transform: translateY(-4px); box-shadow: var(--schaduw); border
   .voet .raster > :first-child { grid-column: 1 / -1; }
 }
 @media (max-width: 640px) {
+  .ig-raster { margin-inline: -18px; padding-inline: 18px; scroll-padding-inline: 18px; }
+  .hv-grid { gap: 8px; }
+  .hv-grid img, figure.hv-klein { border-radius: 14px; }
+  .fotostrook { grid-template-columns: 1fr 1.3fr; height: 190px; }
+  .fotostrook img:last-child { display: none; }
   body { font-size: 16.5px; }
   .wrap { padding-inline: 18px; }
   .behandelingen { grid-template-columns: minmax(0, 1fr); gap: 12px; }
