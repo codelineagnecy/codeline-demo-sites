@@ -52,8 +52,10 @@
     return o.foto?'<img src="'+esc(o.foto)+'" alt="'+esc(o.type+' aan de '+o.adres+' in '+o.plaats)+'"'+(lazy?' loading="lazy"':'')+'>':ph(o);
   }
   function kaartje(o){
+    var pc=(o.postcode?o.postcode+' ':'')+o.plaats;
+    var sp='<li>'+IC.opp+'<span>'+o.opp+' m²</span></li>'+(o.bj?'<li>'+IC.bj+'<span>'+o.bj+'</span></li>':'')+'<li>'+IC.typ+'<span>'+esc(o.type)+'</span></li>';
     return '<a class="kaartje" href="object-'+esc(o.id)+'.html"><div class="kaartje-foto">'+foto(o,true)+'<span class="badge '+badgeCls(o)+'">'+esc(o.status)+'</span></div>'+
-      '<div class="kaartje-body"><b>'+esc(prijzen(o)[0])+'</b><span>'+esc(o.adres)+'</span><small>'+esc(o.plaats)+' · '+o.opp+' m²</small></div></a>';
+      '<div class="kaartje-body"><span class="k-adres">'+esc(o.adres)+'</span><span class="k-plaats">'+esc(pc)+'</span><ul class="k-specs">'+sp+'</ul><b class="k-prijs">'+esc(prijzen(o)[0])+'</b></div></a>';
   }
   var IC={
     opp:'<svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 9h5M15 4v5"/></svg>',
