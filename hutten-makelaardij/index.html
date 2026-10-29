@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hutten Makelaardij – Bedrijfsmakelaar in Veenendaal (concept)</title>
+<meta name="description" content="Luxe conceptwebsite voor Hutten Makelaardij & Bedrijfshuisvesting in Veenendaal: bedrijfsruimte, kantoor en praktijkruimte, taxaties en vastgoedadvies. Gemaakt door CodeLine Agency.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0f1a14">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script>
+document.documentElement.classList.add('js');
+setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove('js')},4000);
+</script>
+<link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body class="heeft-balk">
+
+<header class="header">
+  <div class="wrap nav-rij">
+    <a href="#top" class="logo" aria-label="Hutten Makelaardij"><img src="img/logo.jpg" alt="Hutten Makelaardij o.g. en Bedrijfshuisvesting" width="150" height="72"></a>
+    <button class="menu-knop" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav">
+      <a href="#aanbod">Aanbod</a>
+      <a href="#diensten">Diensten</a>
+      <a href="#verhuurd">Verhuurd</a>
+      <a href="#over">Over ons</a>
+      <a href="#contact">Contact</a>
+      <a class="knop goud" href="https://wa.me/31318519002" target="_blank" rel="noopener">WhatsApp ons</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-bg"><img src="img/nieuwbouw.jpg" alt="Nieuwbouw bedrijfsunits met zwarte en goudkleurige gevel" fetchpriority="high"></div>
+  <div class="wrap hero-in">
+    <span class="label licht">Bedrijfsmakelaardij · Veenendaal en omgeving</span>
+    <h1>Bedrijfsvastgoed <em>met overzicht</em> en persoonlijke aandacht.</h1>
+    <p class="lead licht">Huur, koop, taxatie en advies voor ondernemers en vastgoedeigenaren in Veenendaal, Rhenen en Renswoude.</p>
+    <form class="zoek" onsubmit="return false" aria-label="Zoek in het aanbod">
+      <label>Soort<select id="f-soort"><option value="">Huur en koop</option><option value="huur">Te huur</option><option value="koop">Te koop</option></select></label>
+      <label>Type<select id="f-type"><option value="">Alle typen</option><option value="bedrijfsunit">Bedrijfsunit</option><option value="kantoor">Kantoorruimte</option><option value="praktijk">Praktijkruimte</option></select></label>
+      <label>Plaats<select id="f-plaats"><option value="">Alle plaatsen</option></select></label>
+      <a class="knop goud" href="#aanbod">Bekijk aanbod</a>
+    </form>
+  </div>
+</section>
+
+<section class="kenmerken-band">
+  <div class="wrap band-in">
+    <div><b>NVM</b><span>Aangesloten makelaar</span></div>
+    <div><b>NRVT</b><span>Register-Taxateur</span></div>
+    <div><b>Bedrijfshuisvesting</b><span>Huur, koop en ontwikkeling</span></div>
+    <div><b>Veenendaal</b><span>Rhenen en Renswoude</span></div>
+  </div>
+</section>
+
+<section id="aanbod">
+  <div class="wrap">
+    <div class="kop-blok reveal">
+      <span class="label">Aanbod</span>
+      <h2>Uitgelicht <em>aanbod</em></h2>
+      <p class="lead">Een selectie uit het actuele aanbod van Hutten Makelaardij. Klik op een object voor de details en om direct een bezichtiging aan te vragen.</p>
+    </div>
+    <div class="aanbod-kop"><span id="aanbod-aantal" aria-live="polite"></span><button type="button" id="f-reset" class="tekstknop">Filters wissen</button></div>
+    <div id="aanbod-grid" class="objecten"></div>
+    <p id="aanbod-leeg" class="leeg" hidden>Geen objecten gevonden met deze filters. Neem contact op, dan zoeken we mee.</p>
+    <p class="noot">Aanbod en prijzen komen uit de openbare Instagram-posts van Hutten Makelaardij en kunnen afwijken van de actuele situatie. In een volledige versie komt het aanbod uit hun eigen systeem.</p>
+  </div>
+</section>
+
+<section id="diensten" class="donker">
+  <div class="wrap">
+    <div class="kop-blok midden reveal">
+      <span class="label licht">Diensten</span>
+      <h2>Alles voor uw <em>bedrijfsvastgoed</em></h2>
+      <p class="lead licht">Hutten Makelaardij begeleidt ondernemers en vastgoedeigenaren bij verhuur, verkoop, waardebepaling, ontwikkeling en advies.</p>
+    </div>
+    <div class="diensten">
+      <article class="dienst reveal"><span class="d-nr">01</span><h3>Verhuur en verkoop</h3><p>Bedrijfsruimte, kantoor, winkel- en praktijkruimte, van bedrijventerrein tot centrum.</p></article>
+      <article class="dienst reveal d1"><span class="d-nr">02</span><h3>Taxaties en waardebepaling</h3><p>Inzicht in de actuele waarde van uw bedrijfspand, onderbouwd en onafhankelijk.</p></article>
+      <article class="dienst reveal d2"><span class="d-nr">03</span><h3>Ontwikkeling</h3><p>Begeleiding bij projecten, tot en met de kadastrale splitsing, zoals bij de Klovenier in Veenendaal.</p></article>
+      <article class="dienst reveal d3"><span class="d-nr">04</span><h3>Vastgoedadvies</h3><p>Advies over onder meer duurzaamheid in vastgoed, zoals ESG en DuPa 2.0.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="waarde">
+  <div class="wrap waarde-in reveal">
+    <div>
+      <span class="label">Waardebepaling</span>
+      <h2>Weet u wat uw bedrijfspand <em>nu waard is?</em></h2>
+      <p class="lead">De vastgoedmarkt blijft in beweging. Neem vrijblijvend contact op voor inzicht in de actuele waarde van uw bedrijfspand.</p>
+    </div>
+    <a id="waardebepaling" class="knop goud groot" href="https://wa.me/31318519002" target="_blank" rel="noopener">Vraag een waardebepaling aan</a>
+  </div>
+</section>
+
+<section id="verhuurd">
+  <div class="wrap">
+    <div class="kop-blok reveal">
+      <span class="label">Resultaten</span>
+      <h2>Recent <em>verhuurd</em></h2>
+      <p class="lead">Een greep uit de objecten die Hutten Makelaardij recent heeft verhuurd.</p>
+    </div>
+    <ul id="verhuurd-lijst" class="verhuurd"></ul>
+  </div>
+</section>
+
+<section id="over" class="over">
+  <div class="wrap twee-kol">
+    <figure class="foto reveal"><img src="img/kantoor.jpg" alt="Kantoor van Hutten Makelaardij met gevelreclame en vitrines met aanbod" width="1000" height="822" loading="lazy"></figure>
+    <div class="reveal d1">
+      <span class="label">Over ons</span>
+      <h2>Lokaal verankerd, <em>zakelijk scherp</em></h2>
+      <p class="lead">Hutten Makelaardij & Bedrijfshuisvesting is bedrijfsmakelaar in Veenendaal en omgeving, aangesloten bij de NVM en met een NRVT Register-Taxateur in huis. Het kantoor staat aan De Smalle zijde 18A in Veenendaal.</p>
+      <ul class="lijst">
+        <li>Bedrijfsmakelaardij</li>
+        <li>Taxaties en waardebepaling</li>
+        <li>Ontwikkeling en vastgoedadvies</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="kop-blok midden reveal">
+      <span class="label licht">Contact</span>
+      <h2>Zoekt u een pand, of heeft u <em>er een?</em></h2>
+      <p class="lead licht">Stuur een bericht via WhatsApp of bel. Op zoek naar een bedrijfsruimte in Veenendaal of omgeving, of een pand dat u wilt verhuren of verkopen? Neem gerust contact op.</p>
+    </div>
+    <div class="c-kaarten reveal">
+      <a class="c-kaart" href="tel:+31318519002"><small>Telefoon</small><strong>0318-519002</strong></a>
+      <a class="c-kaart" href="https://wa.me/31318519002" target="_blank" rel="noopener"><small>WhatsApp</small><strong>Stuur een bericht</strong></a>
+      <a class="c-kaart" href="https://www.google.com/maps/search/?api=1&amp;query=De+Smalle+zijde+18A+Veenendaal" target="_blank" rel="noopener"><small>Kantoor</small><strong>De Smalle zijde 18A, 3903 LP Veenendaal</strong></a>
+      <a class="c-kaart" href="https://www.instagram.com/hutten_makelaardij/" target="_blank" rel="noopener"><small>Instagram</small><strong>@hutten_makelaardij</strong></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<dialog id="detail" aria-label="Details van het object">
+  <button type="button" class="d-sluit" aria-label="Sluiten">×</button>
+  <div class="d-inhoud"></div>
+</dialog>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-rij">
+      <span>Hutten Makelaardij o.g. &amp; Bedrijfshuisvesting · De Smalle zijde 18A, Veenendaal</span>
+      <span>Conceptwebsite door CodeLine Agency</span>
+    </div>
+    <p class="disclaimer">Dit is een vrijblijvend demo-concept en geen officiële website van Hutten Makelaardij. Alle gegevens (aanbod, prijzen, teksten, logo, adres, telefoonnummer en foto's) komen van het openbare Instagram-account van Hutten Makelaardij en kunnen afwijken van de actuele situatie. Het aanbod is een voorbeeldselectie; de actuele beschikbaarheid staat bij Hutten Makelaardij en op Funda in Business.</p>
+  </div>
+</footer>
+
+<div class="balk">
+  <a class="knop goud" href="https://wa.me/31318519002" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="knop rand" href="tel:+31318519002">Bel ons</a>
+</div>
+
+<script src="js/aanbod.js?v=1"></script>
+<script src="js/app.js?v=1"></script>
+<script src="js/main.js?v=1"></script>
+</body>
+</html>
