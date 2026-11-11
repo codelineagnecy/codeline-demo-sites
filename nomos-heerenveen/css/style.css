@@ -30,6 +30,7 @@ p{margin:0}
 
 /* loader */
 .loader{display:none}
+.js.geenloader .loader{display:none!important}
 .js .loader{display:flex;position:fixed;inset:0;z-index:200;background:var(--bord);align-items:center;justify-content:center;flex-direction:column;gap:18px;transition:transform 1s var(--ease) .15s}
 .js .loader img{width:min(260px,58vw);opacity:0;transform:translateY(14px) scale(.97);animation:logoin 1.1s var(--ease) .15s forwards}
 .js .loader .lijn{width:0;height:1px;background:var(--zand);animation:lijn 1.2s var(--ease) .45s forwards}
@@ -44,10 +45,10 @@ p{margin:0}
 .header.gescrolld .nav-rij{height:68px}
 .logo img{height:46px;width:auto;transition:height .4s}
 .header.gescrolld .logo img{height:38px}
-.nav{display:flex;align-items:center;gap:38px}
+.nav{display:flex;align-items:center;gap:clamp(20px,2.6vw,38px)}
 .nav a:not(.knop){color:var(--room);font-weight:500;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;position:relative;padding:6px 0}
 .nav a:not(.knop)::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:var(--zand);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
-.nav a:not(.knop):hover::after{transform:scaleX(1);transform-origin:left}
+.nav a:not(.knop):hover::after,.nav a[aria-current]::after{transform:scaleX(1);transform-origin:left}
 .nav .knop{padding:12px 24px;font-size:.68rem}
 .menu-knop{display:none;width:48px;height:48px;border:0;background:transparent;cursor:pointer;position:relative;z-index:70}
 .menu-knop span{position:absolute;left:11px;right:11px;height:1px;background:var(--room);transition:transform .4s var(--ease),opacity .3s,top .4s var(--ease)}
@@ -111,6 +112,12 @@ p{margin:0}
 .dag img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.4s var(--ease),filter .8s}
 .dag::before{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(35,8,8,.92));z-index:-1}
 .dag:hover img{transform:scale(1.08)}
+a.dag{color:var(--room);cursor:pointer}
+.dag .meer{display:inline-flex;align-items:center;gap:12px;margin-top:18px;font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:var(--goud)}
+.dag .meer .pijl{transition:width .5s var(--ease)}
+a.dag:hover .meer .pijl{width:40px}
+.ontdek{padding-bottom:130px}
+.ontdek .kop h2{font-size:clamp(2.2rem,4.6vw,3.8rem)}
 .dag-t{padding:32px 28px;width:100%}
 .dag-t small{display:block;font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--zand);margin-bottom:10px}
 .dag-t h3{font-size:2.3rem;margin-bottom:8px}
@@ -166,6 +173,23 @@ p{margin:0}
 .disc{max-width:640px;font-size:.8rem;line-height:1.7;margin-top:44px;padding-top:28px;border-top:1px solid rgba(205,177,155,.22);color:#b9a597}
 .klein{margin-top:12px;font-size:.72rem;opacity:.7}
 
+/* lunch-lijst en feiten */
+.mini.lijst{max-width:760px}
+.dagen .kop .demo-tag{margin-top:26px}
+.feiten{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.feit{border:1px solid var(--zand);padding:44px 34px 40px;background:rgba(235,224,209,.4);position:relative}
+.feit::before{content:"";position:absolute;left:34px;top:0;width:44px;height:2px;background:var(--bord-l)}
+.feit small{display:block;font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--bord-l);margin-bottom:18px}
+.feit h3{font-size:2.5rem;margin-bottom:12px;color:var(--bord)}
+.feit p{color:var(--grijs);font-size:.92rem;max-width:320px}
+.feiten-sec{padding-bottom:110px}
+.straks.ig{padding-top:60px}
+
+/* paginawissel */
+.sluier{display:none}
+.js .sluier{display:block;position:fixed;inset:0;z-index:190;background:var(--bord);transform:translateY(0);transition:transform .9s var(--ease);pointer-events:none}
+.js .sluier.weg{transform:translateY(-101%)}
+
 /* reveal / animaties */
 .js .reveal{opacity:0;transform:translateY(34px);transition:opacity 1s var(--ease),transform 1.1s var(--ease);transition-delay:calc(var(--d,0)*90ms)}
 .js .reveal.in{opacity:1;transform:none}
@@ -192,6 +216,10 @@ p{margin:0}
 .menu-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0,rgba(122,44,44,.7),transparent 65%)}
 .menu-hero .wrap{position:relative;z-index:2}
 .menu-hero h1{font-size:clamp(3rem,9vw,6rem);margin-bottom:16px}
+.menu-hero h1 em{font-style:italic;color:var(--zand)}
+.menu-hero.ruim{padding:190px 0 110px}
+.menu-hero.ruim h1{font-size:clamp(3rem,8vw,6.2rem);margin-bottom:22px}
+.menu-hero.ruim p{max-width:560px}
 .menu-hero p{color:#e0cdbf;max-width:520px;margin:0 auto}
 .demo-balk{background:var(--goud);color:var(--bord-d);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;text-align:center;padding:12px 20px;line-height:1.5}
 .tabs{position:sticky;top:68px;z-index:40;background:rgba(244,236,225,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--room2)}
@@ -229,8 +257,11 @@ p{margin:0}
   .concept .beeld{max-width:440px}
   .box .kader{max-width:520px}
   .scroll-hint{display:none}
+  .feiten{grid-template-columns:minmax(0,1fr)}
+  .feit{padding:34px 28px}
+  .ontdek{padding-bottom:90px}
 }
-@media (max-width:860px){
+@media (max-width:1020px){
   .nav-rij{height:72px}
   .menu-knop{display:block}
   .nav{position:fixed;inset:0;background:var(--bord);flex-direction:column;justify-content:center;gap:6px;padding:90px 30px 40px;transform:translateY(-100%);transition:transform .8s var(--ease);visibility:hidden}
@@ -238,7 +269,6 @@ p{margin:0}
   .nav a:not(.knop){font-family:var(--serif);font-size:2.6rem;letter-spacing:0;text-transform:none;font-weight:500;padding:6px 0}
   .nav a:not(.knop)::after{display:none}
   .nav .knop{margin-top:28px;padding:16px 30px;font-size:.72rem}
-  .tabs{top:60px}
 }
 @media (max-width:560px){
   .wrap{padding:0 20px}
@@ -250,11 +280,13 @@ p{margin:0}
   .gerecht h3{font-size:1.4rem}
   .tabs .wrap{justify-content:flex-start}
   .menu-hero{padding:120px 0 56px}
+  .menu-hero.ruim{padding:140px 0 70px}
+  .feit h3{font-size:2.1rem}
   .marq span{padding:0 24px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .marq-spoor,.stempel svg,.scroll-hint i,.hero-beeld .kader img{animation:none!important}
   .js .reveal,.js .heroin,.js .maskin,.js .split .w>i,.js .gerecht{transition:none!important;opacity:1!important;transform:none!important;clip-path:none!important}
-  .js .loader{display:none}
+  .js .loader,.js .sluier{display:none}
 }

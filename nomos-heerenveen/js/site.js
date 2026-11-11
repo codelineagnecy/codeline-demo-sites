@@ -71,19 +71,43 @@
     $('.groep').forEach(function(g){g.classList.add('toon')});
   }
 
-  /* hero na loader */
-  var loader=document.querySelector('.loader'),started=Date.now(),done=false;
+  /* hero na loader / paginawissel */
+  var loader=document.querySelector('.loader'),sluier=document.querySelector('.sluier'),started=Date.now(),done=false;
+  var eerste=!!loader&&!root.classList.contains('geenloader')&&!reduce;
+  try{sessionStorage.setItem('nm','1')}catch(e){}
   function klaar(){
     if(done)return;done=true;
     root.classList.add('ready');
     $('[data-hero]').forEach(function(e){toon(e)});
     if(loader){loader.classList.add('weg');setTimeout(function(){loader.style.display='none'},1400)}
   }
-  if(!loader||reduce){klaar()}
+  function sluierWeg(){if(sluier){sluier.style.transform='';sluier.style.transition='';sluier.classList.add('weg')}}
+  if(sluier){
+    if(eerste||reduce){sluier.style.display='none'}
+    else{requestAnimationFrame(function(){setTimeout(sluierWeg,60)})}
+  }
+  if(!eerste){setTimeout(klaar,reduce?0:420)}
   else{
     var wacht=function(){var rest=Math.max(0,2000-(Date.now()-started));setTimeout(klaar,rest)};
     if(document.readyState==='complete')wacht();else window.addEventListener('load',wacht);
     setTimeout(klaar,3600);
+  }
+  /* sluier bij klikken op interne links */
+  if(sluier&&!reduce){
+    document.addEventListener('click',function(ev){
+      if(ev.defaultPrevented||ev.button!==0||ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.altKey)return;
+      var a=ev.target.closest&&ev.target.closest('a[href]');
+      if(!a||a.target==='_blank'||a.hasAttribute('download'))return;
+      var u;try{u=new URL(a.href,location.href)}catch(e){return}
+      if(u.origin!==location.origin||u.pathname===location.pathname)return;
+      ev.preventDefault();
+      sluier.style.display='block';sluier.classList.remove('weg');
+      sluier.style.transition='none';sluier.style.transform='translateY(101%)';
+      void sluier.offsetWidth;
+      sluier.style.transition='transform .55s cubic-bezier(.2,.7,.1,1)';sluier.style.transform='translateY(0)';
+      setTimeout(function(){location.href=u.href},560);
+    });
+    window.addEventListener('pageshow',function(ev){if(ev.persisted){sluier.style.display='';sluierWeg()}});
   }
 
   /* parallax */
