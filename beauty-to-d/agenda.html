@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Salon-weergave (demo) – Beauty to D</title>
+<meta name="description" content="Demo van de agenda van Beauty to D: zo ziet de salon nieuwe online afspraken binnenkomen. Alle gegevens zijn fictief. Gemaakt door CodeLine Agency.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f8f2e9">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<script>
+document.documentElement.classList.add('js');
+try{if(sessionStorage.getItem('btd'))document.documentElement.classList.add('geenloader')}catch(e){}
+setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove('js')},4500);
+</script>
+<link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+<div class="sluier" aria-hidden="true"></div>
+<header class="header">
+  <div class="wrap nav-rij">
+    <a href="index.html" class="logo" aria-label="Beauty to D, naar de homepage"><img src="img/logo.png" alt="Beauty to D" width="633" height="647"></a>
+    <button class="menu-knop" aria-label="Navigatie" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="behandelingen.html">Behandelingen</a><a href="salon.html">De salon</a><a href="binnenkort.html">Binnenkort</a>
+      <a class="knop goud" href="boeken.html">Boek afspraak</a>
+    </nav>
+  </div>
+</header>
+<a class="zwevend weg" href="binnenkort.html" aria-label="Binnenkort open: bekijk de countdown"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="bc" d="M60,60 m-47,0 a47,47 0 1,1 94,0 a47,47 0 1,1 -94,0"/></defs><text font-family="Jost,sans-serif" font-size="9" fill="#e0c58a"><textPath href="#bc" textLength="292" lengthAdjust="spacing">COMING SOON · BEAUTY TO D · </textPath></text></svg><img src="img/logo.png" alt=""></a>
+
+<div id="top">
+<section class="pagina-hero">
+  <span class="ring a"></span><span class="ring b"></span>
+  <div class="wrap">
+    <span class="label heroin" style="--d:0">Salon-weergave</span>
+    <h1 class="split" data-split data-hero>De <em>agenda</em></h1>
+    <p class="heroin" style="--d:3">Zo ziet Beauty to D nieuwe afspraken binnenkomen. Alle gegevens op deze pagina zijn fictief.</p>
+  </div>
+</section>
+</div>
+<div class="demo-balk">Demo · fictieve klanten, afspraken en omzet. Een afspraak die je zelf boekt verschijnt hier op de gekozen dag.</div>
+
+<section class="agenda">
+  <div class="wrap">
+    <div class="ag-kop">
+      <h2 id="agDatum">Vandaag</h2>
+      <div class="ag-nav"><button class="kal-pijl" id="agVorige" aria-label="Vorige dag">&#8249;</button><button class="knop" id="agVandaag" style="padding:11px 24px;font-size:.66rem">Vandaag</button><button class="kal-pijl" id="agVolgende" aria-label="Volgende dag">&#8250;</button></div>
+    </div>
+    <div class="ag-nieuw" id="agNieuw" hidden></div>
+    <div class="ag-stats">
+      <div class="ag-stat"><small>Afspraken</small><b id="stA">0</b></div>
+      <div class="ag-stat"><small>Bezetting</small><b id="stB">0%</b></div>
+      <div class="ag-stat"><small>Verwachte omzet</small><b id="stO">€ 0</b></div>
+    </div>
+    <div class="bord-hd"><span></span><span>Behandelruimte 1</span><span>Behandelruimte 2</span></div>
+    <div class="bord" id="bord"></div>
+    <p class="ag-noot">Voorbeeld-openingstijden: ma t/m za, 09:00 tot 18:00. Dit zijn geen echte gegevens van Beauty to D.</p>
+    <div style="margin-top:40px;display:flex;gap:14px;flex-wrap:wrap"><a class="knop goud" href="boeken.html">Boek een afspraak <i class="pijl"></i></a></div>
+  </div>
+</section>
+
+<footer class="voet">
+  <div class="wrap">
+    <div class="rij">
+      <img src="img/logo.png" alt="Beauty to D" width="633" height="647">
+      <nav><a href="index.html">Home</a><a href="behandelingen.html">Behandelingen</a><a href="salon.html">De salon</a><a href="binnenkort.html">Binnenkort</a><a href="boeken.html">Boeken</a><a href="agenda.html">Salon-weergave (demo)</a><a href="https://www.instagram.com/beautytod.nl/" target="_blank" rel="noopener">Instagram</a></nav>
+    </div>
+    <p class="disc">Dit is een conceptwebsite, gemaakt door CodeLine Agency op basis van publiek gedeelde informatie van Beauty to D op Instagram (@beautytod.nl). Logo, foto's en teksten komen van hun eigen kanaal. De behandelingen, tijden, prijzen en het boekingssysteem zijn een voorbeeld: alles is verzonnen, er wordt niets verstuurd of opgeslagen en het is geen onderdeel van het echte aanbod. Er zijn nog geen adres, openingstijden, openingsdatum of contactgegevens gepubliceerd.</p>
+    <p class="klein">© Concept · CodeLine Agency</p>
+  </div>
+</footer>
+
+<script src="js/site.js?v=2"></script>
+<script src="js/catalog.js?v=2"></script>
+<script src="js/agenda.js?v=2"></script>
+</body>
+</html>

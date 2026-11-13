@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Behandelmenu (demo) – Beauty to D</title>
-<meta name="description" content="Demo-behandelmenu voor Beauty to D: skin, brows, lashes en makeup. Voorbeeldbehandelingen en -prijzen, gemaakt door CodeLine Agency.">
+<title>Behandelingen (demo) – Beauty to D</title>
+<meta name="description" content="Demo-behandelingen voor Beauty to D: skin, brows, lashes en makeup, met direct boeken. Voorbeeldbehandelingen en -prijzen, gemaakt door CodeLine Agency.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#f8f2e9">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,17 +15,17 @@ document.documentElement.classList.add('js');
 try{if(sessionStorage.getItem('btd'))document.documentElement.classList.add('geenloader')}catch(e){}
 setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove('js')},4500);
 </script>
-<link rel="stylesheet" href="css/style.css?v=1">
+<link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
 <div class="sluier" aria-hidden="true"></div>
 <header class="header">
   <div class="wrap nav-rij">
     <a href="index.html" class="logo" aria-label="Beauty to D, naar de homepage"><img src="img/logo.png" alt="Beauty to D" width="633" height="647"></a>
-    <button class="menu-knop" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <button class="menu-knop" aria-label="Navigatie" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav">
-      <a href="index.html">Home</a><a href="behandelingen.html" aria-current="page">Behandelmenu</a><a href="salon.html">De salon</a><a href="binnenkort.html">Binnenkort</a>
-      <a class="knop" href="https://www.instagram.com/beautytod.nl/" target="_blank" rel="noopener">Instagram</a>
+      <a href="index.html">Home</a><a href="behandelingen.html" aria-current="page">Behandelingen</a><a href="salon.html">De salon</a><a href="binnenkort.html">Binnenkort</a>
+      <a class="knop goud" href="boeken.html">Boek afspraak</a>
     </nav>
   </div>
 </header>
@@ -35,15 +35,15 @@ setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove(
 <section class="pagina-hero">
   <span class="ring a"></span><span class="ring b"></span>
   <div class="wrap">
-    <span class="label heroin" style="--d:0">Behandelmenu</span>
-    <h1 class="split" data-split data-hero>Het <em>menu</em></h1>
-    <p class="heroin" style="--d:3">Skin, brows, lashes en makeup. Kies een categorie of bekijk alles.</p>
+    <span class="label heroin" style="--d:0">Behandelingen</span>
+    <h1 class="split" data-split data-hero>Onze <em>behandelingen</em></h1>
+    <p class="heroin" style="--d:3">Skin, brows, lashes en makeup. Kies een categorie en boek direct je afspraak.</p>
   </div>
 </section>
 </div>
-<div class="demo-balk">Demo-behandelmenu · voorbeeldbehandelingen en -prijzen, niet het echte aanbod van Beauty to D</div>
+<div class="demo-balk">Demo · voorbeeldbehandelingen, tijden en prijzen, niet het echte aanbod van Beauty to D</div>
 
-<div class="tabs" role="tablist" aria-label="Behandelmenu">
+<div class="tabs" role="tablist" aria-label="Behandelingen">
   <div class="wrap">
     <span class="tab-balk"></span>
     <button class="tab aan" data-k="alles" role="tab" aria-selected="true">Alles</button>
@@ -60,38 +60,38 @@ setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove(
     <section class="groep" id="skin">
       <div class="groep-kop"><h2>Skin</h2><span></span></div>
       <p class="groep-sub">Voor een stralende, rustige huid.</p>
-      <div class="gerecht"><div><h3>Signature Glow Facial <span class="tag">Populair</span></h3><p>Reiniging, peeling, masker en massage voor een frisse, stralende huid.</p><span class="duur">± 60 min</span></div><div class="prijs">€ 85</div></div>
-      <div class="gerecht"><div><h3>Deep Cleanse</h3><p>Diepe reiniging met stoom en een kalmerend masker.</p><span class="duur">± 50 min</span></div><div class="prijs">€ 70</div></div>
-      <div class="gerecht"><div><h3>Hydra Boost</h3><p>Intensieve hydratatie voor een droge of vermoeide huid.</p><span class="duur">± 60 min</span></div><div class="prijs">€ 90</div></div>
-      <div class="gerecht"><div><h3>Skin Peeling</h3><p>Een milde peeling voor een egalere teint.</p><span class="duur">± 45 min</span></div><div class="prijs">€ 75</div></div>
-      <div class="gerecht"><div><h3>Gezichtsmassage</h3><p>Een rustgevende massage van gezicht, nek en schouders.</p><span class="duur">± 30 min</span></div><div class="prijs">€ 45</div></div>
+      <div class="gerecht"><div><h3>Signature Glow Facial <span class="tag">Populair</span></h3><p>Reiniging, peeling, masker en massage voor een frisse, stralende huid.</p><span class="duur">± 60 min</span></div><div class="prijs-kol"><div class="prijs">€ 85</div><a class="boek-mini" href="boeken.html?b=skin-glow">Boek</a></div></div>
+      <div class="gerecht"><div><h3>Deep Cleanse</h3><p>Diepe reiniging met stoom en een kalmerend masker.</p><span class="duur">± 50 min</span></div><div class="prijs-kol"><div class="prijs">€ 70</div><a class="boek-mini" href="boeken.html?b=skin-deep">Boek</a></div></div>
+      <div class="gerecht"><div><h3>Hydra Boost</h3><p>Intensieve hydratatie voor een droge of vermoeide huid.</p><span class="duur">± 60 min</span></div><div class="prijs-kol"><div class="prijs">€ 90</div><a class="boek-mini" href="boeken.html?b=skin-hydra">Boek</a></div></div>
+      <div class="gerecht"><div><h3>Skin Peeling</h3><p>Een milde peeling voor een egalere teint.</p><span class="duur">± 45 min</span></div><div class="prijs-kol"><div class="prijs">€ 75</div><a class="boek-mini" href="boeken.html?b=skin-peeling">Boek</a></div></div>
+      <div class="gerecht"><div><h3>Gezichtsmassage</h3><p>Een rustgevende massage van gezicht, nek en schouders.</p><span class="duur">± 30 min</span></div><div class="prijs-kol"><div class="prijs">€ 45</div><a class="boek-mini" href="boeken.html?b=skin-massage">Boek</a></div></div>
     </section>
 
     <section class="groep" id="brows">
       <div class="groep-kop"><h2>Brows</h2><span></span></div>
       <p class="groep-sub">Een frame dat bij jou past.</p>
-      <div class="gerecht"><div><h3>Brow Shaping</h3><p>Wenkbrauwen in vorm brengen, passend bij jouw gezicht.</p><span class="duur">± 30 min</span></div><div class="prijs">€ 28</div></div>
-      <div class="gerecht"><div><h3>Brow Lamination <span class="tag">Populair</span></h3><p>Ingezette haartjes die langer en voller ogen, inclusief shaping.</p><span class="duur">± 50 min</span></div><div class="prijs">€ 55</div></div>
-      <div class="gerecht"><div><h3>Brow Tint</h3><p>Een kleurbehandeling voor een intensere look.</p><span class="duur">± 20 min</span></div><div class="prijs">€ 18</div></div>
-      <div class="gerecht"><div><h3>Henna Brows</h3><p>Henna voor een natuurlijke, langer houdbare kleur.</p><span class="duur">± 45 min</span></div><div class="prijs">€ 38</div></div>
+      <div class="gerecht"><div><h3>Brow Shaping</h3><p>Wenkbrauwen in vorm brengen, passend bij jouw gezicht.</p><span class="duur">± 30 min</span></div><div class="prijs-kol"><div class="prijs">€ 28</div><a class="boek-mini" href="boeken.html?b=brows-shaping">Boek</a></div></div>
+      <div class="gerecht"><div><h3>Brow Lamination <span class="tag">Populair</span></h3><p>Haartjes die langer en voller ogen, inclusief shaping.</p><span class="duur">± 60 min</span></div><div class="prijs-kol"><div class="prijs">€ 55</div><a class="boek-mini" href="boeken.html?b=brows-lamination">Boek</a></div></div>
+      <div class="gerecht"><div><h3>Brow Tint</h3><p>Een kleurbehandeling voor een intensere look.</p><span class="duur">± 30 min</span></div><div class="prijs-kol"><div class="prijs">€ 18</div><a class="boek-mini" href="boeken.html?b=brows-tint">Boek</a></div></div>
+      <div class="gerecht"><div><h3>Henna Brows</h3><p>Henna voor een natuurlijke, langer houdbare kleur.</p><span class="duur">± 45 min</span></div><div class="prijs-kol"><div class="prijs">€ 38</div><a class="boek-mini" href="boeken.html?b=brows-henna">Boek</a></div></div>
     </section>
 
     <section class="groep" id="lashes">
       <div class="groep-kop"><h2>Lashes</h2><span></span></div>
       <p class="groep-sub">Van natuurlijk tot vol.</p>
-      <div class="gerecht"><div><h3>Lash Lift <span class="tag">Populair</span></h3><p>Je eigen wimpers omhoog gekruld, inclusief tint.</p><span class="duur">± 60 min</span></div><div class="prijs">€ 55</div></div>
-      <div class="gerecht"><div><h3>Classic Lashes</h3><p>Een natuurlijke set: één extension op één eigen wimper.</p><span class="duur">± 120 min</span></div><div class="prijs">€ 85</div></div>
-      <div class="gerecht"><div><h3>Volume Lashes</h3><p>Een volle, uitgesproken set met meerdere dunne extensions.</p><span class="duur">± 150 min</span></div><div class="prijs">€ 110</div></div>
-      <div class="gerecht"><div><h3>Refill</h3><p>Bijvullen van je set na ongeveer drie weken.</p><span class="duur">± 60 min</span></div><div class="prijs">€ 50</div></div>
+      <div class="gerecht"><div><h3>Lash Lift <span class="tag">Populair</span></h3><p>Je eigen wimpers omhoog gekruld, inclusief tint.</p><span class="duur">± 60 min</span></div><div class="prijs-kol"><div class="prijs">€ 55</div><a class="boek-mini" href="boeken.html?b=lashes-lift">Boek</a></div></div>
+      <div class="gerecht"><div><h3>Classic Lashes</h3><p>Een natuurlijke set: één extension op één eigen wimper.</p><span class="duur">± 120 min</span></div><div class="prijs-kol"><div class="prijs">€ 85</div><a class="boek-mini" href="boeken.html?b=lashes-classic">Boek</a></div></div>
+      <div class="gerecht"><div><h3>Volume Lashes</h3><p>Een volle, uitgesproken set met meerdere dunne extensions.</p><span class="duur">± 150 min</span></div><div class="prijs-kol"><div class="prijs">€ 110</div><a class="boek-mini" href="boeken.html?b=lashes-volume">Boek</a></div></div>
+      <div class="gerecht"><div><h3>Refill</h3><p>Bijvullen van je set na ongeveer drie weken.</p><span class="duur">± 60 min</span></div><div class="prijs-kol"><div class="prijs">€ 50</div><a class="boek-mini" href="boeken.html?b=lashes-refill">Boek</a></div></div>
     </section>
 
     <section class="groep" id="makeup">
       <div class="groep-kop"><h2>Makeup</h2><span></span></div>
       <p class="groep-sub">Voor elk moment.</p>
-      <div class="gerecht"><div><h3>Dagmakeup</h3><p>Een frisse, verzorgde look voor overdag.</p><span class="duur">± 45 min</span></div><div class="prijs">€ 45</div></div>
-      <div class="gerecht"><div><h3>Avondmakeup</h3><p>Wat meer glamour voor een diner of feest.</p><span class="duur">± 60 min</span></div><div class="prijs">€ 60</div></div>
-      <div class="gerecht"><div><h3>Bruidsmakeup</h3><p>Inclusief proefsessie, voor je grote dag.</p><span class="duur">± 120 min</span></div><div class="prijs">€ 150</div></div>
-      <div class="gerecht"><div><h3>Makeup les</h3><p>Leer in je eigen tempo wat bij jou past.</p><span class="duur">± 90 min</span></div><div class="prijs">€ 75</div></div>
+      <div class="gerecht"><div><h3>Dagmakeup</h3><p>Een frisse, verzorgde look voor overdag.</p><span class="duur">± 45 min</span></div><div class="prijs-kol"><div class="prijs">€ 45</div><a class="boek-mini" href="boeken.html?b=makeup-dag">Boek</a></div></div>
+      <div class="gerecht"><div><h3>Avondmakeup</h3><p>Wat meer glamour voor een diner of feest.</p><span class="duur">± 60 min</span></div><div class="prijs-kol"><div class="prijs">€ 60</div><a class="boek-mini" href="boeken.html?b=makeup-avond">Boek</a></div></div>
+      <div class="gerecht"><div><h3>Bruidsmakeup</h3><p>Inclusief proefsessie, voor je grote dag.</p><span class="duur">± 120 min</span></div><div class="prijs-kol"><div class="prijs">€ 150</div><a class="boek-mini" href="boeken.html?b=makeup-bruid">Boek</a></div></div>
+      <div class="gerecht"><div><h3>Makeup les</h3><p>Leer in je eigen tempo wat bij jou past.</p><span class="duur">± 90 min</span></div><div class="prijs-kol"><div class="prijs">€ 75</div><a class="boek-mini" href="boeken.html?b=makeup-les">Boek</a></div></div>
     </section>
 
   </div>
@@ -99,10 +99,10 @@ setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove(
 
 <div class="menu-voet">
   <div class="wrap">
-    <span class="demo-tag">Demo-behandelmenu</span>
-    <div class="qr-kaart"><div class="ring-tekst" aria-hidden="true"><svg viewBox="0 0 200 200"><defs><path id="qc2" d="M100,100 m-88,0 a88,88 0 1,1 176,0 a88,88 0 1,1 -176,0"/></defs><text font-family="Jost,sans-serif" font-size="8.6" fill="#a37a35"><textPath href="#qc2" textLength="548" lengthAdjust="spacing">SCAN HET MENU · SCAN HET MENU · SCAN HET MENU · </textPath></text></svg></div><a class="qr" href="behandelingen.html" aria-label="QR-code naar het demo-behandelmenu"><img src="img/qr-menu.svg" alt="QR-code die naar het demo-behandelmenu leidt" width="220" height="220"></a></div>
-    <p>Dit is een voorbeeld van hoe het digitale behandelmenu van Beauty to D eruit kan zien. De behandelingen, tijden en prijzen zijn verzonnen en worden vervangen door het echte aanbod.</p>
-    <a class="knop" href="index.html">Terug naar home <i class="pijl"></i></a>
+    <span class="demo-tag">Demo-behandelingen</span>
+    <div class="qr-kaart"><div class="ring-tekst" aria-hidden="true"><svg viewBox="0 0 200 200"><defs><path id="qc2" d="M100,100 m-88,0 a88,88 0 1,1 176,0 a88,88 0 1,1 -176,0"/></defs><text font-family="Jost,sans-serif" font-size="8.6" fill="#a37a35"><textPath href="#qc2" textLength="548" lengthAdjust="spacing">SCAN &amp; BOEK · SCAN &amp; BOEK · SCAN &amp; BOEK · SCAN &amp; BOEK · </textPath></text></svg></div><a class="qr" href="boeken.html" aria-label="QR-code naar het demo-boekingssysteem"><img src="img/qr-boeken.svg" alt="QR-code die naar het demo-boekingssysteem leidt" width="220" height="220"></a></div>
+    <p>Dit is een voorbeeld van hoe de behandelingen en het online boeken bij Beauty to D eruit kunnen zien. Behandelingen, tijden en prijzen zijn verzonnen en worden vervangen door het echte aanbod.</p>
+    <a class="knop goud" href="boeken.html">Boek een afspraak <i class="pijl"></i></a>
   </div>
 </div>
 
@@ -110,13 +110,13 @@ setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove(
   <div class="wrap">
     <div class="rij">
       <img src="img/logo.png" alt="Beauty to D" width="633" height="647">
-      <nav><a href="index.html">Home</a><a href="behandelingen.html">Behandelmenu</a><a href="salon.html">De salon</a><a href="binnenkort.html">Binnenkort</a><a href="https://www.instagram.com/beautytod.nl/" target="_blank" rel="noopener">Instagram</a></nav>
+      <nav><a href="index.html">Home</a><a href="behandelingen.html">Behandelingen</a><a href="salon.html">De salon</a><a href="binnenkort.html">Binnenkort</a><a href="boeken.html">Boeken</a><a href="agenda.html">Salon-weergave (demo)</a><a href="https://www.instagram.com/beautytod.nl/" target="_blank" rel="noopener">Instagram</a></nav>
     </div>
-    <p class="disc">Dit is een conceptwebsite, gemaakt door CodeLine Agency op basis van publiek gedeelde informatie van Beauty to D op Instagram (@beautytod.nl). Logo, foto's en teksten komen van hun eigen kanaal. Het behandelmenu is een voorbeeld: behandelingen, tijden en prijzen zijn verzonnen en geen onderdeel van het echte aanbod. Er zijn nog geen adres, openingstijden, openingsdatum of contactgegevens gepubliceerd.</p>
+    <p class="disc">Dit is een conceptwebsite, gemaakt door CodeLine Agency op basis van publiek gedeelde informatie van Beauty to D op Instagram (@beautytod.nl). Logo, foto's en teksten komen van hun eigen kanaal. De behandelingen, tijden, prijzen en het boekingssysteem zijn een voorbeeld: alles is verzonnen, er wordt niets verstuurd of opgeslagen en het is geen onderdeel van het echte aanbod. Er zijn nog geen adres, openingstijden, openingsdatum of contactgegevens gepubliceerd.</p>
     <p class="klein">© Concept · CodeLine Agency</p>
   </div>
 </footer>
 
-<script src="js/site.js?v=1"></script>
+<script src="js/site.js?v=2"></script>
 </body>
 </html>

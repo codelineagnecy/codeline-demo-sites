@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Beauty to D – A new era of beauty, binnenkort open (concept)</title>
-<meta name="description" content="Conceptwebsite voor Beauty to D: Skin, Brows, Lashes en Makeup. Met een demo-behandelmenu en QR-code. Gemaakt door CodeLine Agency.">
+<meta name="description" content="Conceptwebsite voor Beauty to D: Skin, Brows, Lashes en Makeup, met een demo-boekingssysteem voor behandelingen. Gemaakt door CodeLine Agency.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#f8f2e9">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@ document.documentElement.classList.add('js');
 try{if(sessionStorage.getItem('btd'))document.documentElement.classList.add('geenloader')}catch(e){}
 setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove('js')},4500);
 </script>
-<link rel="stylesheet" href="css/style.css?v=1">
+<link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
 <div class="loader" aria-hidden="true"><img src="img/logo.png" alt=""><span class="lijn"></span><span class="tekst">A new era of beauty</span></div>
@@ -23,10 +23,10 @@ setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove(
 <header class="header">
   <div class="wrap nav-rij">
     <a href="index.html" class="logo" aria-label="Beauty to D, naar de homepage"><img src="img/logo.png" alt="Beauty to D" width="633" height="647"></a>
-    <button class="menu-knop" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <button class="menu-knop" aria-label="Navigatie" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav">
-      <a href="index.html" aria-current="page">Home</a><a href="behandelingen.html">Behandelmenu</a><a href="salon.html">De salon</a><a href="binnenkort.html">Binnenkort</a>
-      <a class="knop" href="https://www.instagram.com/beautytod.nl/" target="_blank" rel="noopener">Instagram</a>
+      <a href="index.html" aria-current="page">Home</a><a href="behandelingen.html">Behandelingen</a><a href="salon.html">De salon</a><a href="binnenkort.html">Binnenkort</a>
+      <a class="knop goud" href="boeken.html">Boek afspraak</a>
     </nav>
   </div>
 </header>
@@ -45,8 +45,8 @@ setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove(
     <div class="hero-onder">
       <p class="lead heroin" style="--d:6">Binnenkort kun je bij Beauty to D terecht voor jouw ultieme beauty moment. Een plek waar jij even op nummer één staat.</p>
       <div class="hero-knoppen heroin" style="--d:7">
-        <a class="knop goud" href="behandelingen.html">Bekijk het menu <i class="pijl"></i></a>
-        <a class="knop" href="binnenkort.html">The countdown</a>
+        <a class="knop goud" href="boeken.html">Boek een afspraak <i class="pijl"></i></a>
+        <a class="knop" href="behandelingen.html">Bekijk behandelingen</a>
       </div>
     </div>
   </div>
@@ -69,7 +69,7 @@ setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove(
     <div class="kop">
       <span class="label reveal">Behandelingen</span>
       <h2 class="split" data-split>Vier werelden van <em>beauty</em></h2>
-      <p class="reveal" style="--d:2">Skin, brows, lashes en makeup. Bekijk in het demo-behandelmenu hoe dat eruit kan zien.</p>
+      <p class="reveal" style="--d:2">Skin, brows, lashes en makeup. Bekijk de demo-behandelingen en boek direct een afspraak.</p>
     </div>
     <div class="kaarten">
       <a class="kaart k1 reveal" style="--d:0" href="behandelingen.html#skin">
@@ -96,11 +96,27 @@ setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove(
   </div>
 </section>
 
+<section class="sectie" style="padding-top:20px">
+  <div class="wrap">
+    <div class="kop">
+      <span class="label reveal">Online boeken</span>
+      <h2 class="split" data-split>In drie stappen een <em>afspraak</em></h2>
+      <p class="reveal" style="--d:2">Zo kunnen klanten van Beauty to D straks hun afspraak maken, op elk moment van de dag.</p>
+    </div>
+    <div class="principes">
+      <article class="principe reveal" style="--d:0"><span class="nr">01</span><h3>Kies je behandeling</h3><p>Skin, brows, lashes of makeup. Behandelingen combineren kan ook.</p></article>
+      <article class="principe reveal" style="--d:1"><span class="nr">02</span><h3>Kies dag en tijd</h3><p>Zie direct welke tijden beschikbaar zijn en kies wat jou uitkomt.</p></article>
+      <article class="principe reveal" style="--d:2"><span class="nr">03</span><h3>Klaar, je bent geboekt</h3><p>Je ontvangt een bevestiging en de salon ziet de afspraak meteen in de agenda.</p></article>
+    </div>
+    <div class="reveal" style="--d:3;margin-top:44px;display:flex;gap:14px;flex-wrap:wrap"><a class="knop goud" href="boeken.html">Probeer het boekingssysteem <i class="pijl"></i></a><a class="knop" href="agenda.html">Zo ziet de salon het</a></div>
+  </div>
+</section>
+
 <div class="donker-blok">
   <section class="sectie">
     <div class="wrap grid2">
       <div class="boog">
-        <div class="kader maskin"><img src="img/lamp-sq.jpg" alt="Gouden hanglampen met matglazen bollen onder een rond plafond in de salon" loading="lazy" width="700" height="700" data-par="-.04"></div>
+        <div class="kader maskin"><img src="img/lamp-sq.jpg" alt="Gouden hanglampen met matglazen bollen onder een rond plafond in de salon" loading="lazy" width="630" height="788" data-par="-.04"></div>
         <div class="draai-ring" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="dr" d="M60,60 m-47,0 a47,47 0 1,1 94,0 a47,47 0 1,1 -94,0"/></defs><text font-family="Jost,sans-serif" font-size="9" fill="#1c1511"><textPath href="#dr" textLength="292" lengthAdjust="spacing">IEDER DETAIL · MET LIEFDE · </textPath></text></svg><span class="mid">D</span></div>
       </div>
       <div class="tekst">
@@ -114,22 +130,22 @@ setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove(
   </section>
 </div>
 
-<section id="menukaart" class="sectie menu-t" style="margin-top:-40px;padding-top:180px">
+<section id="boeken-teaser" class="sectie menu-t" style="margin-top:-40px;padding-top:180px">
   <div class="wrap menu-t-rij">
     <div class="tekst">
-      <span class="label reveal">Behandelmenu</span>
-      <h2 class="groot split" data-split>Scan, bekijk en <em>kies</em></h2>
-      <p class="reveal" style="--d:2">Zo kan het digitale behandelmenu van Beauty to D eruitzien: rustig, overzichtelijk en altijd actueel. Gasten scannen de QR-code in de salon of op een kaartje.</p>
-      <span class="demo-tag reveal" style="--d:3">Demo · voorbeeldbehandelingen en -prijzen</span>
+      <span class="label reveal">Online boeken</span>
+      <h2 class="groot split" data-split>Scan, kies en <em>boek</em></h2>
+      <p class="reveal" style="--d:2">Klanten scannen de QR-code in de salon, op een kaartje of op social media en boeken in een paar tikken hun behandeling. Probeer het zelf, op je telefoon of hier.</p>
+      <span class="demo-tag reveal" style="--d:3">Demo · voorbeeldbehandelingen, -tijden en -prijzen</span>
       <ul class="mini reveal" style="--d:3">
-        <li>Signature Glow Facial <span>€ 85</span></li>
-        <li>Brow Lamination <span>€ 55</span></li>
-        <li>Classic Lashes <span>€ 85</span></li>
-        <li>Dagmakeup <span>€ 45</span></li>
+        <li><a href="boeken.html?b=skin-glow">Signature Glow Facial</a><span>€ 85</span></li>
+        <li><a href="boeken.html?b=brows-lamination">Brow Lamination</a><span>€ 55</span></li>
+        <li><a href="boeken.html?b=lashes-classic">Classic Lashes</a><span>€ 85</span></li>
+        <li><a href="boeken.html?b=makeup-dag">Dagmakeup</a><span>€ 45</span></li>
       </ul>
-      <a class="knop reveal" style="--d:4;margin-top:34px" href="behandelingen.html">Open het menu <i class="pijl"></i></a>
+      <a class="knop reveal" style="--d:4;margin-top:34px" href="boeken.html">Boek een afspraak <i class="pijl"></i></a>
     </div>
-    <div class="reveal" style="--d:2"><div class="qr-kaart"><div class="ring-tekst" aria-hidden="true"><svg viewBox="0 0 200 200"><defs><path id="qc1" d="M100,100 m-88,0 a88,88 0 1,1 176,0 a88,88 0 1,1 -176,0"/></defs><text font-family="Jost,sans-serif" font-size="8.6" fill="#a37a35"><textPath href="#qc1" textLength="548" lengthAdjust="spacing">SCAN HET MENU · SCAN HET MENU · SCAN HET MENU · </textPath></text></svg></div><a class="qr" href="behandelingen.html" aria-label="QR-code naar het demo-behandelmenu"><img src="img/qr-menu.svg" alt="QR-code die naar het demo-behandelmenu leidt" width="220" height="220"></a></div><p class="qr-cap">Richt de camera van je telefoon op de code.</p></div>
+    <div class="reveal" style="--d:2"><div class="qr-kaart"><div class="ring-tekst" aria-hidden="true"><svg viewBox="0 0 200 200"><defs><path id="qc1" d="M100,100 m-88,0 a88,88 0 1,1 176,0 a88,88 0 1,1 -176,0"/></defs><text font-family="Jost,sans-serif" font-size="8.6" fill="#a37a35"><textPath href="#qc1" textLength="548" lengthAdjust="spacing">SCAN &amp; BOEK · SCAN &amp; BOEK · SCAN &amp; BOEK · SCAN &amp; BOEK · </textPath></text></svg></div><a class="qr" href="boeken.html" aria-label="QR-code naar het demo-boekingssysteem"><img src="img/qr-boeken.svg" alt="QR-code die naar het demo-boekingssysteem leidt" width="220" height="220"></a></div><p class="qr-cap">Richt de camera van je telefoon op de code en boek een afspraak (demo).</p></div>
   </div>
 </section>
 
@@ -137,8 +153,8 @@ setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove(
   <div class="wrap">
     <span class="label reveal">Binnenkort</span>
     <h2 class="split" data-split>Beauty to D komt <em>eraan</em></h2>
-    <p class="reveal" style="--d:3">Er gebeurt van alles achter de schermen. Lees wat we al weten en volg Beauty to D op Instagram.</p>
-    <div class="knoppen reveal" style="--d:4"><a class="knop goud" href="binnenkort.html">Wat we al weten <i class="pijl"></i></a><a class="knop" href="https://www.instagram.com/beautytod.nl/" target="_blank" rel="noopener">@beautytod.nl</a></div>
+    <p class="reveal" style="--d:3">Er gebeurt van alles achter de schermen. Boek alvast een demo-afspraak of volg Beauty to D op Instagram.</p>
+    <div class="knoppen reveal" style="--d:4"><a class="knop goud" href="boeken.html">Boek een afspraak <i class="pijl"></i></a><a class="knop" href="https://www.instagram.com/beautytod.nl/" target="_blank" rel="noopener">@beautytod.nl</a></div>
   </div>
 </section>
 
@@ -148,13 +164,13 @@ setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove(
   <div class="wrap">
     <div class="rij">
       <img src="img/logo.png" alt="Beauty to D" width="633" height="647">
-      <nav><a href="index.html">Home</a><a href="behandelingen.html">Behandelmenu</a><a href="salon.html">De salon</a><a href="binnenkort.html">Binnenkort</a><a href="https://www.instagram.com/beautytod.nl/" target="_blank" rel="noopener">Instagram</a></nav>
+      <nav><a href="index.html">Home</a><a href="behandelingen.html">Behandelingen</a><a href="salon.html">De salon</a><a href="binnenkort.html">Binnenkort</a><a href="boeken.html">Boeken</a><a href="agenda.html">Salon-weergave (demo)</a><a href="https://www.instagram.com/beautytod.nl/" target="_blank" rel="noopener">Instagram</a></nav>
     </div>
-    <p class="disc">Dit is een conceptwebsite, gemaakt door CodeLine Agency op basis van publiek gedeelde informatie van Beauty to D op Instagram (@beautytod.nl). Logo, foto's en teksten komen van hun eigen kanaal. Het behandelmenu is een voorbeeld: behandelingen, tijden en prijzen zijn verzonnen en geen onderdeel van het echte aanbod. Er zijn nog geen adres, openingstijden, openingsdatum of contactgegevens gepubliceerd.</p>
+    <p class="disc">Dit is een conceptwebsite, gemaakt door CodeLine Agency op basis van publiek gedeelde informatie van Beauty to D op Instagram (@beautytod.nl). Logo, foto's en teksten komen van hun eigen kanaal. De behandelingen, tijden, prijzen en het boekingssysteem zijn een voorbeeld: alles is verzonnen, er wordt niets verstuurd of opgeslagen en het is geen onderdeel van het echte aanbod. Er zijn nog geen adres, openingstijden, openingsdatum of contactgegevens gepubliceerd.</p>
     <p class="klein">© Concept · CodeLine Agency</p>
   </div>
 </footer>
 
-<script src="js/site.js?v=1"></script>
+<script src="js/site.js?v=2"></script>
 </body>
 </html>
