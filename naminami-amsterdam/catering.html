@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Catering – NamiNami Amsterdam (concept)</title>
+<meta name="description" content="Catering aanvragen bij NamiNami Amsterdam: sandwiches, gebak en drankjes voor groepen. Demo-formulier, conceptontwerp door CodeLine Agency.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1d1612">
+<link rel="icon" href="img/favicon.png">
+<link rel="preload" href="fonts/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+document.documentElement.classList.add('js');
+try{if(sessionStorage.getItem('nami'))document.documentElement.classList.add('geenloader')}catch(e){}
+setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove('js')},4000);
+</script>
+<link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+<div class="loader" aria-hidden="true"><img src="img/logo-tan.png" alt="" width="92" height="123"></div>
+<div class="sluier" aria-hidden="true"></div>
+<header class="header">
+  <div class="wrap nav-rij">
+    <a href="index.html" class="logo" aria-label="NamiNami Amsterdam, naar de homepage"><img src="img/logo-tan.png" alt="" width="39" height="52"></a>
+    <button class="menu-knop" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" aria-label="Hoofdmenu">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menukaart</a>
+      <a href="locaties.html">Locaties</a>
+      <a href="catering.html" aria-current="page">Catering</a>
+      <a href="qr.html" class="knop">QR-menu <i class="pijl"></i></a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="pagina-hero">
+  <div class="wrap">
+    <span class="label heroin">Catering</span>
+    <h1 data-split data-hero class="">Voor <em>grote</em> en kleine groepen</h1>
+    <p class="heroin" style="--d:2">Broodjes, gebak en drankjes voor je team, event of feest. Vertel wat je zoekt en we denken met je mee.</p>
+  </div>
+</section>
+
+<section class="sectie">
+  <div class="wrap contact-rij">
+    <div>
+      <div class="foto-blok reveal" style="aspect-ratio:4/3;margin-bottom:26px"><img src="img/catering.jpg" alt="Sandwiches en gebakjes op een schaal" loading="lazy"></div>
+      <span class="label reveal">Wat kan er?</span>
+      <ul class="lijstje reveal"><li>Verse sandwiches en lunchpakketten</li><li>Gebak, dessertcups en iets zoets</li><li>Koffie, matcha en mocktails</li><li>Voor teams, events en privéfeesten</li></ul>
+    </div>
+    <form class="vorm reveal" id="vorm" novalidate>
+      <div class="veld" data-v="naam"><label for="naam">Naam</label><input id="naam" name="naam" autocomplete="name"><span class="melding" hidden></span></div>
+      <div class="veld" data-v="email"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email"><span class="melding" hidden></span></div>
+      <div class="veld"><label for="aantal">Aantal personen</label><select id="aantal" name="aantal"><option>Tot 10</option><option>10 – 25</option><option>25 – 50</option><option>50+</option></select></div>
+      <div class="veld"><label for="datum">Gewenste datum</label><input id="datum" name="datum" type="date"></div>
+      <div class="veld vol" data-v="bericht"><label for="bericht">Wat zoek je?</label><textarea id="bericht" name="bericht" placeholder="Bijvoorbeeld: lunch voor 20 collega's op vrijdag"></textarea><span class="melding" hidden></span></div>
+      <p class="demo-noot">Demo-formulier: er wordt niets verzonden of opgeslagen.</p>
+      <div class="veld vol"><button class="knop vol" type="submit">Aanvraag versturen <i class="pijl"></i></button></div>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="voet">
+  <div class="wrap">
+    <div class="voet-rij">
+      <div><img src="img/logo-tan.png" alt="NamiNami コーヒー" width="67" height="90"></div>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a><a href="menu.html">Menukaart</a><a href="locaties.html">Locaties</a><a href="catering.html">Catering</a><a href="qr.html">QR-tafelkaart</a><a href="https://www.instagram.com/naminami.amsterdam/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+    <p class="disc">Dit is een gratis, vrijblijvend conceptontwerp, gemaakt door CodeLine Agency op basis van openbare informatie van het Instagram-account van NamiNami Amsterdam. Logo en foto's komen van hun eigen kanaal. Prijzen, menu-indeling en formulier zijn voorbeelden en geen officiële gegevens. Dit is niet de officiële website van NamiNami.</p>
+  </div>
+</footer>
+<div class="pil">Concept · CodeLine Agency</div>
+<script src="js/site.js?v=1"></script>
+</body>
+</html>

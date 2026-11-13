@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Menukaart – NamiNami Amsterdam (concept)</title>
+<meta name="description" content="Digitale menukaart van NamiNami Amsterdam: matcha, koffie, mocktails, sandwiches en zoetigheid. Voorbeeldprijzen, conceptontwerp door CodeLine Agency.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1d1612">
+<link rel="icon" href="img/favicon.png">
+<link rel="preload" href="fonts/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+document.documentElement.classList.add('js');
+try{if(sessionStorage.getItem('nami'))document.documentElement.classList.add('geenloader')}catch(e){}
+setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove('js')},4000);
+</script>
+<link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+<div class="loader" aria-hidden="true"><img src="img/logo-tan.png" alt="" width="92" height="123"></div>
+<div class="sluier" aria-hidden="true"></div>
+<header class="header">
+  <div class="wrap nav-rij">
+    <a href="index.html" class="logo" aria-label="NamiNami Amsterdam, naar de homepage"><img src="img/logo-tan.png" alt="" width="39" height="52"></a>
+    <button class="menu-knop" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" aria-label="Hoofdmenu">
+      <a href="index.html">Home</a>
+      <a href="menu.html" aria-current="page">Menukaart</a>
+      <a href="locaties.html">Locaties</a>
+      <a href="catering.html">Catering</a>
+      <a href="qr.html" class="knop">QR-menu <i class="pijl"></i></a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<div class="demo-balk">Voorbeeldmenu · namen en prijzen zijn demo, geen officiële kaart</div>
+<section class="pagina-hero">
+  <div class="wrap">
+    <span class="label heroin">Menukaart</span>
+    <h1 data-split data-hero class="">Wat mag het <em>zijn?</em></h1>
+    <p class="heroin" style="--d:2">Matcha, koffie, mocktails en sandwiches. Scroll door de kaart of zoek direct op wat je wilt.</p>
+  </div>
+</section>
+
+<div class="tabs"><div class="wrap" role="tablist" aria-label="Categorieën"><button class="tab" data-t="matcha">Matcha</button><button class="tab" data-t="koffie">Koffie</button><button class="tab" data-t="mocktails">Mocktails</button><button class="tab" data-t="sandwiches">Sandwiches</button><button class="tab" data-t="zoetigheid">Zoetigheid</button><button class="tab" data-t="mealdeal">Meal deal</button><i class="tab-balk"></i></div></div>
+<div class="wrap zoek"><label><span class="sr" style="position:absolute;left:-9999px">Zoek op de menukaart</span><input id="zoek" type="search" placeholder="Zoek op de kaart…" autocomplete="off"></label></div>
+<div class="kaart-lijst">
+  <section class="groep" id="matcha">
+    <div class="wrap">
+      <div class="groep-kop"><h2 data-split>Matcha</h2><div class="groep-foto reveal"><img src="img/matcha2.jpg" alt="" loading="lazy" decoding="async"></div></div>
+      <p class="groep-sub reveal">Ceremonieel, romig en net iets anders</p>
+      <div class="item"><h3>Mango matcha<span class="tag">Signature</span></h3><span class="prijs">&euro;6,50</span><p>IJskoude matcha met verse mango en melk naar keuze.</p></div>
+      <div class="item"><h3>Speculoos iced matcha<span class="tag">Signature</span></h3><span class="prijs">&euro;6,50</span><p>Matcha met speculoosroom en een koekje bovenop.</p></div>
+      <div class="item"><h3>Banana bread iced matcha<span class="tag">Signature</span></h3><span class="prijs">&euro;6,50</span><p>Matcha met banaan, kaneel en een wolk room.</p></div>
+      <div class="item"><h3>Matcha latte</h3><span class="prijs">&euro;5,20</span><p>Warm of koud, met haver-, soja- of volle melk.</p></div>
+    </div>
+  </section>
+  <section class="groep" id="koffie">
+    <div class="wrap">
+      <div class="groep-kop"><h2 data-split>Koffie</h2><div class="groep-foto reveal"><img src="img/sig-caramel.jpg" alt="" loading="lazy" decoding="async"></div></div>
+      <p class="groep-sub reveal">Koffie met een Japanse draai</p>
+      <div class="item"><h3>Espresso</h3><span class="prijs">&euro;2,60</span><p>Kort, krachtig en donker gebrand.</p></div>
+      <div class="item"><h3>Cappuccino</h3><span class="prijs">&euro;3,60</span><p>Fluweelzacht met een dikke laag melkschuim.</p></div>
+      <div class="item"><h3>Flat white</h3><span class="prijs">&euro;3,90</span><p>Dubbele espresso met gladde microfoam.</p></div>
+      <div class="item"><h3>Latte macchiato</h3><span class="prijs">&euro;3,90</span><p>Gelaagd in het glas, mild en romig.</p></div>
+      <div class="item"><h3>Caramel iced latte<span class="tag">Signature</span></h3><span class="prijs">&euro;5,50</span><p>Ijskoud, met karamel en room.</p></div>
+    </div>
+  </section>
+  <section class="groep" id="mocktails">
+    <div class="wrap">
+      <div class="groep-kop"><h2 data-split>Mocktails</h2><div class="groep-foto reveal"><img src="img/sig-mojito.jpg" alt="" loading="lazy" decoding="async"></div></div>
+      <p class="groep-sub reveal">Fris, fruitig en zonder alcohol</p>
+      <div class="item"><h3>Redbull mojito<span class="tag">Signature</span></h3><span class="prijs">&euro;6,50</span><p>Munt, limoen en een frisse twist.</p></div>
+      <div class="item"><h3>Sunset mocktail</h3><span class="prijs">&euro;6,00</span><p>Lagen van fruit en bubbels, als een zonsondergang.</p></div>
+      <div class="item"><h3>Virgin mojito</h3><span class="prijs">&euro;5,50</span><p>Munt, limoen en prik. Klassiek en fris.</p></div>
+    </div>
+  </section>
+  <section class="groep" id="sandwiches">
+    <div class="wrap">
+      <div class="groep-kop"><h2 data-split>Sandwiches</h2><div class="groep-foto reveal"><img src="img/sandwich.jpg" alt="" loading="lazy" decoding="async"></div></div>
+      <p class="groep-sub reveal">Vers belegd, de hele dag door</p>
+      <div class="item"><h3>Chicken avocado</h3><span class="prijs">&euro;8,50</span><p>Kip, avocado en een frisse dressing.</p></div>
+      <div class="item"><h3>Tuna special</h3><span class="prijs">&euro;7,90</span><p>Tonijnsalade met sla en ei.</p></div>
+      <div class="item"><h3>Parmaham &amp; rucola</h3><span class="prijs">&euro;8,50</span><p>Parmaham, rucola en gedroogde tomaat.</p></div>
+    </div>
+  </section>
+  <section class="groep" id="zoetigheid">
+    <div class="wrap">
+      <div class="groep-kop"><h2 data-split>Zoetigheid</h2><div class="groep-foto reveal"><img src="img/sweets.jpg" alt="" loading="lazy" decoding="async"></div></div>
+      <p class="groep-sub reveal">Iets lekkers erbij</p>
+      <div class="item"><h3>Cheesecake van de dag</h3><span class="prijs">&euro;4,50</span><p>Romig, met een bodem van koekjes.</p></div>
+      <div class="item"><h3>Brownie met slagroom</h3><span class="prijs">&euro;4,20</span><p>Warm, zacht en pure chocolade.</p></div>
+      <div class="item"><h3>Gebakje van het huis</h3><span class="prijs">&euro;4,80</span><p>Wisselend aanbod, vraag naar de smaak van vandaag.</p></div>
+      <div class="item"><h3>Dessertcup</h3><span class="prijs">&euro;5,20</span><p>Laagjes room, cake en fruit in een cup.</p></div>
+    </div>
+  </section>
+  <section class="groep" id="mealdeal">
+    <div class="wrap">
+      <div class="groep-kop"><h2 data-split>Meal deal</h2><div class="groep-foto reveal"><img src="img/catering.jpg" alt="" loading="lazy" decoding="async"></div></div>
+      <p class="groep-sub reveal">Lunch voor een mooie prijs</p>
+      <div class="item"><h3>Sandwich + drankje</h3><span class="prijs">&euro;9,50</span><p>Kies een sandwich en een drankje. Onder de &euro;10.</p></div>
+    </div>
+  </section>
+
+  <p class="leeg">Niets gevonden. Probeer een ander woord.</p>
+</div>
+<section class="menu-voet">
+  <div class="wrap"><span class="demo-tag">Concept</span><p>Dit is een voorbeeldkaart met voorbeeldprijzen. Bij de echte site beheert NamiNami de kaart zelf: een prijs aanpassen of een smaak toevoegen duurt een minuut, en de QR-code blijft altijd werken.</p><a class="knop" href="qr.html">Print de QR-tafelkaart <i class="pijl"></i></a></div>
+</section>
+</main>
+<footer class="voet">
+  <div class="wrap">
+    <div class="voet-rij">
+      <div><img src="img/logo-tan.png" alt="NamiNami コーヒー" width="67" height="90"></div>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a><a href="menu.html">Menukaart</a><a href="locaties.html">Locaties</a><a href="catering.html">Catering</a><a href="qr.html">QR-tafelkaart</a><a href="https://www.instagram.com/naminami.amsterdam/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+    <p class="disc">Dit is een gratis, vrijblijvend conceptontwerp, gemaakt door CodeLine Agency op basis van openbare informatie van het Instagram-account van NamiNami Amsterdam. Logo en foto's komen van hun eigen kanaal. Prijzen, menu-indeling en formulier zijn voorbeelden en geen officiële gegevens. Dit is niet de officiële website van NamiNami.</p>
+  </div>
+</footer>
+<div class="pil">Concept · CodeLine Agency</div>
+<script src="js/site.js?v=1"></script>
+</body>
+</html>
