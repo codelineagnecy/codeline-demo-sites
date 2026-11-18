@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Menukaart – Moon’s Kitchen Den Haag (concept)</title>
+<meta name="description" content="Digitale menukaart van Moon’s Kitchen: ontbijt, broodjes, salades, starters, pancakes en drankjes. Conceptontwerp door CodeLine Agency.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1c3fb0">
+<link rel="icon" href="img/favicon.png">
+<link rel="preload" href="fonts/fraunces-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+document.documentElement.classList.add('js');
+try{if(sessionStorage.getItem('moon'))document.documentElement.classList.add('geenloader')}catch(e){}
+setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove('js')},4000);
+</script>
+<link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+<div class="loader" aria-hidden="true"><img src="img/logo.png" alt="" width="120" height="120"></div>
+<div class="sluier" aria-hidden="true"></div>
+<header class="header">
+  <div class="wrap nav-rij">
+    <a href="index.html" class="logo" aria-label="Moon's Kitchen, naar de homepage"><img src="img/logo.png" alt="" width="58" height="58"></a>
+    <button class="menu-knop" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" aria-label="Hoofdmenu">
+      <a href="index.html">Home</a>
+      <a href="menu.html" aria-current="page">Menukaart</a>
+      <a href="bestellen.html">Bestellen</a>
+      <a href="contact.html">Contact</a>
+      <a href="qr.html" class="knop vol">QR-menu</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<div class="demo-balk">Prijzen volgens menukaart-foto op Google Maps · kunnen afwijken van de huidige kaart</div>
+<section class="pagina-hero"><div class="wrap">
+    <span class="label heroin">Menukaart</span>
+    <h1 data-split data-hero>Wat zal het <em>zijn?</em></h1>
+    <p class="heroin" style="--d:2">Ontbijt, broodjes, salades en meer. Scroll door de kaart of zoek direct op wat je wilt.</p>
+</div></section>
+
+<div class="tabs"><div class="wrap" role="tablist" aria-label="Categorieën"><button class="tab" data-t="ontbijt">Ontbijt</button><button class="tab" data-t="bowls">Bowls</button><button class="tab" data-t="broodjes">Broodjes</button><button class="tab" data-t="salades">Salades</button><button class="tab" data-t="starters">Starters</button><button class="tab" data-t="pancakes">Pancakes</button><button class="tab" data-t="warm">Hot drinks</button><button class="tab" data-t="drinks">Drinks</button><i class="tab-balk"></i></div></div>
+<div class="wrap zoek"><label><span style="position:absolute;left:-9999px">Zoek op de menukaart</span><input id="zoek" type="search" placeholder="Zoek op de kaart…" autocomplete="off"></label></div>
+<div class="kaart-lijst">
+  <section class="groep" id="ontbijt"><div class="wrap">
+    <div class="groep-kop"><h2 data-split>Ontbijt &amp; main</h2><div class="groep-foto"><img src="img/ontbijt-top.jpg" alt="" loading="lazy" decoding="async"></div></div>
+    <p class="groep-sub">Shakshuka, burgers en meer</p>
+    <div class="items">
+<div class="item"><h3>Shakshuka</h3><span class="prijs">&euro;10,95</span><p>Heerlijk vegetarisch pannetje met ei, paprika en ui (+ extra ei &euro;1,30).</p></div>
+<div class="item"><h3>Smashed avocado</h3><span class="prijs">&euro;11,95</span><p>Smashed avocado met gegrilde kippendijfilet, gekaramelliseerde ui, pijnboompitten en parmigiano reggiano.</p></div>
+<div class="item"><h3>Moon burger</h3><span class="prijs">&euro;13,95</span><p>Kipburger, zoete aardappelfriet, tomaat, gekaramelliseerde ui en cheddar (+ extra ei &euro;1,30).</p></div>
+<div class="item"><h3>Beef burger</h3><span class="prijs">&euro;13,95</span><p>Gehaktburger, zoete aardappelfriet, tomaat, cheddar en gekaramelliseerde ui (+ extra ei &euro;1,30).</p></div>
+    </div>
+  </div></section>
+  <section class="groep" id="bowls"><div class="wrap">
+    <div class="groep-kop"><h2 data-split>Breakfast bowls</h2><div class="groep-foto tegel" aria-hidden="true">B</div></div>
+    <p class="groep-sub">Fris en vol fruit</p>
+    <div class="items">
+<div class="item"><h3>Acai</h3><span class="prijs">&euro;10,95</span><p>Breakfast bowl.</p></div>
+<div class="item"><h3>Orange &ndash; Mango</h3><span class="prijs">&euro;10,95</span><p>Breakfast bowl.</p></div>
+    </div>
+  </div></section>
+  <section class="groep" id="broodjes"><div class="wrap">
+    <div class="groep-kop"><h2 data-split>Broodjes</h2><div class="groep-foto"><img src="img/broodje-carpaccio.jpg" alt="" loading="lazy" decoding="async"></div></div>
+    <p class="groep-sub">Vers belegd</p>
+    <div class="items">
+<div class="item"><h3>Carpaccio</h3><span class="prijs">&euro;8,95</span><p>Carpaccio, rucola, pijnboompitten, pesto, parmigiano reggiano en truffelmayo.</p></div>
+<div class="item"><h3>Brie</h3><span class="prijs">&euro;7,95</span><p>Brie, slamelange, walnoten en komkommer.</p></div>
+<div class="item"><h3>Pittige tonijn</h3><span class="prijs">&euro;8,95</span><p>Huisgemaakte tonijnsalade, slamelange, jalape&ntilde;o, kappertjes en avocado.</p></div>
+<div class="item"><h3>Tonijn</h3><span class="prijs">&euro;8,95</span><p>Huisgemaakte tonijn, appel, olijven en gedroogde tomaat.</p></div>
+<div class="item"><h3>Zalm</h3><span class="prijs">&euro;9,95</span><p>Gerookte zalm, roomkaas, avocado, komkommer en slamelange.</p></div>
+    </div>
+  </div></section>
+  <section class="groep" id="salades"><div class="wrap">
+    <div class="groep-kop"><h2 data-split>Salades</h2><div class="groep-foto tegel" aria-hidden="true">S</div></div>
+    <p class="groep-sub">Fris en gezond</p>
+    <div class="items">
+<div class="item"><h3>Carpaccio</h3><span class="prijs">&euro;13,95</span><p>Carpaccio, rucola, pesto, pijnboompitten en truffelmayo.</p></div>
+<div class="item"><h3>Caesar kip</h3><span class="prijs">&euro;12,95</span><p>Gegrilde kip, huisgemaakte croutons, pijnboompitten en parmigiano reggiano.</p></div>
+<div class="item"><h3>Gegrilde groente</h3><span class="prijs">&euro;11,95</span><p>Aubergine, paprika, courgette, pijnboompitten en feta.</p></div>
+    </div>
+  </div></section>
+  <section class="groep" id="starters"><div class="wrap">
+    <div class="groep-kop"><h2 data-split>Starters</h2><div class="groep-foto tegel" aria-hidden="true">S</div></div>
+    <p class="groep-sub">Om te delen (of niet)</p>
+    <div class="items">
+<div class="item"><h3>Soep van de dag</h3><span class="prijs">&euro;5,95</span></div>
+<div class="item"><h3>Bruschetta</h3><span class="prijs">&euro;4,95</span></div>
+<div class="item"><h3>Garnalenkroket</h3><span class="prijs">&euro;8,95</span></div>
+<div class="item"><h3>Gamba&rsquo;s in aioli</h3><span class="prijs">&euro;7,95</span></div>
+<div class="item"><h3>Bitterballen</h3><span class="prijs">&euro;5,50</span></div>
+<div class="item"><h3>Friet</h3><span class="prijs">&euro;4,95</span></div>
+<div class="item"><h3>Zoete aardappel friet</h3><span class="prijs">&euro;4,95</span></div>
+    </div>
+  </div></section>
+  <section class="groep" id="pancakes"><div class="wrap">
+    <div class="groep-kop"><h2 data-split>Pancakes</h2><div class="groep-foto tegel" aria-hidden="true">P</div></div>
+    <p class="groep-sub">Geserveerd met blauwe bessen, aardbei, poedersuiker en stroop</p>
+    <div class="items">
+<div class="item"><h3>Pancake naturel</h3><span class="prijs">&euro;7,95</span><p>Met blauwe bessen, aardbei, poedersuiker en stroop.</p></div>
+<div class="item"><h3>Pancake choco</h3><span class="prijs">&euro;8,95</span><p>Met blauwe bessen, aardbei, poedersuiker en stroop.</p></div>
+<div class="item"><h3>Pankids</h3><span class="prijs">&euro;3,95</span><p>Kleine pancake voor de kids.</p></div>
+    </div>
+  </div></section>
+  <section class="groep" id="warm"><div class="wrap">
+    <div class="groep-kop"><h2 data-split>Hot drinks</h2><div class="groep-foto tegel" aria-hidden="true">H</div></div>
+    <p class="groep-sub">Koffie, thee en meer</p>
+    <div class="items">
+<div class="item"><h3>Espresso</h3><span class="prijs">&euro;2,50</span></div>
+<div class="item"><h3>Double espresso</h3><span class="prijs">&euro;3,75</span></div>
+<div class="item"><h3>Americano</h3><span class="prijs">&euro;2,75</span></div>
+<div class="item"><h3>Caffe latte</h3><span class="prijs">&euro;3,75</span></div>
+<div class="item"><h3>Latte macchiato</h3><span class="prijs">&euro;3,75</span></div>
+<div class="item"><h3>Cappuccino</h3><span class="prijs">&euro;3,25</span></div>
+<div class="item"><h3>Hot chocolate</h3><span class="prijs">&euro;3,50</span></div>
+<div class="item"><h3>Mint tea</h3><span class="prijs">&euro;3,50</span></div>
+    </div>
+  </div></section>
+  <section class="groep" id="drinks"><div class="wrap">
+    <div class="groep-kop"><h2 data-split>Drinks</h2><div class="groep-foto tegel" aria-hidden="true">D</div></div>
+    <p class="groep-sub">Fris, sap en melk</p>
+    <div class="items">
+<div class="item"><h3>Coca Cola</h3><span class="prijs">&euro;2,95</span></div>
+<div class="item"><h3>Coca Cola Zero</h3><span class="prijs">&euro;2,95</span></div>
+<div class="item"><h3>Fanta</h3><span class="prijs">&euro;2,95</span></div>
+<div class="item"><h3>Ginger ale</h3><span class="prijs">&euro;2,95</span></div>
+<div class="item"><h3>Pineapple juice</h3><span class="prijs">&euro;2,95</span></div>
+<div class="item"><h3>Apple juice</h3><span class="prijs">&euro;2,95</span></div>
+<div class="item"><h3>Chocomel</h3><span class="prijs">&euro;3,25</span></div>
+<div class="item"><h3>Fristi</h3><span class="prijs">&euro;3,25</span></div>
+<div class="item"><h3>Sourcy</h3><span class="prijs">&euro;2,50</span></div>
+<div class="item"><h3>Sourcy sparkling</h3><span class="prijs">&euro;2,50</span></div>
+    </div>
+  </div></section>
+
+  <p class="leeg">Niets gevonden. Probeer een ander woord.</p>
+</div>
+<section class="menu-voet"><div class="wrap"><span class="demo-tag">Concept</span><p>Dit is een voorbeeld van een digitale menukaart. Bij de echte site beheert Moon&rsquo;s Kitchen de kaart zelf: een prijs aanpassen of een gerecht toevoegen duurt een minuut, en de QR-code blijft altijd werken.</p><a class="knop vol" href="qr.html">Print de QR-tafelkaart <i class="pijl"></i></a></div></section>
+</main>
+<footer class="voet">
+  <div class="wrap">
+    <div class="voet-rij">
+      <div><img src="img/logo.png" alt="Moon's Kitchen" width="84" height="84"></div>
+      <nav aria-label="Footer"><a href="index.html">Home</a><a href="menu.html">Menukaart</a><a href="bestellen.html">Bestellen</a><a href="contact.html">Contact</a><a href="qr.html">QR-tafelkaart</a><a href="https://www.instagram.com/moons.kitchenx/" target="_blank" rel="noopener">Instagram</a></nav>
+    </div>
+    <p class="disc">Dit is een gratis, vrijblijvend conceptontwerp van CodeLine Agency, gemaakt op basis van openbare informatie (Instagram en een menukaart-foto op Google Maps). Logo en foto's komen van hun eigen kanalen. Prijzen en gerechten zijn overgenomen van die foto en kunnen afwijken van de huidige kaart. Dit is niet de officiële website van Moon&rsquo;s Kitchen.</p>
+  </div>
+</footer>
+<div class="pil">Concept · CodeLine Agency</div>
+<script src="js/site.js?v=1"></script>
+</body>
+</html>

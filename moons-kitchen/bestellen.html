@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bestellen – Moon’s Kitchen Den Haag (concept)</title>
+<meta name="description" content="Demo: stel je bestelling samen en open WhatsApp met het bericht klaar. Conceptontwerp door CodeLine Agency.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1c3fb0">
+<link rel="icon" href="img/favicon.png">
+<link rel="preload" href="fonts/fraunces-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+document.documentElement.classList.add('js');
+try{if(sessionStorage.getItem('moon'))document.documentElement.classList.add('geenloader')}catch(e){}
+setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove('js')},4000);
+</script>
+<link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+<div class="loader" aria-hidden="true"><img src="img/logo.png" alt="" width="120" height="120"></div>
+<div class="sluier" aria-hidden="true"></div>
+<header class="header">
+  <div class="wrap nav-rij">
+    <a href="index.html" class="logo" aria-label="Moon's Kitchen, naar de homepage"><img src="img/logo.png" alt="" width="58" height="58"></a>
+    <button class="menu-knop" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" aria-label="Hoofdmenu">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menukaart</a>
+      <a href="bestellen.html" aria-current="page">Bestellen</a>
+      <a href="contact.html">Contact</a>
+      <a href="qr.html" class="knop vol">QR-menu</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<div class="demo-balk">Demo · de knop opent WhatsApp met je bericht al ingevuld, er wordt niets automatisch verstuurd</div>
+<section class="pagina-hero"><div class="wrap">
+    <span class="label heroin">Bestellen</span>
+    <h1 data-split data-hero>Stel je <em>bestelling</em> samen</h1>
+    <p class="heroin" style="--d:2">Moon&rsquo;s Kitchen werkt via WhatsApp. Kies je gerechten en tik op de knop: je bericht staat klaar om te versturen.</p>
+</div></section>
+
+<section class="sectie" style="padding-top:60px">
+  <div class="wrap bestel-rij">
+    <div>
+  <h2 class="sec-kop" style="font-size:clamp(1.8rem,3.4vw,2.6rem);margin:34px 0 14px">Ontbijt &amp; main</h2>
+  <div class="items">
+    <div class="item" id="ontbijt-0" data-naam="Shakshuka" data-prijs="10.95"><h3>Shakshuka</h3><span class="prijs">&euro;10,95</span><p>Heerlijk vegetarisch pannetje met ei, paprika en ui (+ extra ei &euro;1,30).</p><div class="stap"><button type="button" data-min aria-label="Minder Shakshuka" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Shakshuka">+</button></div></div>
+    <div class="item" id="ontbijt-1" data-naam="Smashed avocado" data-prijs="11.95"><h3>Smashed avocado</h3><span class="prijs">&euro;11,95</span><p>Smashed avocado met gegrilde kippendijfilet, gekaramelliseerde ui, pijnboompitten en parmigiano reggiano.</p><div class="stap"><button type="button" data-min aria-label="Minder Smashed avocado" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Smashed avocado">+</button></div></div>
+    <div class="item" id="ontbijt-2" data-naam="Moon burger" data-prijs="13.95"><h3>Moon burger</h3><span class="prijs">&euro;13,95</span><p>Kipburger, zoete aardappelfriet, tomaat, gekaramelliseerde ui en cheddar (+ extra ei &euro;1,30).</p><div class="stap"><button type="button" data-min aria-label="Minder Moon burger" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Moon burger">+</button></div></div>
+    <div class="item" id="ontbijt-3" data-naam="Beef burger" data-prijs="13.95"><h3>Beef burger</h3><span class="prijs">&euro;13,95</span><p>Gehaktburger, zoete aardappelfriet, tomaat, cheddar en gekaramelliseerde ui (+ extra ei &euro;1,30).</p><div class="stap"><button type="button" data-min aria-label="Minder Beef burger" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Beef burger">+</button></div></div>
+  </div>
+  <h2 class="sec-kop" style="font-size:clamp(1.8rem,3.4vw,2.6rem);margin:34px 0 14px">Breakfast bowls</h2>
+  <div class="items">
+    <div class="item" id="bowls-0" data-naam="Acai" data-prijs="10.95"><h3>Acai</h3><span class="prijs">&euro;10,95</span><p>Breakfast bowl.</p><div class="stap"><button type="button" data-min aria-label="Minder Acai" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Acai">+</button></div></div>
+    <div class="item" id="bowls-1" data-naam="Orange – Mango" data-prijs="10.95"><h3>Orange &ndash; Mango</h3><span class="prijs">&euro;10,95</span><p>Breakfast bowl.</p><div class="stap"><button type="button" data-min aria-label="Minder Orange – Mango" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Orange – Mango">+</button></div></div>
+  </div>
+  <h2 class="sec-kop" style="font-size:clamp(1.8rem,3.4vw,2.6rem);margin:34px 0 14px">Broodjes</h2>
+  <div class="items">
+    <div class="item" id="broodjes-0" data-naam="Carpaccio" data-prijs="8.95"><h3>Carpaccio</h3><span class="prijs">&euro;8,95</span><p>Carpaccio, rucola, pijnboompitten, pesto, parmigiano reggiano en truffelmayo.</p><div class="stap"><button type="button" data-min aria-label="Minder Carpaccio" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Carpaccio">+</button></div></div>
+    <div class="item" id="broodjes-1" data-naam="Brie" data-prijs="7.95"><h3>Brie</h3><span class="prijs">&euro;7,95</span><p>Brie, slamelange, walnoten en komkommer.</p><div class="stap"><button type="button" data-min aria-label="Minder Brie" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Brie">+</button></div></div>
+    <div class="item" id="broodjes-2" data-naam="Pittige tonijn" data-prijs="8.95"><h3>Pittige tonijn</h3><span class="prijs">&euro;8,95</span><p>Huisgemaakte tonijnsalade, slamelange, jalape&ntilde;o, kappertjes en avocado.</p><div class="stap"><button type="button" data-min aria-label="Minder Pittige tonijn" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Pittige tonijn">+</button></div></div>
+    <div class="item" id="broodjes-3" data-naam="Tonijn" data-prijs="8.95"><h3>Tonijn</h3><span class="prijs">&euro;8,95</span><p>Huisgemaakte tonijn, appel, olijven en gedroogde tomaat.</p><div class="stap"><button type="button" data-min aria-label="Minder Tonijn" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Tonijn">+</button></div></div>
+    <div class="item" id="broodjes-4" data-naam="Zalm" data-prijs="9.95"><h3>Zalm</h3><span class="prijs">&euro;9,95</span><p>Gerookte zalm, roomkaas, avocado, komkommer en slamelange.</p><div class="stap"><button type="button" data-min aria-label="Minder Zalm" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Zalm">+</button></div></div>
+  </div>
+  <h2 class="sec-kop" style="font-size:clamp(1.8rem,3.4vw,2.6rem);margin:34px 0 14px">Salades</h2>
+  <div class="items">
+    <div class="item" id="salades-0" data-naam="Carpaccio" data-prijs="13.95"><h3>Carpaccio</h3><span class="prijs">&euro;13,95</span><p>Carpaccio, rucola, pesto, pijnboompitten en truffelmayo.</p><div class="stap"><button type="button" data-min aria-label="Minder Carpaccio" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Carpaccio">+</button></div></div>
+    <div class="item" id="salades-1" data-naam="Caesar kip" data-prijs="12.95"><h3>Caesar kip</h3><span class="prijs">&euro;12,95</span><p>Gegrilde kip, huisgemaakte croutons, pijnboompitten en parmigiano reggiano.</p><div class="stap"><button type="button" data-min aria-label="Minder Caesar kip" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Caesar kip">+</button></div></div>
+    <div class="item" id="salades-2" data-naam="Gegrilde groente" data-prijs="11.95"><h3>Gegrilde groente</h3><span class="prijs">&euro;11,95</span><p>Aubergine, paprika, courgette, pijnboompitten en feta.</p><div class="stap"><button type="button" data-min aria-label="Minder Gegrilde groente" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Gegrilde groente">+</button></div></div>
+  </div>
+  <h2 class="sec-kop" style="font-size:clamp(1.8rem,3.4vw,2.6rem);margin:34px 0 14px">Starters</h2>
+  <div class="items">
+    <div class="item" id="starters-0" data-naam="Soep van de dag" data-prijs="5.95"><h3>Soep van de dag</h3><span class="prijs">&euro;5,95</span><div class="stap"><button type="button" data-min aria-label="Minder Soep van de dag" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Soep van de dag">+</button></div></div>
+    <div class="item" id="starters-1" data-naam="Bruschetta" data-prijs="4.95"><h3>Bruschetta</h3><span class="prijs">&euro;4,95</span><div class="stap"><button type="button" data-min aria-label="Minder Bruschetta" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Bruschetta">+</button></div></div>
+    <div class="item" id="starters-2" data-naam="Garnalenkroket" data-prijs="8.95"><h3>Garnalenkroket</h3><span class="prijs">&euro;8,95</span><div class="stap"><button type="button" data-min aria-label="Minder Garnalenkroket" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Garnalenkroket">+</button></div></div>
+    <div class="item" id="starters-3" data-naam="Gamba’s in aioli" data-prijs="7.95"><h3>Gamba&rsquo;s in aioli</h3><span class="prijs">&euro;7,95</span><div class="stap"><button type="button" data-min aria-label="Minder Gamba’s in aioli" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Gamba’s in aioli">+</button></div></div>
+    <div class="item" id="starters-4" data-naam="Bitterballen" data-prijs="5.50"><h3>Bitterballen</h3><span class="prijs">&euro;5,50</span><div class="stap"><button type="button" data-min aria-label="Minder Bitterballen" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Bitterballen">+</button></div></div>
+    <div class="item" id="starters-5" data-naam="Friet" data-prijs="4.95"><h3>Friet</h3><span class="prijs">&euro;4,95</span><div class="stap"><button type="button" data-min aria-label="Minder Friet" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Friet">+</button></div></div>
+    <div class="item" id="starters-6" data-naam="Zoete aardappel friet" data-prijs="4.95"><h3>Zoete aardappel friet</h3><span class="prijs">&euro;4,95</span><div class="stap"><button type="button" data-min aria-label="Minder Zoete aardappel friet" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Zoete aardappel friet">+</button></div></div>
+  </div>
+  <h2 class="sec-kop" style="font-size:clamp(1.8rem,3.4vw,2.6rem);margin:34px 0 14px">Pancakes</h2>
+  <div class="items">
+    <div class="item" id="pancakes-0" data-naam="Pancake naturel" data-prijs="7.95"><h3>Pancake naturel</h3><span class="prijs">&euro;7,95</span><p>Met blauwe bessen, aardbei, poedersuiker en stroop.</p><div class="stap"><button type="button" data-min aria-label="Minder Pancake naturel" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Pancake naturel">+</button></div></div>
+    <div class="item" id="pancakes-1" data-naam="Pancake choco" data-prijs="8.95"><h3>Pancake choco</h3><span class="prijs">&euro;8,95</span><p>Met blauwe bessen, aardbei, poedersuiker en stroop.</p><div class="stap"><button type="button" data-min aria-label="Minder Pancake choco" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Pancake choco">+</button></div></div>
+    <div class="item" id="pancakes-2" data-naam="Pankids" data-prijs="3.95"><h3>Pankids</h3><span class="prijs">&euro;3,95</span><p>Kleine pancake voor de kids.</p><div class="stap"><button type="button" data-min aria-label="Minder Pankids" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Pankids">+</button></div></div>
+  </div>
+  <h2 class="sec-kop" style="font-size:clamp(1.8rem,3.4vw,2.6rem);margin:34px 0 14px">Hot drinks</h2>
+  <div class="items">
+    <div class="item" id="warm-0" data-naam="Espresso" data-prijs="2.50"><h3>Espresso</h3><span class="prijs">&euro;2,50</span><div class="stap"><button type="button" data-min aria-label="Minder Espresso" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Espresso">+</button></div></div>
+    <div class="item" id="warm-1" data-naam="Double espresso" data-prijs="3.75"><h3>Double espresso</h3><span class="prijs">&euro;3,75</span><div class="stap"><button type="button" data-min aria-label="Minder Double espresso" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Double espresso">+</button></div></div>
+    <div class="item" id="warm-2" data-naam="Americano" data-prijs="2.75"><h3>Americano</h3><span class="prijs">&euro;2,75</span><div class="stap"><button type="button" data-min aria-label="Minder Americano" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Americano">+</button></div></div>
+    <div class="item" id="warm-3" data-naam="Caffe latte" data-prijs="3.75"><h3>Caffe latte</h3><span class="prijs">&euro;3,75</span><div class="stap"><button type="button" data-min aria-label="Minder Caffe latte" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Caffe latte">+</button></div></div>
+    <div class="item" id="warm-4" data-naam="Latte macchiato" data-prijs="3.75"><h3>Latte macchiato</h3><span class="prijs">&euro;3,75</span><div class="stap"><button type="button" data-min aria-label="Minder Latte macchiato" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Latte macchiato">+</button></div></div>
+    <div class="item" id="warm-5" data-naam="Cappuccino" data-prijs="3.25"><h3>Cappuccino</h3><span class="prijs">&euro;3,25</span><div class="stap"><button type="button" data-min aria-label="Minder Cappuccino" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Cappuccino">+</button></div></div>
+    <div class="item" id="warm-6" data-naam="Hot chocolate" data-prijs="3.50"><h3>Hot chocolate</h3><span class="prijs">&euro;3,50</span><div class="stap"><button type="button" data-min aria-label="Minder Hot chocolate" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Hot chocolate">+</button></div></div>
+    <div class="item" id="warm-7" data-naam="Mint tea" data-prijs="3.50"><h3>Mint tea</h3><span class="prijs">&euro;3,50</span><div class="stap"><button type="button" data-min aria-label="Minder Mint tea" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Mint tea">+</button></div></div>
+  </div>
+  <h2 class="sec-kop" style="font-size:clamp(1.8rem,3.4vw,2.6rem);margin:34px 0 14px">Drinks</h2>
+  <div class="items">
+    <div class="item" id="drinks-0" data-naam="Coca Cola" data-prijs="2.95"><h3>Coca Cola</h3><span class="prijs">&euro;2,95</span><div class="stap"><button type="button" data-min aria-label="Minder Coca Cola" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Coca Cola">+</button></div></div>
+    <div class="item" id="drinks-1" data-naam="Coca Cola Zero" data-prijs="2.95"><h3>Coca Cola Zero</h3><span class="prijs">&euro;2,95</span><div class="stap"><button type="button" data-min aria-label="Minder Coca Cola Zero" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Coca Cola Zero">+</button></div></div>
+    <div class="item" id="drinks-2" data-naam="Fanta" data-prijs="2.95"><h3>Fanta</h3><span class="prijs">&euro;2,95</span><div class="stap"><button type="button" data-min aria-label="Minder Fanta" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Fanta">+</button></div></div>
+    <div class="item" id="drinks-3" data-naam="Ginger ale" data-prijs="2.95"><h3>Ginger ale</h3><span class="prijs">&euro;2,95</span><div class="stap"><button type="button" data-min aria-label="Minder Ginger ale" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Ginger ale">+</button></div></div>
+    <div class="item" id="drinks-4" data-naam="Pineapple juice" data-prijs="2.95"><h3>Pineapple juice</h3><span class="prijs">&euro;2,95</span><div class="stap"><button type="button" data-min aria-label="Minder Pineapple juice" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Pineapple juice">+</button></div></div>
+    <div class="item" id="drinks-5" data-naam="Apple juice" data-prijs="2.95"><h3>Apple juice</h3><span class="prijs">&euro;2,95</span><div class="stap"><button type="button" data-min aria-label="Minder Apple juice" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Apple juice">+</button></div></div>
+    <div class="item" id="drinks-6" data-naam="Chocomel" data-prijs="3.25"><h3>Chocomel</h3><span class="prijs">&euro;3,25</span><div class="stap"><button type="button" data-min aria-label="Minder Chocomel" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Chocomel">+</button></div></div>
+    <div class="item" id="drinks-7" data-naam="Fristi" data-prijs="3.25"><h3>Fristi</h3><span class="prijs">&euro;3,25</span><div class="stap"><button type="button" data-min aria-label="Minder Fristi" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Fristi">+</button></div></div>
+    <div class="item" id="drinks-8" data-naam="Sourcy" data-prijs="2.50"><h3>Sourcy</h3><span class="prijs">&euro;2,50</span><div class="stap"><button type="button" data-min aria-label="Minder Sourcy" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Sourcy">+</button></div></div>
+    <div class="item" id="drinks-9" data-naam="Sourcy sparkling" data-prijs="2.50"><h3>Sourcy sparkling</h3><span class="prijs">&euro;2,50</span><div class="stap"><button type="button" data-min aria-label="Minder Sourcy sparkling" disabled>&minus;</button><output>0</output><button type="button" data-plus aria-label="Meer Sourcy sparkling">+</button></div></div>
+  </div>
+    </div>
+    <aside class="mand" id="mand" data-wa="31642193093" aria-label="Jouw bestelling">
+      <h3>Jouw bestelling</h3>
+      <p class="mand-leeg">Nog niets gekozen. Tik op + bij een gerecht.</p>
+      <ul class="mand-lijst"></ul>
+      <div class="totaal"><span>Totaal</span><span data-totaal>&euro;0,00</span></div>
+      <div class="keuze"><label><input type="radio" name="type" value="Afhalen" checked><span>Afhalen</span></label><label><input type="radio" name="type" value="Bezorgen"><span>Bezorgen</span></label></div>
+      <input type="text" name="naam" placeholder="Je naam" autocomplete="given-name">
+      <textarea name="opm" placeholder="Opmerking (bijv. zonder ui)"></textarea>
+      <a class="knop groen" data-wa-knop href="#" target="_blank" rel="noopener">Open WhatsApp <i class="pijl"></i></a>
+      <button class="knop" type="button" data-kopieer style="margin-top:12px">Kopieer bericht</button>
+      <p class="klein-noot">Totaal is een indicatie volgens de prijzen op de menukaart-foto. Bezorggebied en kosten zijn niet bekend en niet getoond.</p>
+    </aside>
+  </div>
+</section>
+</main>
+<footer class="voet">
+  <div class="wrap">
+    <div class="voet-rij">
+      <div><img src="img/logo.png" alt="Moon's Kitchen" width="84" height="84"></div>
+      <nav aria-label="Footer"><a href="index.html">Home</a><a href="menu.html">Menukaart</a><a href="bestellen.html">Bestellen</a><a href="contact.html">Contact</a><a href="qr.html">QR-tafelkaart</a><a href="https://www.instagram.com/moons.kitchenx/" target="_blank" rel="noopener">Instagram</a></nav>
+    </div>
+    <p class="disc">Dit is een gratis, vrijblijvend conceptontwerp van CodeLine Agency, gemaakt op basis van openbare informatie (Instagram en een menukaart-foto op Google Maps). Logo en foto's komen van hun eigen kanalen. Prijzen en gerechten zijn overgenomen van die foto en kunnen afwijken van de huidige kaart. Dit is niet de officiële website van Moon&rsquo;s Kitchen.</p>
+  </div>
+</footer>
+<div class="pil">Concept · CodeLine Agency</div>
+<script src="js/site.js?v=1"></script>
+</body>
+</html>
