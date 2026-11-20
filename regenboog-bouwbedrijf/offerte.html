@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gratis offerte aanvragen – Regenboog Bouwbedrijf Alkmaar (concept)</title>
+<meta name="description" content="Vraag een gratis offerte aan bij Regenboog Bouwbedrijf in Alkmaar. Demo-formulier, conceptontwerp door CodeLine Agency.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0f141d">
+<link rel="icon" href="img/favicon.png">
+<link rel="preload" href="fonts/playfair-display-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+document.documentElement.classList.add('js');
+try{if(sessionStorage.getItem('reg'))document.documentElement.classList.add('geenloader')}catch(e){}
+setTimeout(function(){if(!window.__ll)document.documentElement.classList.remove('js')},4000);
+</script>
+<link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+<div class="loader" aria-hidden="true"><div class="ld"><img src="img/logo-licht.png" alt="" width="150" height="114"><div class="balk"><i></i></div></div></div>
+<div class="sluier" aria-hidden="true"></div>
+<header class="header">
+  <div class="wrap nav-rij">
+    <a href="index.html" class="logo" aria-label="Regenboog Bouwbedrijf, naar de homepage"><img src="img/logo-licht.png" alt="" width="55" height="42"></a>
+    <button class="menu-knop" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" aria-label="Hoofdmenu">
+      <a href="index.html">Home</a>
+      <a href="diensten.html">Diensten</a>
+      <a href="projecten.html">Projecten</a>
+      <a href="contact.html">Contact</a>
+      <a href="offerte.html" class="knop vol" aria-current="page">Gratis offerte <i class="pijl"></i></a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<div class="demo-balk">Demo-formulier · er wordt niets verzonden of opgeslagen</div>
+<section class="pagina-hero"><div class="wrap">
+    <span class="label heroin">Offerte aanvragen</span>
+    <h1 data-split data-hero>Vraag je <em>gratis offerte</em> aan</h1>
+    <p class="heroin" style="--d:2">In vier korte stappen vertel je wat je wilt laten doen. Gratis en vrijblijvend.</p>
+</div></section>
+
+<section class="sectie" style="padding-top:70px">
+  <div class="wrap offerte-rij">
+    <div class="zij">
+      <span class="label reveal">Gratis &amp; vrijblijvend</span>
+      <h2 class="sec-kop reveal" style="font-size:clamp(2rem,3.6vw,3rem)">Wat je kunt <em>verwachten</em></h2>
+      <ul class="reveal"><li>Een gratis offerte, zonder verplichtingen</li><li>Groot of klein: elke klus is welkom</li><li>Binnen of buiten, van badkamer tot buitenschilderwerk</li><li>Liever direct contact? Stuur een bericht via WhatsApp</li></ul>
+      <p class="reveal" style="margin-top:22px"><a class="knop" href="https://wa.me/31684740110" target="_blank" rel="noopener">WhatsApp <i class="pijl"></i></a></p>
+    </div>
+    <form class="wizard reveal" id="wizard" novalidate>
+      <div class="w-kop" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="w-stap" data-v="klus">
+        <h3>Wat wil je laten doen?</h3><p class="sub">Kies één of meer opties.</p>
+        <div class="keuzes"><label class="keuze"><input type="checkbox" name="klus" value="Renovatie badkamer"><span>Renovatie badkamer</span></label><label class="keuze"><input type="checkbox" name="klus" value="Tegelwerk"><span>Tegelwerk</span></label><label class="keuze"><input type="checkbox" name="klus" value="Loodgieter"><span>Loodgieter</span></label><label class="keuze"><input type="checkbox" name="klus" value="Spuiten"><span>Spuiten</span></label><label class="keuze"><input type="checkbox" name="klus" value="Stukadoor"><span>Stukadoor</span></label><label class="keuze"><input type="checkbox" name="klus" value="Schilderwerk"><span>Schilderwerk</span></label><label class="keuze"><input type="checkbox" name="klus" value="Elektrisch"><span>Elektrisch</span></label><label class="keuze"><input type="checkbox" name="klus" value="Anders / weet ik nog niet"><span>Anders / weet ik nog niet</span></label></div>
+        <p class="melding" hidden style="color:#f0a090;font-size:.85rem;margin-top:12px"></p>
+        <div class="w-knoppen"><span></span><button class="knop vol" type="button" data-volgende>Volgende <i class="pijl"></i></button></div>
+      </div>
+      <div class="w-stap">
+        <h3>Vertel er iets meer over</h3><p class="sub">Hoe completer, hoe beter we je kunnen helpen.</p>
+        <div class="velden">
+          <div class="veld vol" data-v="omschrijving"><label for="omschrijving">Omschrijving</label><textarea id="omschrijving" name="omschrijving" placeholder="Bijvoorbeeld: badkamer van 6 m² slopen en opnieuw betegelen"></textarea><span class="melding" hidden></span></div>
+          <div class="veld"><label for="ruimte">Ruimte(s)</label><input id="ruimte" name="ruimte" placeholder="Bijv. badkamer, woonkamer"></div>
+          <div class="veld"><label for="start">Gewenste start</label><select id="start" name="start"><option>Zo snel mogelijk</option><option>Binnen 1 maand</option><option>Binnen 3 maanden</option><option>Nog onbekend</option></select></div>
+        </div>
+        <div class="w-knoppen"><button class="terug" type="button" data-terug>&larr; Terug</button><button class="knop vol" type="button" data-volgende>Volgende <i class="pijl"></i></button></div>
+      </div>
+      <div class="w-stap">
+        <h3>Jouw gegevens</h3><p class="sub">Zo kunnen we contact met je opnemen.</p>
+        <div class="velden">
+          <div class="veld" data-v="naam"><label for="naam">Naam</label><input id="naam" name="naam" autocomplete="name"><span class="melding" hidden></span></div>
+          <div class="veld" data-v="plaats"><label for="plaats">Woonplaats</label><input id="plaats" name="plaats" autocomplete="address-level2"><span class="melding" hidden></span></div>
+          <div class="veld" data-v="email"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email"><span class="melding" hidden></span></div>
+          <div class="veld"><label for="tel">Telefoon (optioneel)</label><input id="tel" name="tel" type="tel" autocomplete="tel"></div>
+        </div>
+        <div class="w-knoppen"><button class="terug" type="button" data-terug>&larr; Terug</button><button class="knop vol" type="button" data-volgende>Controleren <i class="pijl"></i></button></div>
+      </div>
+      <div class="w-stap">
+        <h3>Controleer je aanvraag</h3><p class="sub">Klopt alles? Dan kun je de aanvraag versturen.</p>
+        <dl class="overzicht"></dl>
+        <p class="demo-noot">Demo: bij de echte site komt deze aanvraag direct bij Regenboog Bouwbedrijf binnen. Nu wordt er niets verzonden of opgeslagen.</p>
+        <div class="w-knoppen"><button class="terug" type="button" data-terug>&larr; Terug</button><button class="knop vol" type="submit">Aanvraag versturen <i class="pijl"></i></button></div>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="voet">
+  <div class="wrap">
+    <div class="voet-rij">
+      <div><img src="img/logo-licht.png" alt="Regenboog Bouwbedrijf" width="100" height="76"></div>
+      <nav aria-label="Footer"><a href="index.html">Home</a><a href="diensten.html">Diensten</a><a href="projecten.html">Projecten</a><a href="offerte.html">Offerte</a><a href="contact.html">Contact</a><a href="https://www.instagram.com/regenboogbouwbedrijf/" target="_blank" rel="noopener">Instagram</a></nav>
+    </div>
+    <p class="disc">Dit is een gratis, vrijblijvend conceptontwerp van CodeLine Agency, gemaakt op basis van openbare informatie van het Instagram-account van Regenboog Bouwbedrijf. Logo, foto's, diensten en contactgegevens komen van hun eigen kanaal. Het offerteformulier is een demo en verstuurt niets. Dit is niet de officiële website van Regenboog Bouwbedrijf.</p>
+  </div>
+</footer>
+<div class="pil">Concept · CodeLine Agency</div>
+<script src="js/site.js?v=1"></script>
+</body>
+</html>
