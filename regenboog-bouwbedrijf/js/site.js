@@ -108,9 +108,9 @@ if(sluier){
   if(eerste||reduce){sluier.style.display='none'}
   else{sluier.classList.add('aan');requestAnimationFrame(function(){setTimeout(sluierWeg,60)})}
 }
-if(eerste){setTimeout(klaar,1800)}
+if(eerste){setTimeout(klaar,1000)}
 else{setTimeout(klaar,reduce?0:250)}
-window.addEventListener('load',function(){setTimeout(klaar,eerste?1800:0)});
+window.addEventListener('load',function(){setTimeout(klaar,eerste?1000:0)});
 window.addEventListener('pageshow',function(e){if(e.persisted&&sluier){sluier.style.display='';sluierWeg()}});
 document.addEventListener('click',function(e){
   var a=e.target.closest&&e.target.closest('a[href]');
