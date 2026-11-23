@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bestellen – De Kaaskantine Alkmaar (concept)</title>
+<meta name="description" content="Bestelconcept voor De Kaaskantine: kies je broodjes, geef een afhaaltijd op en haal af. Demo door CodeLine Agency.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#110c09">
+<link rel="icon" href="img/favicon.png">
+<link rel="preload" href="fonts/bebas-neue-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/jost-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+document.documentElement.classList.add('js');
+try{if(sessionStorage.getItem('kaas'))document.documentElement.classList.add('geenloader')}catch(e){}
+setTimeout(function(){if(!document.documentElement.classList.contains('ready'))document.documentElement.classList.remove('js')},3000);
+window.addEventListener('error',function(){setTimeout(function(){if(!document.documentElement.classList.contains('ready'))document.documentElement.classList.remove('js')},1200)});
+</script>
+<link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+<div class="loader" aria-hidden="true"><div class="ld"><img src="img/logo-licht.png" alt="" width="190" height="104"><div class="balk"><i></i></div></div></div>
+<div class="sluier" aria-hidden="true"></div>
+<header class="header">
+  <div class="wrap nav-rij">
+    <a href="index.html" class="logo" aria-label="De Kaaskantine, naar de homepage"><img src="img/logo-licht.png" alt="" width="99" height="54"></a>
+    <button class="menu-knop" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" aria-label="Hoofdmenu">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="sfeer.html">Sfeer</a>
+      <a href="contact.html">Contact</a>
+      <a href="bestellen.html" class="knop vol" aria-current="page">Bestellen <i class="pijl"></i></a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<div class="demo-balk">Bestelconcept · demo, er wordt niets verzonden of opgeslagen</div>
+<section class="pagina-hero"><div class="wrap">
+    <span class="label heroin">Afhalen</span>
+    <h1 data-split data-hero><em>Bestel</em> vooraf</h1>
+    <p class="heroin" style="--d:2">Kies je broodjes, geef een afhaaltijd op en haal ze op aan de Hofstraat 4. Zo hoef je niet te wachten.</p>
+</div></section>
+
+<section class="sectie" style="padding-top:40px">
+  <div class="wrap bestel-rij" id="bestel-app">
+    <div class="bestel-menu">
+      <div class="bcat"><h2>Specials</h2><div class="bi" data-id="s0" data-naam="Broodje Dikke Nek" data-prijs="9"><div class="bi-t"><b>Broodje Dikke Nek</b><p>Rib eye, truffelmayonaise, gepofte tomaat, rucola, gebakken ui en rode ui.</p></div><span class="bi-p">€9,00</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Broodje Dikke Nek">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Broodje Dikke Nek">+</button></div></div><div class="bi" data-id="s1" data-naam="Broodje Brandalarm" data-prijs="9"><div class="bi-t"><b>Broodje Brandalarm</b><span class="bdg">Nieuw</span><span class="bdg hl">Ook halal</span><p>Malse hete kippendij, chipotlemayonaise, rode ui en gebakken ui.</p></div><span class="bi-p">€9,00</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Broodje Brandalarm">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Broodje Brandalarm">+</button></div></div><div class="bi" data-id="s2" data-naam="Broodje Dakduif" data-prijs="9"><div class="bi-t"><b>Broodje Dakduif</b><p>Pulled chicken, little gem, limoenmayonaise, rode ui, gebakken ui en bosui.</p></div><span class="bi-p">€9,00</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Broodje Dakduif">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Broodje Dakduif">+</button></div></div><div class="bi" data-id="s3" data-naam="Broodje Kaaskop" data-prijs="9"><div class="bi-t"><b>Broodje Kaaskop</b><p>Brie, honing-mosterdmayonaise, rucola en walnoten.</p></div><span class="bi-p">€9,00</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Broodje Kaaskop">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Broodje Kaaskop">+</button></div></div><div class="bi" data-id="s4" data-naam="Broodje Don Morta" data-prijs="10.25"><div class="bi-t"><b>Broodje Don Morta</b><span class="bdg">Nieuw</span><p>Mortadella, stracciatella, pesto en pistachecrumble.</p></div><span class="bi-p">€10,25</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Broodje Don Morta">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Broodje Don Morta">+</button></div></div><div class="bi" data-id="s5" data-naam="Broodje Tuna Smelt" data-prijs="9"><div class="bi-t"><b>Broodje Tuna Smelt</b><p>Tonijn met rode ui, mosterd, ketchup, mayonaise, kaas, chiliolie en gegrilde paprikapoeder, afgemaakt met gesmolten kaas.</p></div><span class="bi-p">€9,00</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Broodje Tuna Smelt">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Broodje Tuna Smelt">+</button></div></div><div class="bi" data-id="s6" data-naam="Brioche Krokante Karel" data-prijs="10.25"><div class="bi-t"><b>Brioche Krokante Karel</b><span class="bdg">Nieuw</span><span class="bdg hl">Ook halal</span><p>Gefrituurde kippendij, coleslaw, uiencompote en srirachamayonaise op een brioche.</p></div><span class="bi-p">€10,25</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Brioche Krokante Karel">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Brioche Krokante Karel">+</button></div></div><div class="bi" data-id="s7" data-naam="Broodje Baastrami" data-prijs="10"><div class="bi-t"><b>Broodje Baastrami</b><span class="bdg">Nieuw</span><p>Pastrami met rucola, truffelmayonaise, rode ui en srirachamayonaise.</p></div><span class="bi-p">€10,00</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Broodje Baastrami">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Broodje Baastrami">+</button></div></div><div class="bi" data-id="w1" data-naam="Broodje Rendang" data-prijs="9.5"><div class="bi-t"><b>Broodje Rendang</b><span class="bdg">Weekend special</span><p>Langzaam gegaard, zoet en mals stoofvlees met krokante kentang, bosui en een romige saus.</p></div><span class="bi-p">€9,50</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Broodje Rendang">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Broodje Rendang">+</button></div></div></div>
+      <div class="bcat"><h2>Klassiekers</h2><div class="bi" data-id="k0" data-naam="Broodje Bal" data-prijs="5.5"><div class="bi-t"><b>Broodje Bal</b><p>Broodje bal in jus met huisgemaakte pindasaus.</p></div><span class="bi-p">€5,50</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Broodje Bal">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Broodje Bal">+</button></div></div><div class="bi" data-id="k1" data-naam="Broodje Ossenworst" data-prijs="7"><div class="bi-t"><b>Broodje Ossenworst</b></div><span class="bi-p">€7,00</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Broodje Ossenworst">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Broodje Ossenworst">+</button></div></div><div class="bi" data-id="k2" data-naam="Broodje Grillworst" data-prijs="7"><div class="bi-t"><b>Broodje Grillworst</b></div><span class="bi-p">€7,00</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Broodje Grillworst">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Broodje Grillworst">+</button></div></div><div class="bi" data-id="k3" data-naam="Broodje Grillworst kaas" data-prijs="7.5"><div class="bi-t"><b>Broodje Grillworst kaas</b></div><span class="bi-p">€7,50</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Broodje Grillworst kaas">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Broodje Grillworst kaas">+</button></div></div><div class="bi" data-id="k4" data-naam="Broodje Grillworst kaas &amp; jalapeño" data-prijs="7.5"><div class="bi-t"><b>Broodje Grillworst kaas &amp; jalapeño</b></div><span class="bi-p">€7,50</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Broodje Grillworst kaas &amp; jalapeño">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Broodje Grillworst kaas &amp; jalapeño">+</button></div></div><div class="bi" data-id="k5" data-naam="Broodje Filet José" data-prijs="7.5"><div class="bi-t"><b>Broodje Filet José</b></div><span class="bi-p">€7,50</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Broodje Filet José">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Broodje Filet José">+</button></div></div><div class="bi" data-id="k6" data-naam="Broodje Tonijnsalade" data-prijs="7"><div class="bi-t"><b>Broodje Tonijnsalade</b></div><span class="bi-p">€7,00</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Broodje Tonijnsalade">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Broodje Tonijnsalade">+</button></div></div><div class="bi" data-id="k7" data-naam="Broodje Oude kaas" data-prijs="6"><div class="bi-t"><b>Broodje Oude kaas</b></div><span class="bi-p">€6,00</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Broodje Oude kaas">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Broodje Oude kaas">+</button></div></div><div class="bi" data-id="k8" data-naam="Broodje Jonge kaas" data-prijs="5.5"><div class="bi-t"><b>Broodje Jonge kaas</b></div><span class="bi-p">€5,50</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Broodje Jonge kaas">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Broodje Jonge kaas">+</button></div></div></div>
+      <div class="bcat"><h2>Zoet</h2><div class="bi" data-id="z0" data-naam="Dough Department Choco Chip" data-prijs="5.5"><div class="bi-t"><b>Dough Department Choco Chip</b><p>The Original NYC Cookies. 140 gram.</p></div><span class="bi-p">€5,50</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Dough Department Choco Chip">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Dough Department Choco Chip">+</button></div></div><div class="bi" data-id="z1" data-naam="Dough Department Triple Choco" data-prijs="5.5"><div class="bi-t"><b>Dough Department Triple Choco</b></div><span class="bi-p">€5,50</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Dough Department Triple Choco">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Dough Department Triple Choco">+</button></div></div><div class="bi" data-id="z2" data-naam="Dough Department Red Velvet" data-prijs="5.5"><div class="bi-t"><b>Dough Department Red Velvet</b></div><span class="bi-p">€5,50</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Dough Department Red Velvet">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Dough Department Red Velvet">+</button></div></div></div>
+      <div class="bcat"><h2>Drinken</h2><div class="bi" data-id="d0" data-naam="Galvanina Aranciata Rossa" data-prijs="3.95"><div class="bi-t"><b>Galvanina Aranciata Rossa</b></div><span class="bi-p">€3,95</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Galvanina Aranciata Rossa">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Galvanina Aranciata Rossa">+</button></div></div><div class="bi" data-id="d1" data-naam="Galvanina Té alla Pesca" data-prijs="3.95"><div class="bi-t"><b>Galvanina Té alla Pesca</b></div><span class="bi-p">€3,95</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Galvanina Té alla Pesca">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Galvanina Té alla Pesca">+</button></div></div><div class="bi" data-id="d2" data-naam="Galvanina Pompelmo Rosso" data-prijs="3.95"><div class="bi-t"><b>Galvanina Pompelmo Rosso</b></div><span class="bi-p">€3,95</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Galvanina Pompelmo Rosso">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Galvanina Pompelmo Rosso">+</button></div></div><div class="bi" data-id="d3" data-naam="Kombucha" data-prijs="3.95"><div class="bi-t"><b>Kombucha</b></div><span class="bi-p">€3,95</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Kombucha">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Kombucha">+</button></div></div><div class="bi" data-id="d4" data-naam="Thijs Appel (bio)" data-prijs="3.95"><div class="bi-t"><b>Thijs Appel (bio)</b></div><span class="bi-p">€3,95</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Thijs Appel (bio)">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Thijs Appel (bio)">+</button></div></div><div class="bi" data-id="d5" data-naam="Thijs Gember (bio)" data-prijs="3.95"><div class="bi-t"><b>Thijs Gember (bio)</b></div><span class="bi-p">€3,95</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Thijs Gember (bio)">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Thijs Gember (bio)">+</button></div></div><div class="bi" data-id="d6" data-naam="Thijs Aardbei (bio)" data-prijs="3.95"><div class="bi-t"><b>Thijs Aardbei (bio)</b></div><span class="bi-p">€3,95</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Thijs Aardbei (bio)">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Thijs Aardbei (bio)">+</button></div></div><div class="bi" data-id="d7" data-naam="Cola" data-prijs="4.2"><div class="bi-t"><b>Cola</b></div><span class="bi-p">€4,20</span><div class="bi-s"><button type="button" class="min" aria-label="Eén minder: Cola">&minus;</button><span class="q" aria-live="polite">0</span><button type="button" class="plus" aria-label="Eén meer: Cola">+</button></div></div></div>
+      <p class="noot">Prijzen zoals op hun menukaart en bestelpagina; ze kunnen wijzigen. Bij allergieën graag even navragen in de zaak.</p>
+    </div>
+    <aside class="mandje" id="mandje" aria-label="Je bestelling">
+      <div class="m-vorm">
+        <span class="label">Je bestelling</span>
+        <ul class="m-regels"><li class="leeg">Je mandje is nog leeg.</li></ul>
+        <div class="m-totaal"><span>Totaal</span><b>€0,00</b></div>
+        <form class="m-form" novalidate>
+          <div class="velden">
+            <div class="veld"><label for="dag">Afhaaldag</label><select id="dag" name="dag"></select></div>
+            <div class="veld"><label for="tijd">Afhaaltijd</label><select id="tijd" name="tijd"></select></div>
+            <div class="veld vol" data-v="naam"><label for="naam">Naam</label><input id="naam" name="naam" autocomplete="name" placeholder="Voor- en achternaam"><span class="melding" hidden></span></div>
+            <div class="veld vol"><label for="opm">Opmerking (optioneel)</label><textarea id="opm" name="opm" placeholder="Bijvoorbeeld: zonder ui"></textarea></div>
+          </div>
+          <p class="m-melding" hidden></p>
+          <button class="knop vol m-knop" type="submit">Bestelling plaatsen <i class="pijl"></i></button>
+          <p class="demo-noot">Demo: in de echte versie komt de bestelling direct bij De Kaaskantine binnen, of koppelen we hun bestaande bestelsysteem. Nu wordt er niets verzonden of opgeslagen.</p>
+        </form>
+      </div>
+      <div class="m-klaar" hidden>
+        <div class="vink" aria-hidden="true"></div>
+        <h3>Bedankt, <span class="m-naam"></span></h3>
+        <p class="m-sam"></p>
+        <ul class="m-regels m-regels2"></ul>
+        <div class="m-totaal"><span>Totaal</span><b></b></div>
+        <p class="demo-noot">Dit is een demo. In deze conceptversie is er niets verzonden of opgeslagen.</p>
+        <a class="knop" href="menu.html">Terug naar het menu <i class="pijl"></i></a>
+      </div>
+    </aside>
+  </div>
+</section>
+<a class="mbar" href="#mandje"><span><b data-m-aantal>0</b> in je mandje</span><span class="mbar-t">Bekijk</span></a>
+</main>
+<footer class="voet">
+  <div class="wrap">
+    <div class="voet-rij">
+      <div><img src="img/logo-licht.png" alt="De Kaaskantine" width="118" height="64"></div>
+      <nav aria-label="Footer"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="sfeer.html">Sfeer</a><a href="contact.html">Contact</a><a href="bestellen.html">Bestellen</a><a href="https://www.instagram.com/dekaaskantine/" target="_blank" rel="noopener">Instagram</a></nav>
+    </div>
+    <p class="disc">Dit is een gratis, vrijblijvend conceptontwerp van CodeLine Agency, gemaakt op basis van openbare informatie van het Instagram-account en de bestelpagina van De Kaaskantine. Logo, foto's, menu en prijzen komen van hun eigen kanalen en kunnen sindsdien zijn gewijzigd. Dit is niet de officiële website van De Kaaskantine.</p>
+  </div>
+</footer>
+<div class="pil">Concept · CodeLine Agency</div>
+<script src="js/site.js?v=1"></script>
+</body>
+</html>

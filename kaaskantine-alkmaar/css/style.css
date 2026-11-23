@@ -235,6 +235,58 @@ html:not(.js) .heroin,html:not(.js) .w>i{opacity:1;transform:none}
 .disc{font-size:.8rem;line-height:1.7;color:#8d8068;max-width:62em}
 .pil{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:90;white-space:nowrap;background:rgba(17,12,9,.92);border:1px solid var(--goud);color:var(--goud-l);font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;font-weight:600;padding:8px 16px;border-radius:99px;pointer-events:none}
 
+/* bestelconcept */
+.demo-balk{background:var(--goud);color:var(--ink);text-align:center;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;padding:11px 20px;position:relative;z-index:2;margin-top:0}
+.bestel-rij{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);gap:clamp(30px,5vw,70px);align-items:start}
+.bcat{margin-bottom:clamp(40px,6vw,70px)}
+.bcat h2{font-size:clamp(2.6rem,4.6vw,3.8rem);margin-bottom:10px;padding-bottom:14px;border-bottom:1px solid var(--lijn)}
+.bi{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:6px 20px;align-items:center;padding:18px 14px;margin:0 -14px;border-bottom:1px solid rgba(201,162,75,.16);transition:background .4s}
+.bi.actief{background:rgba(201,162,75,.09)}
+.bi-t b{font-family:var(--disp);font-weight:400;font-size:1.65rem;letter-spacing:.03em;text-transform:uppercase;color:var(--room);line-height:1.1}
+.bi-t p{font-size:.92rem;line-height:1.55;margin-top:2px;color:var(--tekst)}
+.bi-p{font-family:var(--disp);font-size:1.6rem;color:var(--goud);letter-spacing:.03em}
+.bi-s{display:flex;align-items:center;gap:10px}
+.bi-s button{width:38px;height:38px;border-radius:50%;border:1px solid var(--goud);background:transparent;color:var(--goud-l);font-size:1.3rem;line-height:1;transition:background .3s,color .3s}
+.bi-s button:hover{background:var(--goud);color:var(--ink)}
+.bi-s .q{min-width:1.4em;text-align:center;font-family:var(--disp);font-size:1.5rem;color:var(--room)}
+.mandje{position:sticky;top:96px;border:1px solid var(--lijn);background:var(--bruin);padding:clamp(24px,3vw,36px)}
+.m-regels{list-style:none;margin:16px 0 4px;display:grid;gap:0}
+.m-regels li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid rgba(201,162,75,.16);font-size:.98rem;color:var(--room)}
+.m-regels li b{font-weight:500;color:var(--goud-l);white-space:nowrap}
+.m-regels li.leeg{color:var(--tekst);font-style:italic;border-bottom:0}
+.m-totaal{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0 22px}
+.m-totaal span{font-family:var(--disp);font-size:1.5rem;letter-spacing:.06em;color:var(--room)}
+.m-totaal b{font-family:var(--disp);font-weight:400;font-size:2.2rem;color:var(--goud)}
+.velden{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.veld{display:grid;gap:6px;align-content:start}
+.veld.vol{grid-column:1 / -1}
+.veld label{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;font-weight:500;color:var(--goud)}
+.veld input,.veld select,.veld textarea{width:100%;font:inherit;font-size:1rem;color:var(--room);background:rgba(244,236,206,.06);border:1px solid var(--lijn);padding:13px 14px;border-radius:0;outline:0;transition:border-color .3s,background .3s}
+.veld select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--goud) 50%),linear-gradient(135deg,var(--goud) 50%,transparent 50%);background-position:calc(100% - 20px) 55%,calc(100% - 14px) 55%;background-size:6px 6px;background-repeat:no-repeat;padding-right:36px}
+.veld select option{background:var(--bruin);color:var(--room)}
+.veld textarea{min-height:76px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{border-color:var(--goud);background:rgba(244,236,206,.1)}
+.veld.fout input{border-color:#e08a72}
+.melding{font-size:.85rem;color:#f0a58f}
+.m-melding{margin-top:14px;color:#f0a58f;font-size:.92rem}
+.m-knop{width:100%;justify-content:center;margin-top:20px}
+.demo-noot{font-size:.8rem;line-height:1.6;margin-top:16px;padding-left:14px;border-left:2px solid var(--goud);color:var(--tekst)}
+.m-klaar{text-align:center}
+.m-klaar h3{font-size:2.6rem;margin:14px 0 8px}
+.m-klaar .m-sam{margin-bottom:10px;color:var(--room)}
+.m-klaar .m-regels{text-align:left}
+.m-klaar .m-totaal{padding-bottom:6px}
+.m-klaar .knop{margin-top:18px}
+.vink{width:72px;height:72px;border:1px solid var(--goud);border-radius:50%;margin:0 auto;position:relative}
+.vink::after{content:"";position:absolute;left:25px;top:18px;width:14px;height:26px;border:solid var(--goud);border-width:0 2px 2px 0;transform:rotate(45deg)}
+.mbar{display:none;position:fixed;left:12px;right:12px;bottom:52px;z-index:95;background:var(--goud);color:var(--ink);padding:14px 20px;align-items:center;justify-content:space-between;font-weight:500;letter-spacing:.06em;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.mbar b{font-family:var(--disp);font-weight:400;font-size:1.3rem}
+.mbar-t{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase}
+@media (max-width:1020px){
+  .bestel-rij{grid-template-columns:minmax(0,1fr)}
+  .mandje{position:static}
+  .mbar.zicht{display:flex}
+}
 @media (max-width:1020px){
   .hero-rij,.menu-prev,.info-rij,.cat{grid-template-columns:minmax(0,1fr)}
   .kader{width:min(100%,400px)}
@@ -254,6 +306,11 @@ html:not(.js) .heroin,html:not(.js) .w>i{opacity:1;transform:none}
   .menu-nav{top:56px}
 }
 @media (max-width:560px){
+  .velden{grid-template-columns:1fr}
+  .bi{grid-template-columns:minmax(0,1fr) auto;padding:16px 10px;margin:0 -10px}
+  .bi-p{grid-column:2;grid-row:1}
+  .bi-s{grid-column:1 / -1;justify-content:flex-start}
+  .bi-t b{font-size:1.45rem}
   body{font-size:16px}
   .wrap{width:min(1240px,100% - 36px)}
   .hero-knoppen .knop,.cta-knoppen .knop{width:100%;justify-content:center}
