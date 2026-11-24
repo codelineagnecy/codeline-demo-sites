@@ -455,3 +455,9 @@ body{background:var(--bg)}
   .tk{background:#fbf6ee}
 }
 .pagina-hero::before{right:-6vw;top:-12vw;width:42vw;height:42vw;background:radial-gradient(circle,rgba(122,45,60,.5),transparent 68%)}
+
+/* vaste balken: volledig dekkend zodat er geen tekst doorheen schemert */
+.header.gescrolld{background:#1b0d10}
+.tabs{background:#1b0d10}
+.kk-tabs{background:#1b0d10}
+.tabs nav{-webkit-overflow-scrolling:touch}
