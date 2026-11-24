@@ -27,7 +27,7 @@ if('IntersectionObserver' in window){
 }else{rv.forEach(function(r){r.classList.add('in')})}
 
 /* menu: scrollspy */
-var mn=$$('.menu-nav a');
+var mn=$$('.tabs a');
 if(mn.length){
   var secs=mn.map(function(a){return d.getElementById(a.getAttribute('href').slice(1))}).filter(Boolean);
   var spy=function(){
@@ -36,6 +36,28 @@ if(mn.length){
     mn.forEach(function(a){var on=best&&a.getAttribute('href')==='#'+best.id;a.classList.toggle('nu',!!on);if(on){a.setAttribute('aria-current','true');var n=a.parentNode;if(n.scrollWidth>n.clientWidth){n.scrollTo({left:a.offsetLeft-20,behavior:'smooth'})}}else a.removeAttribute('aria-current')});
   };
   window.addEventListener('scroll',spy,{passive:true});spy();
+}
+
+/* open / gesloten (Amsterdam-tijd): do t/m ma 10:30 - 20:30 */
+var op=$('[data-open]');
+if(op){
+  var upd=function(){
+    var pr={},fm=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Amsterdam',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false});
+    fm.formatToParts(new Date()).forEach(function(x){pr[x.type]=x.value});
+    var dn={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[pr.weekday],m=(+pr.hour%24)*60+(+pr.minute);
+    var open=dn!==2&&dn!==3,nu=open&&m>=630&&m<1230,t=op.querySelector('span');
+    op.classList.remove('open','dicht');
+    if(nu){op.classList.add('open');t.textContent='Nu open · tot 20:30'}
+    else{
+      op.classList.add('dicht');
+      var nxt;
+      if(open&&m<630)nxt='vandaag om 10:30';
+      else if(dn===1||dn===2||dn===3)nxt='donderdag om 10:30';
+      else nxt='morgen om 10:30';
+      t.textContent='Nu gesloten · opent '+nxt;
+    }
+  };
+  upd();setInterval(upd,60000);
 }
 
 /* reserveringsformulier -> WhatsApp-bericht */

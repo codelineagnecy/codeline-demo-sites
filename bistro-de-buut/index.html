@@ -6,16 +6,16 @@
 <title>Bistro DeBuut Schoondijke – lunch, diner & drinks (concept)</title>
 <meta name="description" content="Bistro DeBuut aan het Dorpsplein in Schoondijke: lunch, tapas, diner, tearoom en drinks. Conceptwebsite met menu en reserveren, door CodeLine Agency.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#1c0e10">
+<meta name="theme-color" content="#f7f2ea">
 <link rel="icon" href="img/favicon.png">
-<link rel="preload" href="fonts/bodoni-moda-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/hanken-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/cormorant-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/jost-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
 <script>
 document.documentElement.classList.add('js');
 setTimeout(function(){if(!document.documentElement.classList.contains('ready'))document.documentElement.classList.remove('js')},2500);
 window.addEventListener('error',function(){setTimeout(function(){if(!document.documentElement.classList.contains('ready'))document.documentElement.classList.remove('js')},1000)});
 </script>
-<link rel="stylesheet" href="css/style.css?v=1">
+<link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
 <header class="header">
@@ -23,11 +23,13 @@ window.addEventListener('error',function(){setTimeout(function(){if(!document.do
     <a href="index.html" class="logo" aria-label="Bistro DeBuut, naar de homepage"><span class="l1">Bistro</span><span class="l2">DeBuut</span></a>
     <button class="menu-knop" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav" aria-label="Hoofdmenu">
+      <div class="nav-links">
       <a href="index.html" aria-current="page">Home</a>
       <a href="menu.html">Menu</a>
-      <a href="reserveren.html">Reserveren</a>
+      <a href="over-ons.html">Over ons</a>
       <a href="contact.html">Contact</a>
-      <a href="reserveren.html" class="knop vol">Reserveer een tafel</a>
+      </div>
+      <a href="reserveren.html" class="pil-knop donker">Reserveer een tafel</a>
     </nav>
   </div>
 </header>
@@ -36,66 +38,83 @@ window.addEventListener('error',function(){setTimeout(function(){if(!document.do
 <section class="hero">
   <div class="wrap hero-rij">
     <div class="hero-tekst">
-      <span class="label heroin">Lunch &middot; Diner &middot; Drinks</span>
-      <h1 class="heroin" style="--d:1">Aan tafel op het <em>Dorpsplein</em></h1>
-      <p class="lead heroin" style="--d:2">Bistro DeBuut opende op 6 november de deuren in Schoondijke. Kom voor een 12-uurtje, tapas bij een drankje, een ribeye of zeebaars, en sluit af met verse appeltaart of een Zeeuwse koffie.</p>
-      <div class="hero-knoppen heroin" style="--d:3"><a class="knop vol" href="reserveren.html">Reserveer een tafel <i class="pijl"></i></a><a class="knop" href="menu.html">Bekijk het menu</a></div>
-      <ul class="hero-feiten heroin" style="--d:4"><li><b>Do – ma</b><span>10:30 – 20:30</span></li><li><b>Dorpsplein 1</b><span>Schoondijke</span></li><li><b>06 27 41 98 69</b><span>Bellen of appen</span></li></ul>
+      <span class="open-pil heroin" data-open><i class="dot"></i><span>Do – ma · 10:30 – 20:30</span></span>
+      <h1 class="heroin" style="--d:1">Lunch, diner &amp; <em>drinks</em> op het Dorpsplein</h1>
+      <p class="lead heroin" style="--d:2">Bistro DeBuut is sinds 6 november open in Schoondijke. Kom voor een 12-uurtje, tapas bij een drankje, een ribeye of zeebaars, of een Zeeuwse koffie met appeltaart.</p>
+      <div class="knoppen heroin" style="--d:3"><a class="pil-knop donker" href="menu.html">Bekijk het menu</a><a class="pil-knop rand" href="reserveren.html">Reserveer een tafel</a></div>
+      <ul class="tags heroin" style="--d:4"><li>Lunch</li><li>Diner</li><li>Drinks</li></ul>
     </div>
-    <div class="kader heroin" style="--d:2">
-      <div class="boog"><img src="img/gevel.jpg" alt="De voorgevel van Bistro DeBuut aan het Dorpsplein, met de eigenaren in de open deur" width="966" height="1202" fetchpriority="high"></div>
-      <span class="tag">Sinds 6 november</span>
+    <div class="foto-kader heroin" style="--d:2">
+      <div class="foto"><img src="img/gevel.jpg" alt="De voorgevel van Bistro DeBuut aan het Dorpsplein, met de eigenaren in de open deur" width="966" height="1202" fetchpriority="high"></div>
+      <span class="foto-tag">Bistro DeBuut</span>
+      <a class="bezoek" href="https://www.google.com/maps/search/?api=1&query=Bistro+DeBuut+Dorpsplein+1+Schoondijke" target="_blank" rel="noopener"><b>Bezoek ons</b><span>Dorpsplein 1<br>4507 BH Schoondijke</span></a>
     </div>
   </div>
 </section>
 
-<div class="band" aria-hidden="true"><div class="band-spoor"><span>Lunch</span><i>&#10022;</i><span>Tapas</span><i>&#10022;</i><span>Diner</span><i>&#10022;</i><span>Tearoom</span><i>&#10022;</i><span>Cocktails</span><i>&#10022;</i><span>Bier &amp; wijn</span><i>&#10022;</i><span>Lunch</span><i>&#10022;</i><span>Tapas</span><i>&#10022;</i><span>Diner</span><i>&#10022;</i><span>Tearoom</span><i>&#10022;</i><span>Cocktails</span><i>&#10022;</i><span>Bier &amp; wijn</span><i>&#10022;</i></div></div>
+<div class="band" aria-hidden="true"><div class="band-spoor"><span>Lunch</span><i>&bull;</i><span>Tapas</span><i>&bull;</i><span>Diner</span><i>&bull;</i><span>Tearoom</span><i>&bull;</i><span>Cocktails</span><i>&bull;</i><span>Bier &amp; wijn</span><i>&bull;</i><span>Lunch</span><i>&bull;</i><span>Tapas</span><i>&bull;</i><span>Diner</span><i>&bull;</i><span>Tearoom</span><i>&bull;</i><span>Cocktails</span><i>&bull;</i><span>Bier &amp; wijn</span><i>&bull;</i></div></div>
 
 <section class="sectie">
-  <div class="wrap statement">
-    <span class="label reveal">Bistro DeBuut</span>
-    <h2 class="reveal">Eén adres voor <em>de koffie, de lunch</em> en een avond uit eten.</h2>
-    <p class="reveal">De kaart is breed: broodjes en soepen voor de lunch, tapas om te delen, salades, voor- en hoofdgerechten, desserts en een tearoom. Daarbij een flinke kaart met bier, wijn, aperitieven, gin-tonics en cocktails.</p>
+  <div class="wrap">
+    <div class="kop-midden"><span class="label reveal">Wat je kunt verwachten</span><h2 class="reveal">Lunch, tapas <em>en</em> diner</h2><p class="reveal">Aan het Dorpsplein kun je de hele dag aanschuiven: een broodje of soep, tapas bij een drankje, een uitgebreid diner of alleen een kop koffie met taart.</p></div>
+    <div class="exp-rij"><article class="exp boog reveal" style="--d:0"><span class="nr">01</span><h3>Lunch</h3><p>12-uurtjes, tosti’s, broodjes met carpaccio, zalm of burrata en een uitsmijter.</p><span class="vanaf">vanaf &euro;&nbsp;7,50</span></article><article class="exp  reveal" style="--d:1"><span class="nr">02</span><h3>Tapas</h3><p>Bitterballen, calamaris, garnalen tempura en een tapasplank om te delen.</p><span class="vanaf">vanaf &euro;&nbsp;7,50</span></article><article class="exp boog reveal" style="--d:2"><span class="nr">03</span><h3>Diner</h3><p>Van hamburger en stoverij tot ribeye, zeebaars en sliptongetjes.</p><span class="vanaf">vanaf &euro;&nbsp;18,50</span></article><article class="exp  reveal" style="--d:3"><span class="nr">04</span><h3>Tearoom &amp; drinks</h3><p>Appeltaart, poffertjes, speciale koffies, wijn, bier en cocktails.</p><span class="vanaf">vanaf &euro;&nbsp;3,20</span></article></div>
+    <p class="noot midden reveal">Bekijk het <a href="menu.html" class="tekstlink">menu</a> voor alle gerechten en prijzen.</p>
   </div>
 </section>
 
-<section class="sectie kaart-blok">
+<section class="show" aria-label="Bistro DeBuut">
+  <div class="show-rij r1" aria-hidden="true"><div class="spoor"><span>Lunch &amp; diner</span><i>&#10022;</i><span>Lunch &amp; diner</span><i>&#10022;</i><span>Lunch &amp; diner</span><i>&#10022;</i><span>Lunch &amp; diner</span><i>&#10022;</i><span>Lunch &amp; diner</span><i>&#10022;</i><span>Lunch &amp; diner</span><i>&#10022;</i><span>Lunch &amp; diner</span><i>&#10022;</i><span>Lunch &amp; diner</span><i>&#10022;</i></div></div>
+  <div class="show-rij r2" aria-hidden="true"><div class="spoor"><span>Aan tafel op het Dorpsplein</span><i>&#10022;</i><span>Aan tafel op het Dorpsplein</span><i>&#10022;</i><span>Aan tafel op het Dorpsplein</span><i>&#10022;</i><span>Aan tafel op het Dorpsplein</span><i>&#10022;</i><span>Aan tafel op het Dorpsplein</span><i>&#10022;</i><span>Aan tafel op het Dorpsplein</span><i>&#10022;</i><span>Aan tafel op het Dorpsplein</span><i>&#10022;</i><span>Aan tafel op het Dorpsplein</span><i>&#10022;</i></div></div>
+  <div class="show-rij r3" aria-hidden="true"><div class="spoor"><span>Tapas &amp; drinks</span><i>&#10022;</i><span>Tapas &amp; drinks</span><i>&#10022;</i><span>Tapas &amp; drinks</span><i>&#10022;</i><span>Tapas &amp; drinks</span><i>&#10022;</i><span>Tapas &amp; drinks</span><i>&#10022;</i><span>Tapas &amp; drinks</span><i>&#10022;</i><span>Tapas &amp; drinks</span><i>&#10022;</i><span>Tapas &amp; drinks</span><i>&#10022;</i></div></div>
+  <div class="show-merk" aria-hidden="true"><span class="l1">Bistro</span><span class="l2">DeBuut</span></div>
+</section>
+
+<section class="over">
+  <div class="cirkel" aria-hidden="true"></div>
+  <div class="wrap kop-midden">
+    <span class="label reveal">Over Bistro DeBuut</span>
+    <h2 class="reveal">Nieuw in <em>Schoondijke</em></h2>
+    <p class="reveal">Op vrijdag 6 november 2026 opende Bistro DeBuut de deuren aan het Dorpsplein. Je kunt er terecht voor lunch, diner en drinks, van een eenvoudige tosti tot een ribeye, en van een kop koffie tot een cocktail.</p>
+    <div class="knoppen reveal"><a class="pil-knop rand" href="over-ons.html">Meer over ons</a></div>
+  </div>
+</section>
+
+<section class="sectie lichter">
   <div class="wrap">
-    <div class="kop-rij"><div><span class="label reveal">Van de kaart</span><h2 class="reveal">Zes om <em>mee te beginnen</em></h2></div><a class="knop reveal" href="menu.html">Het hele menu <i class="pijl"></i></a></div>
-    <ol class="hl"><li class="reveal" style="--d:0"><span class="nr">01</span><div><b>Ribeye</b><p>Seizoensgroente, friet</p></div><span class="pr">&euro;&nbsp;33,00</span></li><li class="reveal" style="--d:1"><span class="nr">02</span><div><b>Sliptongetjes</b><p>Tartaarsaus, salade, friet</p></div><span class="pr">&euro;&nbsp;26,00</span></li><li class="reveal" style="--d:2"><span class="nr">03</span><div><b>Zeebaars</b><p>Chimichurri, gewokte groente, friet</p></div><span class="pr">&euro;&nbsp;23,50</span></li><li class="reveal" style="--d:0"><span class="nr">04</span><div><b>Stoverij</b><p>Stoofvlees, salade, friet</p></div><span class="pr">&euro;&nbsp;20,50</span></li><li class="reveal" style="--d:1"><span class="nr">05</span><div><b>Garnalen tempura</b><p>8 stuks, kerriemayo</p></div><span class="pr">&euro;&nbsp;9,00</span></li><li class="reveal" style="--d:2"><span class="nr">06</span><div><b>Verse appeltaart</b><p>Slagroom</p></div><span class="pr">&euro;&nbsp;6,00</span></li></ol>
+    <div class="kop-rij"><div><span class="label reveal">Van de kaart</span><h2 class="reveal">Zes om <em>mee te beginnen</em></h2></div><a class="pil-knop rand reveal" href="menu.html">Het hele menu</a></div>
+    <ol class="hl"><li class="reveal" style="--d:0"><span class="nr">01</span><div><b>Ribeye</b><p>Seizoensgroente, friet</p></div><span class="pr">&euro;&nbsp;33,00</span></li><li class="reveal" style="--d:1"><span class="nr">02</span><div><b>Sliptongetjes</b><p>Tartaarsaus, salade, friet</p></div><span class="pr">&euro;&nbsp;26,00</span></li><li class="reveal" style="--d:0"><span class="nr">03</span><div><b>Zeebaars</b><p>Chimichurri, gewokte groente, friet</p></div><span class="pr">&euro;&nbsp;23,50</span></li><li class="reveal" style="--d:1"><span class="nr">04</span><div><b>Stoverij</b><p>Stoofvlees, salade, friet</p></div><span class="pr">&euro;&nbsp;20,50</span></li><li class="reveal" style="--d:0"><span class="nr">05</span><div><b>Garnalen tempura</b><p>8 stuks, kerriemayo</p></div><span class="pr">&euro;&nbsp;9,00</span></li><li class="reveal" style="--d:1"><span class="nr">06</span><div><b>Verse appeltaart</b><p>Slagroom</p></div><span class="pr">&euro;&nbsp;6,00</span></li></ol>
     <p class="noot reveal">Prijzen en gerechten zoals op hun menukaart van 7 november; ze kunnen wijzigen. Bij allergieën graag even navragen.</p>
   </div>
 </section>
 
-<section class="sectie vier">
-  <div class="wrap">
-    <span class="label reveal">Het hele etmaal</span>
-    <h2 class="reveal">Voor elk <em>moment</em></h2>
-    <div class="punten">
-      <article class="punt reveal"><span class="nr">01</span><h3>Lunch</h3><p>12-uurtjes, tosti’s, broodjes carpaccio, zalm of burrata en een uitsmijter.</p></article>
-      <article class="punt reveal" style="--d:1"><span class="nr">02</span><h3>Tapas</h3><p>Bitterballen, calamaris, garnalen tempura en een tapasplank om te delen.</p></article>
-      <article class="punt reveal" style="--d:2"><span class="nr">03</span><h3>Diner</h3><p>Van hamburger en stoverij tot ribeye, zeebaars en sliptongetjes.</p></article>
-      <article class="punt reveal" style="--d:3"><span class="nr">04</span><h3>Tearoom &amp; drinks</h3><p>Appeltaart, poffertjes, speciale koffies, wijn, bier en cocktails.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="sectie qr-blok">
+<section class="sectie">
   <div class="wrap qr-rij">
     <div class="qr-tekst">
       <span class="label reveal">Op tafel</span>
       <h2 class="reveal">Scan en <em>bekijk de menukaart</em></h2>
       <p class="reveal">Met een QR-code op tafel, de bar of de deur bekijken gasten de actuele kaart direct op hun telefoon, zonder app. Verandert het menu of een prijs? Dan passen wij de digitale kaart aan en hoeft er niets opnieuw gedrukt te worden.</p>
-      <div class="hero-knoppen reveal"><a class="knop vol" href="menukaart.html">Open de digitale menukaart <i class="pijl"></i></a><a class="knop" href="qr.html">QR-tafelkaartje</a></div>
+      <div class="knoppen reveal"><a class="pil-knop donker" href="menukaart.html">Open de digitale menukaart</a><a class="pil-knop rand" href="qr.html">QR-tafelkaartje</a></div>
     </div>
     <a class="qr-kaart reveal" href="menukaart.html" aria-label="Scan de QR-code of open de digitale menukaart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 570" width="570" height="570" role="img" aria-label="QR-code naar de digitale menukaart" class="segno"><g transform="scale(10)"><path fill="#fbf6ee" d="M0 0h57v57h-57z"/><path class="qrline" stroke="#3a1a1e" d="M4 4.5h7m2 0h2m1 0h1m6 0h1m1 0h1m1 0h1m3 0h3m3 0h1m1 0h1m4 0h1m1 0h7m-49 1h1m5 0h1m1 0h2m2 0h2m1 0h4m2 0h1m1 0h2m1 0h2m2 0h1m3 0h3m1 0h3m1 0h1m5 0h1m-49 1h1m1 0h3m1 0h1m2 0h1m6 0h1m1 0h2m2 0h1m1 0h1m2 0h2m1 0h2m3 0h2m2 0h2m1 0h1m1 0h3m1 0h1m-49 1h1m1 0h3m1 0h1m4 0h1m1 0h1m3 0h2m1 0h2m1 0h1m2 0h2m3 0h1m1 0h2m2 0h1m1 0h1m2 0h1m1 0h3m1 0h1m-49 1h1m1 0h3m1 0h1m2 0h1m2 0h2m1 0h2m1 0h9m3 0h4m1 0h1m6 0h1m1 0h3m1 0h1m-49 1h1m5 0h1m1 0h5m1 0h2m1 0h2m1 0h1m1 0h1m3 0h2m1 0h4m1 0h2m1 0h2m3 0h1m5 0h1m-49 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-41 1h3m1 0h1m1 0h2m2 0h3m1 0h1m3 0h1m4 0h6m2 0h2m-37 1h4m1 0h4m1 0h6m2 0h7m2 0h6m3 0h1m1 0h2m3 0h1m-45 1h1m5 0h1m1 0h4m1 0h7m1 0h3m3 0h1m1 0h1m3 0h1m1 0h2m1 0h2m1 0h1m-45 1h2m2 0h1m1 0h1m3 0h1m1 0h1m2 0h1m4 0h1m4 0h1m2 0h1m1 0h2m1 0h1m4 0h1m1 0h5m-42 1h1m4 0h2m1 0h2m1 0h3m2 0h6m1 0h2m1 0h1m1 0h2m1 0h1m1 0h2m2 0h1m1 0h1m1 0h1m1 0h1m-46 1h1m1 0h2m1 0h1m1 0h1m2 0h1m6 0h1m5 0h3m1 0h1m1 0h1m2 0h1m1 0h2m1 0h1m1 0h2m2 0h4m-48 1h3m1 0h1m2 0h1m1 0h3m2 0h1m3 0h1m1 0h3m1 0h1m2 0h1m2 0h4m1 0h4m3 0h1m1 0h3m-46 1h1m2 0h1m1 0h3m5 0h1m1 0h7m2 0h1m1 0h1m4 0h1m5 0h2m1 0h2m1 0h2m-46 1h1m1 0h1m1 0h2m3 0h2m1 0h4m1 0h1m2 0h2m1 0h1m1 0h4m1 0h1m5 0h2m1 0h1m1 0h1m2 0h1m1 0h1m-47 1h2m1 0h1m1 0h2m4 0h1m1 0h2m1 0h1m2 0h3m2 0h3m4 0h1m1 0h1m1 0h8m1 0h5m-49 1h2m1 0h1m3 0h2m1 0h2m4 0h1m2 0h2m1 0h3m6 0h1m1 0h1m1 0h5m1 0h2m1 0h1m1 0h1m-47 1h1m5 0h3m1 0h2m2 0h3m2 0h1m1 0h3m2 0h1m1 0h2m1 0h3m4 0h2m1 0h2m2 0h2m-47 1h1m1 0h1m1 0h2m3 0h1m2 0h3m1 0h1m3 0h2m1 0h3m3 0h2m1 0h1m1 0h8m1 0h2m1 0h1m-46 1h4m1 0h2m2 0h3m4 0h2m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h1m3 0h2m3 0h1m1 0h1m1 0h3m-42 1h1m1 0h4m4 0h1m2 0h1m3 0h1m1 0h1m1 0h1m1 0h6m1 0h5m1 0h6m-45 1h1m1 0h6m1 0h3m1 0h2m1 0h1m2 0h10m2 0h1m4 0h8m-45 1h4m3 0h1m2 0h1m4 0h1m2 0h1m1 0h2m3 0h1m1 0h1m1 0h1m2 0h1m1 0h2m2 0h2m3 0h1m1 0h3m-49 1h3m1 0h1m1 0h1m1 0h3m1 0h2m1 0h1m3 0h4m1 0h1m1 0h3m4 0h1m1 0h2m2 0h2m1 0h1m1 0h1m1 0h1m1 0h1m-49 1h1m2 0h2m3 0h2m1 0h1m4 0h2m2 0h1m1 0h1m3 0h1m1 0h1m1 0h2m1 0h1m4 0h1m1 0h1m3 0h1m-45 1h1m2 0h7m1 0h2m2 0h1m1 0h2m2 0h6m1 0h5m3 0h3m1 0h6m-46 1h2m2 0h1m2 0h2m1 0h1m1 0h7m1 0h6m3 0h1m2 0h2m1 0h4m3 0h2m1 0h2m-47 1h1m1 0h2m1 0h9m2 0h1m1 0h2m5 0h5m2 0h2m1 0h2m3 0h4m2 0h3m-48 1h4m2 0h2m2 0h2m1 0h1m1 0h4m1 0h3m2 0h2m1 0h1m2 0h2m1 0h1m2 0h1m1 0h2m2 0h2m1 0h1m-46 1h1m2 0h3m2 0h1m1 0h3m3 0h1m1 0h2m1 0h3m1 0h1m1 0h1m1 0h3m1 0h1m2 0h1m1 0h1m2 0h4m-46 1h1m3 0h1m2 0h1m2 0h1m5 0h4m1 0h1m1 0h2m2 0h2m6 0h1m1 0h1m2 0h2m1 0h1m1 0h1m-47 1h1m4 0h2m2 0h1m2 0h4m2 0h1m1 0h1m5 0h3m2 0h6m1 0h1m1 0h2m1 0h1m2 0h1m-45 1h4m2 0h1m4 0h1m1 0h3m5 0h1m1 0h1m2 0h2m1 0h3m2 0h1m1 0h4m2 0h2m-42 1h4m2 0h1m1 0h5m3 0h1m2 0h1m1 0h4m1 0h1m2 0h1m1 0h4m1 0h2m2 0h4m-47 1h1m2 0h1m7 0h1m1 0h1m2 0h1m2 0h2m3 0h1m2 0h3m1 0h1m1 0h1m1 0h3m2 0h2m3 0h1m-47 1h3m1 0h3m1 0h2m2 0h2m2 0h1m1 0h1m1 0h4m2 0h1m5 0h1m2 0h2m1 0h1m2 0h1m1 0h1m1 0h4m-48 1h1m3 0h1m1 0h1m1 0h2m1 0h2m1 0h2m2 0h2m1 0h2m2 0h1m3 0h1m7 0h4m2 0h2m1 0h1m-47 1h1m3 0h5m1 0h2m1 0h1m1 0h2m3 0h2m1 0h2m1 0h2m2 0h3m1 0h1m2 0h1m2 0h1m1 0h1m2 0h1m-46 1h3m3 0h1m1 0h1m2 0h2m1 0h4m2 0h1m1 0h5m2 0h1m1 0h1m2 0h4m1 0h4m2 0h2m-48 1h3m3 0h3m1 0h3m7 0h7m5 0h1m2 0h3m2 0h5m1 0h1m-39 1h1m2 0h1m3 0h2m1 0h3m1 0h1m3 0h1m1 0h2m1 0h1m4 0h1m1 0h3m3 0h2m-46 1h7m1 0h1m3 0h1m2 0h1m1 0h1m2 0h3m1 0h1m1 0h1m2 0h1m3 0h2m3 0h1m1 0h1m1 0h1m1 0h3m-47 1h1m5 0h1m1 0h2m1 0h1m1 0h2m1 0h1m1 0h5m3 0h1m1 0h1m3 0h1m1 0h7m3 0h1m1 0h2m-48 1h1m1 0h3m1 0h1m1 0h1m4 0h3m3 0h11m2 0h2m1 0h2m3 0h8m-48 1h1m1 0h3m1 0h1m3 0h2m1 0h1m2 0h1m1 0h1m1 0h1m5 0h2m1 0h3m1 0h1m2 0h1m1 0h4m1 0h1m1 0h1m1 0h2m-49 1h1m1 0h3m1 0h1m2 0h1m1 0h3m3 0h1m1 0h1m2 0h1m3 0h1m2 0h1m1 0h3m4 0h1m1 0h1m2 0h1m2 0h1m-47 1h1m5 0h1m4 0h2m1 0h1m1 0h4m1 0h1m2 0h1m1 0h2m1 0h2m1 0h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h2m-48 1h7m2 0h3m1 0h1m2 0h1m4 0h1m1 0h3m6 0h1m3 0h1m1 0h1m7 0h3"/></g></svg>
 <span>Scan voor de menukaart</span></a>
   </div>
 </section>
 
-<section class="sectie cta">
-  <div class="wrap"><span class="label reveal">Reserveren</span><h2 class="reveal">Trek gekregen? <em>Reserveer een tafel</em></h2><p class="reveal">Bel of app naar 06 27 41 98 69, of stuur een reserveringsaanvraag via de website.</p>
-  <div class="hero-knoppen reveal"><a class="knop vol" href="reserveren.html">Reserveer een tafel <i class="pijl"></i></a><a class="knop" href="tel:+31627419869">Bel 06 27 41 98 69</a></div></div>
+<section class="sectie locatie">
+  <div class="wrap loc-rij">
+    <div>
+      <span class="label reveal">Locatie</span>
+      <h2 class="reveal">Dorpsplein <em>1</em></h2>
+      <p class="reveal lead">Je vindt Bistro DeBuut aan het Dorpsplein in Schoondijke. Kom gerust binnen voor lunch, diner of een drankje, of reserveer vooraf een tafel.</p>
+      <div class="knoppen reveal"><a class="pil-knop donker" href="https://www.google.com/maps/search/?api=1&query=Bistro+DeBuut+Dorpsplein+1+Schoondijke" target="_blank" rel="noopener">Route plannen</a><a class="pil-knop rand" href="tel:+31627419869">Bel 06 27 41 98 69</a></div>
+    </div>
+    <dl class="gegevens reveal">
+      <div><dt>Adres</dt><dd>Dorpsplein 1, 4507 BH Schoondijke</dd></div>
+      <div><dt>Reserveren</dt><dd><a href="tel:+31627419869">06 27 41 98 69</a> (bellen of appen)</dd></div>
+      <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/bistrodebuut/" target="_blank" rel="noopener">@bistrodebuut</a></dd></div>
+      <div><dt>Openingstijden</dt><dd>Donderdag t/m maandag 10:30 – 20:30<br><span class="dicht">Dinsdag en woensdag gesloten</span></dd></div>
+    </dl>
+  </div>
 </section>
 </main>
 <footer class="voet">
@@ -104,12 +123,13 @@ window.addEventListener('error',function(){setTimeout(function(){if(!document.do
       <div class="voet-merk"><a href="index.html" class="logo" aria-label="Bistro DeBuut"><span class="l1">Bistro</span><span class="l2">DeBuut</span></a><p>Dorpsplein 1<br>4507 BH Schoondijke</p></div>
       <div><span class="label">Geopend</span><p>Donderdag t/m maandag<br>10:30 – 20:30</p></div>
       <div><span class="label">Reserveren</span><p><a href="tel:+31627419869">06 27 41 98 69</a><br>Bellen of appen</p></div>
-      <nav aria-label="Footer"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="reserveren.html">Reserveren</a><a href="contact.html">Contact</a><a href="menukaart.html">Digitale menukaart</a><a href="qr.html">QR-tafelkaartje</a><a href="https://www.instagram.com/bistrodebuut/" target="_blank" rel="noopener">Instagram</a></nav>
+      <nav aria-label="Footer"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="over-ons.html">Over ons</a><a href="reserveren.html">Reserveren</a><a href="contact.html">Contact</a><a href="menukaart.html">Digitale menukaart</a><a href="qr.html">QR-tafelkaartje</a><a href="https://www.instagram.com/bistrodebuut/" target="_blank" rel="noopener">Instagram</a></nav>
     </div>
     <p class="disc">Dit is een gratis, vrijblijvend conceptontwerp van CodeLine Agency, gemaakt op basis van openbare informatie van het Instagram-account van Bistro DeBuut. Foto, openingstijden, menu en prijzen komen van hun eigen kanalen (menukaart van 7 november) en kunnen sindsdien zijn gewijzigd. Dit is niet de officiële website van Bistro DeBuut.</p>
   </div>
 </footer>
+<a class="badge" href="menu.html" aria-label="Bekijk de menukaart"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="bc" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/></defs><text><textPath href="#bc" textLength="276" lengthAdjust="spacing">BEKIJK DE MENUKAART · BISTRO DEBUUT · </textPath></text></svg><span class="ster">&#10022;</span></a>
 <div class="pil">Concept · CodeLine Agency</div>
-<script src="js/site.js?v=1"></script>
+<script src="js/site.js?v=2"></script>
 </body>
 </html>
