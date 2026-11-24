@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reserveren – Bistro DeBuut Schoondijke (concept)</title>
+<meta name="description" content="Reserveer een tafel bij Bistro DeBuut in Schoondijke: bel of app naar 06 27 41 98 69, of stuur een aanvraag via WhatsApp.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1c0e10">
+<link rel="icon" href="img/favicon.png">
+<link rel="preload" href="fonts/bodoni-moda-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/hanken-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+document.documentElement.classList.add('js');
+setTimeout(function(){if(!document.documentElement.classList.contains('ready'))document.documentElement.classList.remove('js')},2500);
+window.addEventListener('error',function(){setTimeout(function(){if(!document.documentElement.classList.contains('ready'))document.documentElement.classList.remove('js')},1000)});
+</script>
+<link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+<header class="header">
+  <div class="wrap nav-rij">
+    <a href="index.html" class="logo" aria-label="Bistro DeBuut, naar de homepage"><span class="l1">Bistro</span><span class="l2">DeBuut</span></a>
+    <button class="menu-knop" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" aria-label="Hoofdmenu">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="reserveren.html" aria-current="page">Reserveren</a>
+      <a href="contact.html">Contact</a>
+      <a href="reserveren.html" class="knop vol" aria-current="page">Reserveer een tafel</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="pagina-hero"><div class="wrap">
+    <span class="label heroin">Reserveren</span>
+    <h1 class="heroin" style="--d:1">Reserveer <em>een tafel</em></h1>
+    <p class="lead heroin" style="--d:2">Bel of app naar het restaurant, of vul hieronder je wensen in. Je aanvraag opent als WhatsApp-bericht, klaar om te versturen.</p>
+</div></section>
+
+<section class="sectie" style="padding-top:20px">
+  <div class="wrap res-rij">
+    <div class="res-info">
+      <article class="kaartje reveal"><span class="nr">01</span><h3>Bellen of appen</h3><a class="lnk" href="tel:+31627419869">06 27 41 98 69</a><p>Zo reserveer je op de manier waarop Bistro DeBuut het zelf vraagt: bel of app.</p><div class="hero-knoppen"><a class="knop vol" href="tel:+31627419869">Bel nu</a><a class="knop" href="https://wa.me/31627419869" target="_blank" rel="noopener">WhatsApp</a></div></article>
+      <article class="kaartje reveal" style="--d:1"><span class="nr">02</span><h3>Openingstijden</h3><div class="uren"><div><span>Donderdag</span><b>10:30 – 20:30</b></div><div><span>Vrijdag</span><b>10:30 – 20:30</b></div><div><span>Zaterdag</span><b>10:30 – 20:30</b></div><div><span>Zondag</span><b>10:30 – 20:30</b></div><div><span>Maandag</span><b>10:30 – 20:30</b></div><div class="dicht"><span>Dinsdag &amp; woensdag</span><b>Gesloten</b></div></div></article>
+    </div>
+    <form class="res-form reveal" id="res-form" novalidate style="--d:1">
+      <span class="label">Reserveringsaanvraag</span>
+      <div class="velden">
+        <div class="veld" data-v="datum"><label for="r-datum">Datum</label><input type="date" id="r-datum" name="datum"><span class="melding" hidden></span></div>
+        <div class="veld" data-v="tijd"><label for="r-tijd">Tijd</label><select id="r-tijd" name="tijd"></select><span class="melding" hidden></span></div>
+        <div class="veld" data-v="pers"><label for="r-pers">Aantal personen</label><select id="r-pers" name="pers"></select></div>
+        <div class="veld" data-v="naam"><label for="r-naam">Naam</label><input id="r-naam" name="naam" autocomplete="name" placeholder="Voor- en achternaam"><span class="melding" hidden></span></div>
+        <div class="veld vol"><label for="r-opm">Opmerking (optioneel)</label><textarea id="r-opm" name="opm" placeholder="Bijvoorbeeld: kinderstoel, allergie of een bijzondere gelegenheid"></textarea></div>
+      </div>
+      <p class="m-melding" hidden></p>
+      <button class="knop vol" type="submit">Verstuur via WhatsApp <i class="pijl"></i></button>
+      <p class="demo-noot">Conceptformulier: het opent een WhatsApp-bericht aan het restaurant. Een reservering is pas definitief nadat Bistro DeBuut hem heeft bevestigd.</p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="voet">
+  <div class="wrap">
+    <div class="voet-rij">
+      <div class="voet-merk"><a href="index.html" class="logo" aria-label="Bistro DeBuut"><span class="l1">Bistro</span><span class="l2">DeBuut</span></a><p>Dorpsplein 1<br>4507 BH Schoondijke</p></div>
+      <div><span class="label">Geopend</span><p>Donderdag t/m maandag<br>10:30 – 20:30</p></div>
+      <div><span class="label">Reserveren</span><p><a href="tel:+31627419869">06 27 41 98 69</a><br>Bellen of appen</p></div>
+      <nav aria-label="Footer"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="reserveren.html">Reserveren</a><a href="contact.html">Contact</a><a href="menukaart.html">Digitale menukaart</a><a href="qr.html">QR-tafelkaartje</a><a href="https://www.instagram.com/bistrodebuut/" target="_blank" rel="noopener">Instagram</a></nav>
+    </div>
+    <p class="disc">Dit is een gratis, vrijblijvend conceptontwerp van CodeLine Agency, gemaakt op basis van openbare informatie van het Instagram-account van Bistro DeBuut. Foto, openingstijden, menu en prijzen komen van hun eigen kanalen (menukaart van 7 november) en kunnen sindsdien zijn gewijzigd. Dit is niet de officiële website van Bistro DeBuut.</p>
+  </div>
+</footer>
+<div class="pil">Concept · CodeLine Agency</div>
+<script src="js/site.js?v=1"></script>
+</body>
+</html>
